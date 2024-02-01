@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import {AboutComponent} from "./about/about.component";
 import {ValuesComponent} from "./values/values.component";
 import {FeaturesComponent} from "./features/features.component";
+import {FaqComponent} from "./faq/faq.component";
+import {ServicesComponent} from "./services/services.component";
 
 @Component({
   selector: 'app-main',
@@ -9,7 +11,9 @@ import {FeaturesComponent} from "./features/features.component";
   imports: [
     AboutComponent,
     ValuesComponent,
-    FeaturesComponent
+    FeaturesComponent,
+    FaqComponent,
+    ServicesComponent
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
