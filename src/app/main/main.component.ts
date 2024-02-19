@@ -4,6 +4,8 @@ import {ValuesComponent} from "./values/values.component";
 import {FeaturesComponent} from "./features/features.component";
 import {FaqComponent} from "./faq/faq.component";
 import {ServicesComponent} from "./services/services.component";
+import {TeamComponent} from "./team/team.component";
+import {ContactComponent} from "./contact/contact.component";
 
 @Component({
   selector: 'app-main',
@@ -13,7 +15,9 @@ import {ServicesComponent} from "./services/services.component";
     ValuesComponent,
     FeaturesComponent,
     FaqComponent,
-    ServicesComponent
+    ServicesComponent,
+    TeamComponent,
+    ContactComponent
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
