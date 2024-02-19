@@ -6,6 +6,7 @@ import {FaqComponent} from "./faq/faq.component";
 import {ServicesComponent} from "./services/services.component";
 import {TeamComponent} from "./team/team.component";
 import {ContactComponent} from "./contact/contact.component";
+import {ClientsComponent} from "./clients/clients.component";
 
 @Component({
   selector: 'app-main',
@@ -17,7 +18,8 @@ import {ContactComponent} from "./contact/contact.component";
     FaqComponent,
     ServicesComponent,
     TeamComponent,
-    ContactComponent
+    ContactComponent,
+    ClientsComponent
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
