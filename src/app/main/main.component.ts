@@ -7,6 +7,7 @@ import {ServicesComponent} from "./services/services.component";
 import {TeamComponent} from "./team/team.component";
 import {ContactComponent} from "./contact/contact.component";
 import {ClientsComponent} from "./clients/clients.component";
+import {PortfolioComponent} from "./portfolio/portfolio.component";
 
 @Component({
   selector: 'app-main',
@@ -19,7 +20,8 @@ import {ClientsComponent} from "./clients/clients.component";
     ServicesComponent,
     TeamComponent,
     ContactComponent,
-    ClientsComponent
+    ClientsComponent,
+    PortfolioComponent
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
