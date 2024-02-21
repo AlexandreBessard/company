@@ -8,6 +8,9 @@ import {TeamComponent} from "./team/team.component";
 import {ContactComponent} from "./contact/contact.component";
 import {ClientsComponent} from "./clients/clients.component";
 import {PortfolioComponent} from "./portfolio/portfolio.component";
+import {RouterModule, RouterOutlet} from "@angular/router";
+import {CommonModule} from "@angular/common";
+import {HeroComponent} from "../hero/hero.component";
 
 @Component({
   selector: 'app-main',
@@ -21,7 +24,10 @@ import {PortfolioComponent} from "./portfolio/portfolio.component";
     TeamComponent,
     ContactComponent,
     ClientsComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    CommonModule,
+    RouterOutlet,
+    HeroComponent
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
