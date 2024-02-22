@@ -1,5 +1,5 @@
 import {Component, inject, OnInit} from '@angular/core';
-import {ActivatedRoute, Router} from "@angular/router";
+import {ActivatedRoute, Router, RouterModule} from "@angular/router";
 import {AsyncPipe, CommonModule} from "@angular/common";
 import {PortfolioDetailsService} from "./portfolio-details.service";
 import {filter, map, Observable, tap} from "rxjs";
@@ -9,7 +9,8 @@ import {filter, map, Observable, tap} from "rxjs";
   standalone: true,
   imports: [
     AsyncPipe,
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   templateUrl: './portfolio-details.component.html',
   styleUrl: './portfolio-details.component.css'

@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import {PortfolioGuard } from "./portfolio.guard";
 
 export const routes: Routes = [
   {
@@ -9,7 +10,8 @@ export const routes: Routes = [
   {
     path: 'home',
     loadComponent: () =>
-      import('./main/main.component').then((m) => m.MainComponent)
+      import('./main/main.component').then((m) => m.MainComponent),
+    canActivate: [PortfolioGuard]
   },
   {
     path: 'home/portfolio-details/:id',
