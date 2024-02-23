@@ -1,7 +1,8 @@
 <section class="breadcrumbs">
   <div class="container">
     <ol>
-      <li><a [routerLink]="['/home']" [queryParams]="{ from: 'portfolio' }">Home</a></li>
+      <li><a [routerLink]="['/home']">Accueil</a></li>
+      <li><a [routerLink]="['/home']" [queryParams]="{ from: 'portfolio' }">Portfolio</a></li>
       <li>Portfolio Details</li>
     </ol>
     <h2>Portfolio Details</h2>
@@ -15,25 +16,25 @@
 
       <div class="col-lg-8">
         <div class="portfolio-details-slider">
-          <img src="assets/img/portfolio/portfolio-1.jpg" alt="Single Image">
+          <img src="{{ portfolio.photo }}" alt="Single Image">
         </div>
       </div>
 
-
       <div class="col-lg-4">
         <div class="portfolio-info">
-          <h3>Project information number : {{ portfolio.id }}</h3>
+          <h3>{{ portfolio.title }}</h3>
           <ul>
-            <li><strong>Category</strong>: Web design</li>
-            <li><strong>Client</strong>: ASU Company</li>
-            <li><strong>Project date</strong>: 01 March, 2020</li>
-            <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+            <li><strong>Categorie</strong>: {{ portfolio.categorie }}</li>
+            <li><strong>URL du projet: </strong>: <a href="{{portfolio.link}}" target="_blank">{{ portfolio.title }}</a></li>
           </ul>
         </div>
         <div class="portfolio-description">
-          <h2>This is an example of portfolio detail</h2>
+          <h2>{{ portfolio.descriptionTitle }}</h2>
           <p>
-            Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+            {{ portfolio.description }}
+            <br>
+            URL du code source:
+            <a href="{{portfolio.github}}" target="_blank">{{ portfolio.github }}</a>
           </p>
         </div>
       </div>
