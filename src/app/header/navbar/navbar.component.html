@@ -32,21 +32,26 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#">Features</a>
-        <a class="nav-link" href="#">Pricing</a>
-        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+<!--
+        <li><a class="nav-link active" [routerLink]="['/home']">Accueil</a></li>
+-->
+        <li><a class="nav-link" (click)="scrollToElement('about')" [ngStyle]="{cursor: 'pointer'}">Qui sommes nous?</a></li>
+        <li><a class="nav-link"  (click)="scrollToElement('values')" [ngStyle]="{cursor: 'pointer'}">Nos valeurs</a></li>
+        <li><a class="nav-link" (click)="scrollToElement('features')" [ngStyle]="{cursor: 'pointer'}">Notre expertise</a></li>
+        <li><a class="nav-link" (click)="scrollToElement('services')" [ngStyle]="{cursor: 'pointer'}">Certifications</a></li>
+        <li><a class="nav-link" (click)="scrollToElement('team')" [ngStyle]="{cursor: 'pointer'}">Equipes</a></li>
+        <li><a class="nav-link" (click)="scrollToElement('faq')" [ngStyle]="{cursor: 'pointer'}">F.A.Q</a></li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+          <a class="nav-link dropdown-toggle" (click)="scrollToElement('portfolio')" [ngStyle]="{cursor: 'pointer'}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Portfolio
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a [routerLink]="['home', 'portfolio-details', 1]">Projet 1</a></li>
+            <li><a [routerLink]="['home', 'portfolio-details', 2]">Projet 2</a></li>
           </ul>
         </li>
+        <li><a class="nav-link scrollto" (click)="scrollToElement('clients')" [ngStyle]="{cursor: 'pointer'}">Clients</a></li>
+        <li><a class="nav-link scrollto" (click)="scrollToElement('contact')" [ngStyle]="{cursor: 'pointer'}">Contact</a></li>
 
       </div>
     </div>
