@@ -1,3 +1,4 @@
+<!--
 <nav id="navbar" class="navbar">
   <ul>
     <li><a class="nav-link scrollto active" [routerLink]="['/home']">Accueil</a></li>
@@ -17,4 +18,37 @@
     <li><a class="nav-link scrollto" (click)="scrollToElement('contact')" [ngStyle]="{cursor: 'pointer'}">Contact</a></li>
   </ul>
   <i class="bi bi-list mobile-nav-toggle"></i>
+</nav>
+-->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="assets/img/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+      LEXOFT
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+
+      </div>
+    </div>
+  </div>
 </nav>
