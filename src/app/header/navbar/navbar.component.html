@@ -1,26 +1,3 @@
-<!--
-<nav id="navbar" class="navbar">
-  <ul>
-    <li><a class="nav-link scrollto active" [routerLink]="['/home']">Accueil</a></li>
-    <li><a class="nav-link scrollto" (click)="scrollToElement('about')" [ngStyle]="{cursor: 'pointer'}">Qui sommes nous?</a></li>
-    <li><a class="nav-link scrollto"  (click)="scrollToElement('values')" [ngStyle]="{cursor: 'pointer'}">Nos valeurs</a></li>
-    <li><a class="nav-link scrollto" (click)="scrollToElement('features')" [ngStyle]="{cursor: 'pointer'}">Notre expertise</a></li>
-    <li><a class="nav-link scrollto" (click)="scrollToElement('services')" [ngStyle]="{cursor: 'pointer'}">Certifications</a></li>
-    <li><a class="nav-link scrollto" (click)="scrollToElement('team')" [ngStyle]="{cursor: 'pointer'}">Equipes</a></li>
-    <li><a class="nav-link scrollto" (click)="scrollToElement('faq')" [ngStyle]="{cursor: 'pointer'}">F.A.Q</a></li>
-    <li class="dropdown"><a (click)="scrollToElement('portfolio')" [ngStyle]="{cursor: 'pointer'}"><span>Portfolio</span> <i class="bi bi-chevron-down"></i></a>
-      <ul>
-        <li><a [routerLink]="['home', 'portfolio-details', 1]">Projet 1</a></li>
-        <li><a [routerLink]="['home', 'portfolio-details', 2]">Projet 2</a></li>
-      </ul>
-    </li>
-    <li><a class="nav-link scrollto" (click)="scrollToElement('clients')" [ngStyle]="{cursor: 'pointer'}">Clients</a></li>
-    <li><a class="nav-link scrollto" (click)="scrollToElement('contact')" [ngStyle]="{cursor: 'pointer'}">Contact</a></li>
-  </ul>
-  <i class="bi bi-list mobile-nav-toggle"></i>
-</nav>
--->
-
 <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
@@ -35,12 +12,12 @@
 <!--
         <li><a class="nav-link active" [routerLink]="['/home']">Accueil</a></li>
 -->
-        <li><a class="nav-link" (click)="scrollToElement('about')" [ngStyle]="{cursor: 'pointer'}">Qui sommes nous?</a></li>
-        <li><a class="nav-link"  (click)="scrollToElement('values')" [ngStyle]="{cursor: 'pointer'}">Nos valeurs</a></li>
-        <li><a class="nav-link" (click)="scrollToElement('features')" [ngStyle]="{cursor: 'pointer'}">Notre expertise</a></li>
-        <li><a class="nav-link" (click)="scrollToElement('services')" [ngStyle]="{cursor: 'pointer'}">Certifications</a></li>
-        <li><a class="nav-link" (click)="scrollToElement('team')" [ngStyle]="{cursor: 'pointer'}">Equipes</a></li>
-        <li><a class="nav-link" (click)="scrollToElement('faq')" [ngStyle]="{cursor: 'pointer'}">F.A.Q</a></li>
+        <li><a class="nav-link" (click)="scrollToElement('about')" [ngStyle]="{cursor: 'pointer'}">{{ 'nav.whoweare' | translate }}</a></li>
+        <li><a class="nav-link"  (click)="scrollToElement('values')" [ngStyle]="{cursor: 'pointer'}">{{ 'nav.values' | translate }}</a></li>
+        <li><a class="nav-link" (click)="scrollToElement('features')" [ngStyle]="{cursor: 'pointer'}">{{ 'nav.expertise' | translate }}</a></li>
+        <li><a class="nav-link" (click)="scrollToElement('services')" [ngStyle]="{cursor: 'pointer'}">{{ 'nav.certifications' | translate }}</a></li>
+        <li><a class="nav-link" (click)="scrollToElement('team')" [ngStyle]="{cursor: 'pointer'}">{{ 'nav.team' | translate }}</a></li>
+        <li><a class="nav-link" (click)="scrollToElement('faq')" [ngStyle]="{cursor: 'pointer'}">{{ 'nav.faq' | translate }}</a></li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" (click)="scrollToElement('portfolio')" [ngStyle]="{cursor: 'pointer'}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Portfolio

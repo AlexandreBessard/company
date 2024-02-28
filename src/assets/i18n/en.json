@@ -1,0 +1,20 @@
+{
+	"demo.header": "Welcome to my new app",
+	"demo.text": "This translation editor is made for <strong>ngx-translate!",
+
+  "nav.whoweare": "Who we are?",
+  "nav.values": "Our values",
+  "nav.expertise": "Our expertise",
+  "nav.certifications": "Certifications",
+  "nav.team": "Team",
+  "nav.faq": "FAQ",
+  "nav.clients": "Clients",
+  "nav.contact": "Contact",
+
+
+  "header.title": "<h1>Turn your ideas into digital reality with our custom software solutions</h1>",
+  "header.description": "At <strong>LEXOFT</strong>, we understand that every business has unique needs.<br><br> That's why we offer customized software solutions designed to grow your business.<br><br> Our team of development experts is ready to bring your digital vision to life with innovative and effective solutions",
+
+
+  "portfolio.title": "In English"
+}

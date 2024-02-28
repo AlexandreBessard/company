@@ -1,0 +1,20 @@
+{
+	"demo.header": "Bienvenue sur ma nouvelle application",
+	"demo.text": "On explique comment cela marche",
+
+  "nav.whoweare": "Qui sommes nous?",
+  "nav.values":"Nos valeurs",
+  "nav.expertise":"Notre expertise",
+  "nav.certifications": "Certifications",
+  "nav.team": "Equipes",
+  "nav.faq": "FAQ",
+  "nav.clients": "Clients",
+  "nav.contact": "Contact",
+
+
+  "header.title": "<h1>Vos idées en réalité numérique avec nos solutions logicielles sur mesure</h1>",
+  "header.description": "À <strong>LEXOFT</strong>, nous comprenons que chaque entreprise a des besoins uniques.<br><br> C'est pourquoi nous offrons des solutions logicielles personnalisées.<br><br> Notre équipe d'experts en développement est prête à concrétiser votre vision numérique avec des solutions innovantes et efficaces.",
+
+
+  "portfolio.title": "En Francais"
+}

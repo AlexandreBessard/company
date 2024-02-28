@@ -1,18 +1,21 @@
 <section id="hero" class="hero d-flex align-items-center">
   <div class="container">
+    <div style="margin-bottom: 30px">
+      <label class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"
+               (change)="toggleLanguage()"
+               [checked]="defaultLanguageIsEnglish">
+        English
+      </label>
+    </div>
     <div class="row">
-      <div class="col-lg-6 d-flex flex-column justify-content-center">
-        <h1 data-aos="fade-up">Transformez vos idées en réalité numérique avec nos solutions logicielles sur mesure</h1>
-        <h2 data-aos="fade-up" data-aos-delay="400">À <strong>LEXOFT</strong>, nous comprenons que chaque entreprise a des besoins uniques. C'est pourquoi nous offrons des solutions logicielles personnalisées conçues pour faire croître votre entreprise. Notre équipe d'experts en développement est prête à concrétiser votre vision numérique avec des solutions innovantes et efficaces.</h2>
-        <div data-aos="fade-up" data-aos-delay="600">
-          <div class="text-center text-lg-start">
-          </div>
-        </div>
+      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up">
+        <div [innerHTML]="'header.title' | translate | sanitizeHtml"></div>
+        <h2 data-aos-delay="400" [innerHTML]="'header.description' | translate | sanitizeHtml"></h2>
       </div>
       <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
         <img src="assets/img/hero-img.png" class="img-fluid" alt="">
       </div>
     </div>
   </div>
-
 </section>

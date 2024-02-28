@@ -1,13 +1,14 @@
 import {Component, OnInit, Renderer2} from '@angular/core';
 import {Router, RouterModule} from "@angular/router";
 import {NgStyle} from "@angular/common";
+import {TranslateModule} from "@ngx-translate/core";
 declare var bootstrap: any;
 
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterModule, NgStyle],
+  imports: [RouterModule, NgStyle, TranslateModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })

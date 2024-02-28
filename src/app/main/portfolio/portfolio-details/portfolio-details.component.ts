@@ -3,6 +3,7 @@ import {ActivatedRoute, Router, RouterModule} from "@angular/router";
 import {AsyncPipe, CommonModule} from "@angular/common";
 import {PortfolioDetailsService} from "./portfolio-details.service";
 import {filter, map, Observable, tap} from "rxjs";
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-portfolio-details',
@@ -21,7 +22,9 @@ export class PortfolioDetailsComponent implements OnInit {
   portfolio$!: Observable<any>;
   id?: string | null;
 
-  constructor(private route: ActivatedRoute, private router: Router) {}
+  constructor(private route: ActivatedRoute,
+              private router: Router,
+              private translate: TranslateService) {}
 
   ngOnInit(): void {
     this.portfolio$ = this.route.paramMap.pipe(
@@ -32,8 +35,20 @@ export class PortfolioDetailsComponent implements OnInit {
           this.router.navigate(['/']);
           return null;
         }
+        if (this.isEnglish()) {
+          return this.portfolioService.getByIdInEnglishContent(id as string) || null;
+        }
         return this.portfolioService.getById(id as string) || null;
       })
     );
   }
+
+  isFrench(): boolean {
+    return this.translate.currentLang === 'fr';
+  }
+
+  isEnglish(): boolean {
+    return this.translate.currentLang === 'en';
+  }
+
 }
