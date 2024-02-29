@@ -20,7 +20,7 @@
 <!--
               <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
 -->
-              <a [routerLink]="['portfolio-details', 1]" title="More Details"><i class="bi bi-link"></i></a>
+              <a [routerLink]="['portfolio-details', 1]" (click)="scrollToTop()" title="More Details"><i class="bi bi-link"></i></a>
             </div>
           </div>
         </div>
@@ -36,7 +36,7 @@
 <!--
               <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bi bi-plus"></i></a>
 -->
-              <a [routerLink]="['portfolio-details', 2]" title="More Details"><i class="bi bi-link"></i></a>
+              <a [routerLink]="['portfolio-details', 2]" (click)="scrollToTop()" title="More Details"><i class="bi bi-link"></i></a>
             </div>
           </div>
         </div>
