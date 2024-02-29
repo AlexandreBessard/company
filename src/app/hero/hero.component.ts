@@ -22,7 +22,6 @@ export class HeroComponent implements OnInit {
   constructor(private translate: TranslateService) {}
 
   ngOnInit(): void {
-    console.log("call nginx");
     this.setDefaultLanguage();
     AOS.init();
   }
@@ -30,7 +29,6 @@ export class HeroComponent implements OnInit {
   toggleLanguage(): void {
     this.toggle = !this.toggle;
     const newLanguage = this.toggle ? 'fr' : 'en';
-    console.log(newLanguage);
     this.translate.use(newLanguage);
     // Store language preference in local storage
     localStorage.setItem('preferredLanguage', newLanguage);
@@ -42,22 +40,18 @@ export class HeroComponent implements OnInit {
   private setDefaultLanguage(): void {
     const language = this.translate.getBrowserLang() || 'en';
     if (localStorage.getItem("preferredLanguage") === 'fr') {
-      console.log("1");
       const language = localStorage.getItem("preferredLanguage");
       if (language === 'fr') {
-        console.log("1.1");
         this.defaultLanguageIsEnglish = false;
         this.toggle = true;
         localStorage.setItem("preferredLanguage", 'fr');
         return;
       } else {
-        console.log("1.2");
         this.defaultLanguageIsEnglish = true;
         this.toggle = false;
         localStorage.setItem("preferredLanguage", 'en');
       }
     } else if (language === 'en') {
-      console.log("2");
       this.defaultLanguageIsEnglish = true;
       localStorage.setItem("preferredLanguage", language);
     }

@@ -3,8 +3,8 @@
   <div class="container" data-aos="fade-up">
 
     <header class="section-header">
-      <h2>Nos valeurs</h2>
-      <p>Nous unissons l'excellence technique, une collaboration transparente et une innovation agile<p>
+      <h2>{{ 'ourvalues.section' | translate }}</h2>
+      <p>{{ 'ourvalues.title' | translate }}</p>
     </header>
 
     <div class="row">
@@ -12,24 +12,24 @@
       <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
         <div class="box">
           <img src="assets/img/values-1.png" class="img-fluid" alt="">
-          <h3>Excellence Technique</h3>
-          <p>Chez <strong>LEXOFT</strong>, nous nous engageons à offrir des solutions logicielles d'une qualité exceptionnelle. Forts d'une expertise technique pointue dans les domaines de Java, d'Angular, du cloud AWS, Kubernetes, Terraform... nous sommes constamment à la recherche de l'excellence. Cette quête incessante nous permet de concevoir des produits et des services qui surpassent les attentes de nos clients.</p>
+          <h3>{{ 'ourvalues.technical.title' | translate }}</h3>
+          <p [innerHTML]="'ourvalues.technical.description' | translate"></p>
         </div>
       </div>
 
       <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
         <div class="box">
           <img src="assets/img/values-2.png" class="img-fluid" alt="">
-          <h3>Collaboration Transparente</h3>
-          <p>Chez <strong>LEXOFT</strong>, nous plaçons la collaboration transparente au cœur de notre approche. Nous croyons en une communication ouverte et honnête avec nos clients tout au long du processus de développement. En favorisant une collaboration étroite, nous garantissons une compréhension mutuelle des objectifs, des défis et des succès, ce qui permet de créer des partenariats solides et durables.</p>
+          <h3>{{ 'ourvalues.collaboration.title' | translate }}</h3>
+          <p [innerHTML]="'ourvalues.collaboration.description' | translate"></p>
         </div>
       </div>
 
       <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
         <div class="box">
           <img src="assets/img/values-3.png" class="img-fluid" alt="">
-          <h3>Innovation Agile</h3>
-          <p>Chez <strong>LEXOFT</strong>, nous embrassons l'innovation agile dans un environnement technologique en perpétuelle évolution. En restant constamment à l'affût des nouvelles tendances, des meilleures pratiques et des technologies émergentes, nous nous positionnons en avant-garde. Cette agilité nous permet de concevoir des solutions flexibles et adaptées, offrant ainsi à nos clients un avantage concurrentiel inégalé dans leur secteur d'activité.</p>
+          <h3>{{ 'ourvalues.innovation.title' | translate }}</h3>
+          <p [innerHTML]="'ourvalues.innovation.description' | translate"></p>
         </div>
       </div>
 

@@ -7,24 +7,4 @@
 
 <app-footer></app-footer>
 
-<div>
-
-  <button (click)="useLanguage('fr')">fr</button>
-  <button (click)="useLanguage('en')">en</button>
-
-  <h1>{{ 'demo.header' | translate }}</h1>
-
-  <!-- translation: translation pipe -->
-  <p>{{ 'demo.text' | translate }}</p>
-
-  <!-- translation: directive (key as attribute)-->
-  <p [translate]="'demo.text'"></p>
-
-  <!-- translation: directive (key as content of element) -->
-  <p translate>demo.text</p>
-
-  <!-- HTML can be added directly -->
-  <div [innerHTML]="'demo.text' | translate"></div>
-</div>
-
 

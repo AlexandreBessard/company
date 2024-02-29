@@ -16,6 +16,17 @@
   "whoweare.description": "<p>LEXOFT est bien plus qu'une simple société de développement informatique - <strong>nous sommes votre partenaire dédié à la réussite de vos projets</strong>. Notre expertise et notre passion pour l'innovation nous distinguent, faisant de nous le choix idéal pour tous vos besoins en matière de développement logiciel.</p>\n            <p>En tant que spécialistes freelance du développement informatique, nous nous concentrons sur les technologies de pointe telles que <strong>Java / Spring</strong>, <strong>Typescript / Angular</strong> et le <strong>cloud AWS</strong>. Cela nous permet de créer des solutions logicielles robustes, évolutives et hautement performantes.</p>\n            <p>Que vous cherchiez à mettre en place une présence en ligne dynamique, à développer des applications Java puissantes, une interface utilisateur, à migrer vers le cloud AWS... <strong>LEXOFT</strong> est là pour transformer vos idées en réalité. Notre engagement envers l'excellence technique et notre approche centrée sur le client garantissent des résultats exceptionnels à chaque projet.</p>",
 
 
+  "ourvalues.section": "Nos valeurs",
+  "ourvalues.title": "Nous unissons l'excellence technique, une collaboration transparente et une innovation agile",
+
+  "ourvalues.technical.title": "Excellence Technique",
+  "ourvalues.technical.description": "Chez <strong>LEXOFT</strong>, nous nous engageons à offrir des solutions logicielles d'une qualité exceptionnelle. Forts d'une expertise technique pointue dans les domaines de Java, d'Angular, du cloud AWS, Kubernetes, Terraform... nous sommes constamment à la recherche de l'excellence. Cette quête incessante nous permet de concevoir des produits et des services qui surpassent les attentes de nos clients.",
+
+  "ourvalues.collaboration.title": "Collaboration Transparente",
+  "ourvalues.collaboration.description": "Chez <strong>LEXOFT</strong>, nous plaçons la collaboration transparente au cœur de notre approche. Nous croyons en une communication ouverte et honnête avec nos clients tout au long du processus de développement. En favorisant une collaboration étroite, nous garantissons une compréhension mutuelle des objectifs, des défis et des succès, ce qui permet de créer des partenariats solides et durables.",
+
+  "ourvalues.innovation.title": "Innovation Agile",
+  "ourvalues.innovation.description": "Chez <strong>LEXOFT</strong>, nous embrassons l'innovation agile dans un environnement technologique en perpétuelle évolution. En restant constamment à l'affût des nouvelles tendances, des meilleures pratiques et des technologies émergentes, nous nous positionnons en avant-garde. Cette agilité nous permet de concevoir des solutions flexibles et adaptées, offrant ainsi à nos clients un avantage concurrentiel inégalé dans leur secteur d'activité.",
 
 
   "header.title": "<h1>Vos idées en réalité numérique avec nos solutions logicielles sur mesure</h1>",
