@@ -12,6 +12,11 @@
   "nav.contact": "Contact",
 
 
+  "whoweare.section": "Who we are",
+  "whoweare.title": "Discover <strong>LEXOFT</strong>: Your Freelance Partner in Software Development",
+  "whoweare.description": "<p>LEXOFT is more than just a software development company - <strong>we are your dedicated partner for the success of your projects</strong>. Our expertise and passion for innovation set us apart, making us the ideal choice for all your software development needs.</p>\n            <p>As freelance specialists in software development, we focus on cutting-edge technologies such as <strong>Java / Spring</strong>, <strong>Typescript / Angular</strong>, and <strong>AWS cloud</strong>. This allows us to create robust, scalable, and highly performant software solutions.</p>\n            <p>Whether you're looking to establish a dynamic online presence, develop powerful Java applications, a user interface, migrate to the AWS cloud... <strong>LEXOFT</strong> is here to turn your ideas into reality. Our commitment to technical excellence and customer-centric approach ensure outstanding results with every project.</p>",
+
+
   "header.title": "<h1>Turn your ideas into digital reality with our custom software solutions</h1>",
   "header.description": "At <strong>LEXOFT</strong>, we understand that every business has unique needs.<br><br> That's why we offer customized software solutions designed to grow your business.<br><br> Our team of development experts is ready to bring your digital vision to life with innovative and effective solutions",
 
