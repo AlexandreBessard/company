@@ -28,9 +28,42 @@
   "ourvalues.innovation.title": "Innovation Agile",
   "ourvalues.innovation.description": "Chez <strong>LEXOFT</strong>, nous embrassons l'innovation agile dans un environnement technologique en perpétuelle évolution. En restant constamment à l'affût des nouvelles tendances, des meilleures pratiques et des technologies émergentes, nous nous positionnons en avant-garde. Cette agilité nous permet de concevoir des solutions flexibles et adaptées, offrant ainsi à nos clients un avantage concurrentiel inégalé dans leur secteur d'activité.",
 
+  "expertise.title": "Notre expertise",
+  "expertise.description": "Spécialiste du développement logiciel métiers",
+  "expertise.language": "Puissance et Polyvalence avec Java et Spring",
+  "expertise.ui": "Expérience Utilisateur Avancée grâce à Angular et Typescript",
+  "expertise.scalability": "Elasticité et Évolutivité sur AWS avec Kubernetes et Terraform",
+  "expertise.orchestration": "Orchestration Agile avec Kubernetes",
+  "expertise.security": "Sécurité et Conformité Intégrées",
+  "expertise.optimisation": "Optimisation du Cycle de Vie grâce à une Approche DevOps",
+
+
+
+
+  "expertise.realisation.title": "Clés de la réalisation d'un logiciel innovant",
+
+  "expertise.realisation.programming.title": "Expertise Approfondie en Développement Java et Angular",
+  "expertise.realisation.programming.description": "Nous possédons une solide expérience dans le développement avec Java et Angular, illustrant notre capacité à concevoir des solutions robustes et performantes en utilisant ces technologies modernes de développement.",
+
+  "expertise.realisation.cloud.title": "Maîtrise des services cloud AWS",
+  "expertise.realisation.cloud.description": "Notre expertise englobe la conception, le déploiement et la gestion d'applications sur AWS. Nous mettons en lumière nos compétences dans le provisionnement d'infrastructures cloud, l'utilisation de services tels que EC2, S3, RDS, ainsi que notre capacité à optimiser les performances et la fiabilité des applications déployées sur AWS.",
+
+  "expertise.realisation.orchestration.title": "Connaissance Avancée de Kubernetes pour l'Orchestration de Conteneurs",
+  "expertise.realisation.orchestration.description": "Nous excellons dans l'utilisation de Kubernetes pour l'orchestration de conteneurs, contribuant ainsi à l'amélioration de l'agilité et de la disponibilité de vos applications.",
+
+  "expertise.realisation.devops.title": "Pratiques DevOps Évoluées pour une Livraison Continue de Qualité",
+  "expertise.realisation.devops.description": "Nous avons la capacité d'automatiser les processus de développement, de test et de déploiement, en mettant en place des pipelines CI/CD efficaces. Nous intégrons également des pratiques telles que l'infrastructure as code, la surveillance et le logging pour garantir une livraison continue de haute qualité.",
+
+  "expertise.realisation.team.title": "Expérience de Collaboration au sein d'Équipes Multidisciplinaires",
+  "expertise.realisation.team.description": "Notre capacité à travailler efficacement au sein d'équipes multidisciplinaires est mise en avant, avec une expérience de collaboration avec des développeurs, des ingénieurs cloud, des administrateurs système et d'autres parties prenantes pour assurer le succès des projets.",
+
+  "expertise.realisation.security.title": "Engagement envers la Sécurité et la Conformité",
+  "expertise.realisation.security.description": "Nous sommes engagés envers la sécurité et la conformité, avec une expérience dans la mise en œuvre de bonnes pratiques de sécurité des données, de gestion des identités et des accès, ainsi que dans le respect des réglementations et des normes de l'industrie.",
+
 
   "header.title": "<h1>Vos idées en réalité numérique avec nos solutions logicielles sur mesure</h1>",
   "header.description": "À <strong>LEXOFT</strong>, nous comprenons que chaque entreprise a des besoins uniques.<br><br> C'est pourquoi nous offrons des solutions logicielles personnalisées.<br><br> Notre équipe d'experts en développement est prête à concrétiser votre vision numérique avec des solutions innovantes et efficaces.",
+
 
 
   "portfolio.title": "En Francais"

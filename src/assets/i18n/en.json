@@ -32,6 +32,35 @@
   "header.title": "<h1>Turn your ideas into digital reality with our custom software solutions</h1>",
   "header.description": "At <strong>LEXOFT</strong>, we understand that every business has unique needs.<br><br> That's why we offer customized software solutions designed to grow your business.<br><br> Our team of development experts is ready to bring your digital vision to life with innovative and effective solutions",
 
+  "expertise.title": "Our Expertise",
+  "expertise.description": "Specialist in business software development",
+  "expertise.language": "Power and Versatility with Java and Spring",
+  "expertise.ui": "Advanced User Experience through Angular and Typescript",
+  "expertise.scalability": "Elasticity and Scalability on AWS with Kubernetes and Terraform",
+  "expertise.orchestration": "Agile Orchestration with Kubernetes",
+  "expertise.security": "Integrated Security and Compliance",
+  "expertise.optimisation": "Lifecycle Optimization through a DevOps Approach",
+
+
+  "expertise.realisation.title": "Keys to Achieving Innovative Software",
+  "expertise.realisation.programming.title": "Deep Expertise in Java and Angular Development",
+  "expertise.realisation.programming.description": "We have extensive experience in development with Java and Angular, showcasing our ability to design robust and high-performing solutions using these modern development technologies.",
+
+  "expertise.realisation.cloud.title": "Mastery of AWS Cloud Services",
+  "expertise.realisation.cloud.description": "Our expertise encompasses the design, deployment, and management of applications on AWS. We highlight our skills in provisioning cloud infrastructures, utilizing services such as EC2, S3, RDS, as well as our ability to optimize the performance and reliability of applications deployed on AWS.",
+
+  "expertise.realisation.orchestration.title": "Advanced Knowledge of Kubernetes for Container Orchestration",
+  "expertise.realisation.orchestration.description": "We excel in using Kubernetes for container orchestration, thereby contributing to the improvement of agility and availability of your applications.",
+
+  "expertise.realisation.devops.title": "Advanced DevOps Practices for Continuous Quality Delivery",
+  "expertise.realisation.devops.description": "We have the ability to automate development, testing, and deployment processes, implementing effective CI/CD pipelines. We also integrate practices such as infrastructure as code, monitoring, and logging to ensure continuous high-quality delivery.",
+
+  "expertise.realisation.team.title": "Experience Collaborating within Multidisciplinary Teams",
+  "expertise.realisation.team.description": "Our ability to work effectively within multidisciplinary teams is highlighted, with experience collaborating with developers, cloud engineers, system administrators, and other stakeholders to ensure project success.",
+
+  "expertise.realisation.security.title": "Commitment to Security and Compliance",
+  "expertise.realisation.security.description": "We are committed to security and compliance, with experience in implementing data security best practices, identity and access management, as well as adhering to industry regulations and standards.",
+
 
   "portfolio.title": "In English"
 }
