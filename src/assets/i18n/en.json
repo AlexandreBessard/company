@@ -62,5 +62,32 @@
   "expertise.realisation.security.description": "We are committed to security and compliance, with experience in implementing data security best practices, identity and access management, as well as adhering to industry regulations and standards.",
 
 
+  "services.main.title": "Our Services",
+
+  "services.development.title": "Custom Software Development",
+  "services.development.description": "Design and develop tailor-made applications using Java, Angular, and other technologies according to specific needs of the client company.",
+
+  "services.migration.title": "Cloud Migration",
+  "services.migration.description": "Assist companies in migrating their existing applications to cloud environments, including AWS, ensuring reliability, security, and performance.",
+
+  "services.cloud.native.app.title": "Cloud-Native Application Development",
+  "services.cloud.native.app.description": "Design cloud-optimized applications using microservices-based architectures, Kubernetes, and other cloud technologies.",
+
+  "services.infrastructure.title": "Infrastructure as Code (IaC) with Terraform",
+  "services.infrastructure.description": "Set up and manage cloud infrastructure efficiently and reproducibly using Terraform to automate provisioning and management of cloud resources.",
+
+  "services.management.containers.title": "Container Management with Kubernetes",
+  "services.management.containers.description": "Deploy and manage containerized applications at scale using Kubernetes for container orchestration, ensuring optimal scalability and availability.",
+
+  "services.practice.devops.title": "DevOps Practices",
+  "services.practice.devops.description": "Implement DevOps practices to automate development, testing, and deployment processes, fostering continuous delivery of high-quality software.",
+
+  "services.training.title": "Consulting and Training",
+  "services.training.description": "Provide consulting and training services to help companies optimize their use of Java, Angular, AWS, Kubernetes, Terraform, and DevOps technologies.",
+
+  "services.support.maintenance.title": "Support and Maintenance",
+  "services.support.maintenance.description": "Ensure continuous support and maintenance of developed applications, including monitoring, security patches, and functional updates.",
+
+
   "portfolio.title": "In English"
 }

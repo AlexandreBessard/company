@@ -61,6 +61,34 @@
   "expertise.realisation.security.description": "Nous sommes engagés envers la sécurité et la conformité, avec une expérience dans la mise en œuvre de bonnes pratiques de sécurité des données, de gestion des identités et des accès, ainsi que dans le respect des réglementations et des normes de l'industrie.",
 
 
+  "services.main.title": "Nos service",
+
+  "services.development.title":"Développement de logiciels sur mesure",
+  "services.development.description": "Concevoir et développer des applications sur mesure en utilisant Java, Angular et d'autres technologies selon les besoins spécifiques de l'entreprise cliente.",
+
+  "services.migration.title": "Migration vers le cloud",
+  "services.migration.description": "Aider les entreprises à migrer leurs applications existantes vers des environnements cloud, notamment AWS, en garantissant la fiabilité, la sécurité et les performances.",
+
+  "services.cloud.native.app.title": "Développement d'applications cloud-native",
+  "services.cloud.native.app.description": "Concevoir des applications optimisées pour le cloud en utilisant des architectures basées sur les microservices, Kubernetes et d'autres technologies cloud.",
+
+  "services.infrastructure.title": "Infrastructure as Code (IaC) avec Terraform",
+  "services.infrastructure.description": "Mettre en place et gérer l'infrastructure cloud de manière efficace et reproductible en utilisant Terraform pour automatiser le provisionnement et la gestion des ressources cloud.",
+
+  "services.management.containers.title": "Gestion de conteneurs avec Kubernetes",
+  "services.management.containers.description": "Déployer et gérer des applications conteneurisées à grande échelle en utilisant Kubernetes pour l'orchestration des conteneurs, assurant ainsi une évolutivité et une disponibilité optimales.",
+
+  "services.practice.devops.title": "Pratiques DevOps",
+  "services.practice.devops.description": "Mettre en œuvre des pratiques DevOps pour automatiser les processus de développement, de test et de déploiement, favorisant ainsi une livraison continue de logiciels de haute qualité.",
+
+  "services.training.title": "Consulting et formation",
+  "services.training.description" : "Fournir des services de conseil et de formation pour aider les entreprises à optimiser leur utilisation des technologies Java, Angular, AWS, Kubernetes, Terraform et DevOps.",
+
+  "services.support.maintenance.title": "Support et maintenance",
+  "services.support.maintenance.description": "Assurer le support et la maintenance continus des applications développées, y compris la surveillance, les correctifs de sécurité et les mises à jour fonctionnelles.",
+
+
+
   "header.title": "<h1>Vos idées en réalité numérique avec nos solutions logicielles sur mesure</h1>",
   "header.description": "À <strong>LEXOFT</strong>, nous comprenons que chaque entreprise a des besoins uniques.<br><br> C'est pourquoi nous offrons des solutions logicielles personnalisées.<br><br> Notre équipe d'experts en développement est prête à concrétiser votre vision numérique avec des solutions innovantes et efficaces.",
 
