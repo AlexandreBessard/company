@@ -28,12 +28,12 @@
     <!-- Collapsible navigation content -->
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ms-auto">
-        <li><a class="nav-link" (click)="scrollToElement('about')">{{ 'nav.whoweare' | translate }}</a></li>
-        <li><a class="nav-link" (click)="scrollToElement('values')">{{ 'nav.values' | translate }}</a></li>
-        <li><a class="nav-link" (click)="scrollToElement('features')">{{ 'nav.expertise' | translate }}</a></li>
-        <li><a class="nav-link" (click)="scrollToElement('services')">{{ 'nav.certifications' | translate }}</a></li>
-        <li><a class="nav-link" (click)="scrollToElement('team')">{{ 'nav.team' | translate }}</a></li>
-        <li><a class="nav-link" (click)="scrollToElement('faq')">{{ 'nav.faq' | translate }}</a></li>
+        <li style="cursor: pointer;"><a class="nav-link" (click)="scrollToElement('about')">{{ 'nav.whoweare' | translate }}</a></li>
+        <li style="cursor: pointer;"><a class="nav-link" (click)="scrollToElement('values')">{{ 'nav.values' | translate }}</a></li>
+        <li style="cursor: pointer;"><a class="nav-link" (click)="scrollToElement('features')">{{ 'nav.expertise' | translate }}</a></li>
+        <li style="cursor: pointer;"><a class="nav-link" (click)="scrollToElement('services')">{{ 'nav.certifications' | translate }}</a></li>
+        <li style="cursor: pointer;"><a class="nav-link" (click)="scrollToElement('team')">{{ 'nav.team' | translate }}</a></li>
+        <li style="cursor: pointer;"><a class="nav-link" (click)="scrollToElement('faq')">{{ 'nav.faq' | translate }}</a></li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Portfolio
@@ -43,8 +43,8 @@
             <li><a class="dropdown-item" [routerLink]="['home', 'portfolio-details', 2]">Projet 2</a></li>
           </ul>
         </li>
-        <li><a class="nav-link" (click)="scrollToElement('clients')">Clients</a></li>
-        <li><a class="nav-link" (click)="scrollToElement('contact')">Contact</a></li>
+        <li style="cursor: pointer;"><a class="nav-link" (click)="scrollToElement('clients')">Clients</a></li>
+        <li style="cursor: pointer;"><a class="nav-link" (click)="scrollToElement('contact')">Contact</a></li>
       </div>
     </div>
 
