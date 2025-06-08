@@ -1,38 +1,52 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand"
-       (click)="scrollToElement('header')" [ngStyle]="{cursor: 'pointer'}"
-       [routerLink]="['/']">
-      <img src="assets/img/logo.png" alt="LEXOFT" width="30" height="24" class="d-inline-block align-text-top">
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top shadow-sm">
+  <div class="container-fluid d-flex align-items-center">
+
+    <!-- Language Switcher (far left, always visible) -->
+    <label class="form-check form-switch mb-0 me-3">
+      <input class="form-check-input" type="checkbox" role="switch"
+             id="flexSwitchCheckDefault"
+             (change)="toggleLanguage()"
+             [checked]="defaultLanguageIsEnglish">
+      <span class="ms-2 small text-muted">EN</span>
+    </label>
+
+    <!-- Brand -->
+    <a class="navbar-brand me-auto d-flex align-items-center"
+       [routerLink]="['/']" (click)="scrollToElement('header')" style="cursor: pointer;">
+      <img src="assets/img/logo.png" alt="LEXOFT" width="30" height="24" class="d-inline-block align-text-top me-2">
       LEXOFT
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+
+    <!-- Toggler button for mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false"
+            aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
+    <!-- Collapsible navigation content -->
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-<!--
-        <li><a class="nav-link active" [routerLink]="['/home']">Accueil</a></li>
--->
-        <li><a class="nav-link" (click)="scrollToElement('about')" [ngStyle]="{cursor: 'pointer'}">{{ 'nav.whoweare' | translate }}</a></li>
-        <li><a class="nav-link"  (click)="scrollToElement('values')" [ngStyle]="{cursor: 'pointer'}">{{ 'nav.values' | translate }}</a></li>
-        <li><a class="nav-link" (click)="scrollToElement('features')" [ngStyle]="{cursor: 'pointer'}">{{ 'nav.expertise' | translate }}</a></li>
-        <li><a class="nav-link" (click)="scrollToElement('services')" [ngStyle]="{cursor: 'pointer'}">{{ 'nav.certifications' | translate }}</a></li>
-        <li><a class="nav-link" (click)="scrollToElement('team')" [ngStyle]="{cursor: 'pointer'}">{{ 'nav.team' | translate }}</a></li>
-        <li><a class="nav-link" (click)="scrollToElement('faq')" [ngStyle]="{cursor: 'pointer'}">{{ 'nav.faq' | translate }}</a></li>
+      <div class="navbar-nav ms-auto">
+        <li><a class="nav-link" (click)="scrollToElement('about')">{{ 'nav.whoweare' | translate }}</a></li>
+        <li><a class="nav-link" (click)="scrollToElement('values')">{{ 'nav.values' | translate }}</a></li>
+        <li><a class="nav-link" (click)="scrollToElement('features')">{{ 'nav.expertise' | translate }}</a></li>
+        <li><a class="nav-link" (click)="scrollToElement('services')">{{ 'nav.certifications' | translate }}</a></li>
+        <li><a class="nav-link" (click)="scrollToElement('team')">{{ 'nav.team' | translate }}</a></li>
+        <li><a class="nav-link" (click)="scrollToElement('faq')">{{ 'nav.faq' | translate }}</a></li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" (click)="scrollToElement('portfolio')" [ngStyle]="{cursor: 'pointer'}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Portfolio
           </a>
           <ul class="dropdown-menu">
-            <li><a [routerLink]="['home', 'portfolio-details', 1]">Projet 1</a></li>
-            <li><a [routerLink]="['home', 'portfolio-details', 2]">Projet 2</a></li>
+            <li><a class="dropdown-item" [routerLink]="['home', 'portfolio-details', 1]">Projet 1</a></li>
+            <li><a class="dropdown-item" [routerLink]="['home', 'portfolio-details', 2]">Projet 2</a></li>
           </ul>
         </li>
-        <li><a class="nav-link scrollto" (click)="scrollToElement('clients')" [ngStyle]="{cursor: 'pointer'}">Clients</a></li>
-        <li><a class="nav-link scrollto" (click)="scrollToElement('contact')" [ngStyle]="{cursor: 'pointer'}">Contact</a></li>
-
+        <li><a class="nav-link" (click)="scrollToElement('clients')">Clients</a></li>
+        <li><a class="nav-link" (click)="scrollToElement('contact')">Contact</a></li>
       </div>
     </div>
+
   </div>
 </nav>
