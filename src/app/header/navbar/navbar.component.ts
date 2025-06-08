@@ -67,5 +67,11 @@ export class NavbarComponent implements OnInit{
     }
   }
 
+  closeNavbar() {
+    const navbar = document.getElementById('navbarNavAltMarkup');
+    const bsCollapse = bootstrap.Collapse.getInstance(navbar) || new bootstrap.Collapse(navbar!, { toggle: false });
+    bsCollapse.hide();
+  }
+
 
 }

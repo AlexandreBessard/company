@@ -29,3 +29,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Technical issue
 
 Remove the cache from CloudFront first and then replace the file stored from S3
+
+Steps to deploy:
+
+- execute the command: "ng build --configuration=production".
+- Upload all the files from the browser folder to the s3 bucket.
+- Go to CloudFront and create invalidations for both distributions.
