@@ -3,13 +3,15 @@ import 'aos/dist/aos.css';
 import AOS from 'aos';
 import {TranslateModule, TranslateService} from "@ngx-translate/core";
 import {SanitizeHtmlPipe} from "../pipes/sanitizeHtml.pipe";
+import {NgOptimizedImage} from "@angular/common";
 
 @Component({
   selector: 'app-hero',
   standalone: true,
   imports: [
     TranslateModule,
-    SanitizeHtmlPipe
+    SanitizeHtmlPipe,
+    NgOptimizedImage
   ],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.css'

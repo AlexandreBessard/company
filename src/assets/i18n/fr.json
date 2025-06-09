@@ -2,7 +2,7 @@
 	"demo.header": "Bienvenue sur ma nouvelle application",
 	"demo.text": "On explique comment cela marche",
 
-  "nav.whoweare": "Qui sommes nous?",
+  "nav.whoweare": "Entreprise",
   "nav.values":"Nos valeurs",
   "nav.expertise":"Notre expertise",
   "nav.certifications": "Certifications",
@@ -11,10 +11,12 @@
   "nav.clients": "Clients",
   "nav.contact": "Contact",
 
-  "whoweare.section": "Qui sommes nous",
-  "whoweare.title": "Découvrez <strong>LEXOFT</strong> : Votre Partenaire Freelance en Développement Informatique",
-  "whoweare.description": "<p>LEXOFT est bien plus qu'une simple société de développement informatique - <strong>nous sommes votre partenaire dédié à la réussite de vos projets</strong>. Notre expertise et notre passion pour l'innovation nous distinguent, faisant de nous le choix idéal pour tous vos besoins en matière de développement logiciel.</p>\n            <p>En tant que spécialistes freelance du développement informatique, nous nous concentrons sur les technologies de pointe telles que <strong>Java / Spring</strong>, <strong>Typescript / Angular</strong> et le <strong>cloud AWS</strong>. Cela nous permet de créer des solutions logicielles robustes, évolutives et hautement performantes.</p>\n            <p>Que vous cherchiez à mettre en place une présence en ligne dynamique, à développer des applications Java puissantes, une interface utilisateur, à migrer vers le cloud AWS... <strong>LEXOFT</strong> est là pour transformer vos idées en réalité. Notre engagement envers l'excellence technique et notre approche centrée sur le client garantissent des résultats exceptionnels à chaque projet.</p>",
+  "whoweare.section": "Qui suis-je nous",
+  "whoweare.title": "<h1><span>LEXOFT</span>, c’est bien plus qu’un prestataire : c’est un partenaire dédié à la réussite de vos projets.</h1>",
+  "whoweare.description": "<h2>Votre partenaire technique de confiance</h2>\n\n<p>\n  Je suis <strong>Alexandre Bessard</strong>, fondateur et dirigeant de la societe LEXOFT.<br><br> <strong>Spécialisé en Java, Spring, TypeScript, Angular, Kubernetes, Terraform, AWS et en intelligence artificielle</strong>,\n  je conçois des solutions logicielles performantes, scalables et entièrement sur mesure.\n</p>\n\n<p>\n  Je dispose de <strong>certifications techniques reconnues</strong>\n  (AWS, Oracle, HashiCorp, Kubernetes, Spring...), garantissant un haut niveau\n  d’expertise et de fiabilité.\n</p>\n\n<p>\n  LEXOFT est une société française légalement déclarée et en conformité avec la réglementation, pour une collaboration transparente, simple et professionnelle.\n</p>\n\n<p>\n  <strong>Ma priorité absolue : votre satisfaction.</strong><br>\n  Chaque projet est mené avec écoute, rigueur et engagement pour répondre précisément à vos besoins.\n</p>\n\n<p>\n  Vous souhaitez développer une application Java, moderniser une interface,\n  migrer vers le cloud AWS ou renforcer votre présence en ligne ?<br>\n  <strong>LEXOFT donne vie à vos idées avec expertise, passion et sérieux.</strong>\n</p>\n",
 
+  "certification.main.title": "Certifications",
+  "certification.main.description": "<p> Je suis certifié par des leaders de l’industrie tels qu’<strong>AWS</strong>, <strong>Oracle</strong>, <strong>VMware</strong>, <strong>HashiCorp</strong> et <strong>la Linux Foundation</strong>. </p> <p> Ces certifications valident mes compétences avancées en développement logiciel, cloud computing, infrastructure as code, cybersécurité, DevOps et intelligence artificielle. </p> <p> <strong>Pour vous, client</strong>, c’est la garantie de travailler avec un professionnel qualifié, à jour des meilleures pratiques du marché, et capable de livrer des solutions robustes, sécurisées et pérennes. </p>",
 
   "ourvalues.section": "Nos valeurs",
   "ourvalues.title": "Nous unissons l'excellence technique, une collaboration transparente et une innovation agile",
@@ -94,5 +96,9 @@
 
 
 
-  "portfolio.title": "En Francais"
+  "portfolio.title": "En Francais",
+
+  "team.whoami": "Qui suis-je ?",
+  "team.title": "Fondateur & Ingénieur Logiciel chez LEXOFT",
+  "team.information": "J’aide les entreprises à accélérer leur transformation digitale grâce à des solutions cloud, IA et fullstack robustes et sur mesure.<br><br> Une expertise acquise depuis plus de 7 ans sur des projets stratégiques à haute valeur ajoutée."
 }

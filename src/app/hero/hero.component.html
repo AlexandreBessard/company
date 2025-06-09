@@ -1,20 +1,12 @@
 <section id="hero" class="hero d-flex align-items-center">
   <div class="container">
-<!--    <div style="margin-bottom: 30px">-->
-<!--      <label class="form-check form-switch">-->
-<!--        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"-->
-<!--               (change)="toggleLanguage()"-->
-<!--               [checked]="defaultLanguageIsEnglish">-->
-<!--        English translation in progress...-->
-<!--      </label>-->
-<!--    </div>-->
     <div class="row">
       <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up">
         <div [innerHTML]="'header.title' | translate | sanitizeHtml"></div>
         <h2 data-aos-delay="400" [innerHTML]="'header.description' | translate | sanitizeHtml"></h2>
       </div>
       <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
-        <img src="assets/img/hero-img.png" class="img-fluid" alt="">
+        <img ngSrc="assets/img/lexoft.png" class="img-fluid" alt="" height="1024" width="1024">
       </div>
     </div>
   </div>

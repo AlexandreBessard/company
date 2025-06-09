@@ -6,3 +6,20 @@
   margin-bottom: 20px; /* Marge en bas */
   text-align: center;
 }
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h5 {
+  font-size: 1.25rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+}
