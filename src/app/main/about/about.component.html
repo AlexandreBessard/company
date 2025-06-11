@@ -1,32 +1,32 @@
 <section id="about" class="about">
-
   <div class="container" data-aos="fade-up">
-    <div class="row gx-0">
+    <div class="row gx-0 align-items-center">
 
+      <!-- Image à gauche, centrée -->
+      <div class="col-lg-6 d-flex justify-content-center align-items-center" data-aos="zoom-in" data-aos-delay="300">
+        <div class="position-relative text-center">
+          <img ngSrc="assets/img/sotware_engineering.jpg"
+               width="600" height="338"
+               class="img-fluid rounded-4 shadow-lg"
+               alt="Ingénierie logicielle"
+               priority>
+          <div [innerHTML]="'whoweare.image.description' | translate | sanitizeHtml"
+               class="position-absolute bottom-0 end-0 p-2 text-white bg-dark bg-opacity-75 rounded-start small">
+          </div>
+        </div>
+      </div>
+
+      <!-- Texte à droite -->
       <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-        <div class="content">
-          <h3>{{ 'whoweare.section' | translate }}</h3>
+        <div class="content px-lg-5">
+          <h3 [innerHTML]="'whoweare.section' | translate"></h3>
           <div>
             <h1 [innerHTML]="'whoweare.title' | translate"></h1>
             <p [innerHTML]="'whoweare.description' | translate"></p>
           </div>
-
-          <div class="text-center text-lg-start">
-          </div>
         </div>
       </div>
 
-      <!-- Image à droite, centrée -->
-      <div class="col-lg-6 d-flex justify-content-center align-items-center" data-aos="zoom-in" data-aos-delay="300">
-        <div class="position-relative text-center">
-          <img ngSrc="assets/img/sotware_engineering.jpg" width="600" height="400"
-               class="img-fluid rounded-4 shadow-lg" alt="Ingénierie logicielle">
-          <div [innerHTML]="'whoweare.image.description' | translate | sanitizeHtml" class="position-absolute bottom-0 end-0 p-2 text-white bg-dark bg-opacity-75 rounded-start small">
-
-          </div>
-        </div>
-      </div>
     </div>
   </div>
-
 </section>

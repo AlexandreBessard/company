@@ -1,51 +1,56 @@
 <footer id="footer" class="footer">
-
   <div class="footer-top">
     <div class="container">
       <div class="row gy-4">
+
+        <!-- Bloc logo + description -->
         <div class="col-lg-5 col-md-12 footer-info">
           <a href="index.html" class="logo d-flex align-items-center">
             <img src="assets/img/logo.png" alt="">
             <span>LEXOFT</span>
           </a>
-          <p>LEXOFT, spécialisée dans les services aux entreprises et administrations, propose une gamme de services et solutions dans le développement logiciel.</p>
+          <p [innerHTML]="'footer.description' | translate | sanitizeHtml"></p>
           <div class="social-links mt-3">
-            <a href="https://www.linkedin.com/company/102575184/admin/feed/posts/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.linkedin.com/company/102575184/admin/feed/posts/" class="linkedin" target="_blank">
+              <i class="bi bi-linkedin"></i>
+            </a>
           </div>
         </div>
 
+        <!-- Bloc liens -->
         <div class="col-lg-1 col-6 footer-links">
-          <h4>Liens</h4>
+          <h4 [innerHTML]="'footer.links.title' | translate"></h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Accueil</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#" [innerHTML]="'footer.links.home' | translate"></a></li>
           </ul>
         </div>
 
+        <!-- Bloc services -->
         <div class="col-lg-3 col-6 footer-links">
-          <h4>Mes Services</h4>
+          <h4 [innerHTML]="'footer.services.title' | translate"></h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i>Développement de logiciels sur mesure</li>
-            <li><i class="bi bi-chevron-right"></i>Migration vers le cloud</li>
-            <li><i class="bi bi-chevron-right"></i>Développement d'applications cloud-native</li>
-            <li><i class="bi bi-chevron-right"></i>Infrastructure as Code (IaC) avec Terraform</li>
-            <li><i class="bi bi-chevron-right"></i>Gestion de conteneurs avec Kubernetes</li>
-            <li><i class="bi bi-chevron-right"></i>Support et maintenance</li>
-            <li><i class="bi bi-chevron-right"></i>Consulting et formation</li>
-            <li><i class="bi bi-chevron-right"></i>Pratiques DevOps</li>
+            <li><i class="bi bi-chevron-right"></i> <span [innerHTML]="'footer.services.dev' | translate"></span></li>
+            <li><i class="bi bi-chevron-right"></i> <span [innerHTML]="'footer.services.migration' | translate"></span></li>
+            <li><i class="bi bi-chevron-right"></i> <span [innerHTML]="'footer.services.cloud_native' | translate"></span></li>
+            <li><i class="bi bi-chevron-right"></i> <span [innerHTML]="'footer.services.terraform' | translate"></span></li>
+            <li><i class="bi bi-chevron-right"></i> <span [innerHTML]="'footer.services.kubernetes' | translate"></span></li>
+            <li><i class="bi bi-chevron-right"></i> <span [innerHTML]="'footer.services.support' | translate"></span></li>
+            <li><i class="bi bi-chevron-right"></i> <span [innerHTML]="'footer.services.consulting' | translate"></span></li>
+            <li><i class="bi bi-chevron-right"></i> <span [innerHTML]="'footer.services.devops' | translate"></span></li>
           </ul>
         </div>
 
+        <!-- Bloc contact -->
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contactez nous</h4>
+          <h4 [innerHTML]="'footer.contact.title' | translate"></h4>
           <p>
             BP 15<br>
             6 All de la Chavannerie<br>
-            45240, La Ferte Saint Aubin<br><br>
+            45240, La Ferté Saint Aubin<br><br>
             <strong>Phone FR:</strong> +33 6 34 49 12 75<br>
             <strong>Phone US:</strong> +1 647 313 8837<br>
-            <strong>Email: </strong>lexoft.eurl&#64;gmail.com<br>
+            <strong>Email:</strong> lexoft.eurl&#64;gmail.com<br>
           </p>
-
         </div>
 
       </div>
@@ -53,15 +58,6 @@
   </div>
 
   <div class="container">
-    <div class="copyright">
-      &copy; 2024 Copyright <strong><span>LEXOFT</span></strong>. Tous droits réservés.
-    </div>
-    <div class="credits">
-      <!-- All the links in the footer should remain intact. -->
-      <!-- You can delete the links only if you purchased the pro version. -->
-      <!-- Licensing information: https://bootstrapmade.com/license/ -->
-      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ -->
-    </div>
+    <div class="copyright" [innerHTML]="'footer.copyright' | translate"></div>
   </div>
-
 </footer>

@@ -1,80 +1,91 @@
 {
-	"demo.header": "Welcome to my new app",
-	"demo.text": "This translation editor is made for <strong>ngx-translate!",
-
-  "nav.whoweare": "Who I am?",
-  "nav.values": "Our values",
-  "nav.expertise": "Our expertise",
+  "demo.header": "Welcome to my new application",
+  "demo.text": "Here’s how it works",
+  "nav.whoweare": "What is LEXOFT ?",
+  "nav.values": "My values",
+  "nav.expertise": "My expertise",
   "nav.certifications": "Certifications",
   "nav.team": "Team",
-  "nav.faq": "FAQ",
+  "nav.faq": "Q&A",
   "nav.clients": "Clients",
   "nav.contact": "Contact",
 
 
-  "whoweare.section": "Who we are",
-  "whoweare.title": "Discover <strong>LEXOFT</strong>: Your Freelance Partner in Software Development",
-  "whoweare.description": "<p>LEXOFT is more than just a software development company - <strong>we are your dedicated partner for the success of your projects</strong>. Our expertise and passion for innovation set us apart, making us the ideal choice for all your software development needs.</p>\n            <p>As freelance specialists in software development, we focus on cutting-edge technologies such as <strong>Java / Spring</strong>, <strong>Typescript / Angular</strong>, and <strong>AWS cloud</strong>. This allows us to create robust, scalable, and highly performant software solutions.</p>\n            <p>Whether you're looking to establish a dynamic online presence, develop powerful Java applications, a user interface, migrate to the AWS cloud... <strong>LEXOFT</strong> is here to turn your ideas into reality. Our commitment to technical excellence and customer-centric approach ensure outstanding results with every project.</p>",
+  "whoweare.section": "What is LEXOFT?",
+  "whoweare.title": "<h1><span>LEXOFT</span> is much more than a provider: it's a dedicated partner for the success of your projects.</h1>",
+  "whoweare.description": "<h2>Your trusted technical partner</h2>\n\n<p>\n  I am <strong>Alexandre Bessard</strong>, founder and CEO of LEXOFT.<br><br><strong>Specialized in Java, Spring, TypeScript, Angular, Kubernetes, Terraform, AWS, and artificial intelligence</strong>,\n  I design powerful, scalable, and fully customized software solutions.\n</p>\n\n<p>\n  I hold <strong>recognized technical certifications</strong>\n  (AWS, Oracle, HashiCorp, Kubernetes, Spring...), ensuring a high level\n  of expertise and reliability.\n</p>\n\n<p>\n  LEXOFT is a legally registered French company compliant with regulations, enabling transparent, simple, and professional collaboration.\n</p>\n\n<p>\n  <strong>My top priority: your satisfaction.</strong><br>\n  Each project is carried out with attentiveness, rigor, and commitment to meet your exact needs.\n</p>\n\n<p>\n  Looking to develop a Java application, modernize an interface,\n  migrate to the AWS cloud, or strengthen your online presence?<br>\n  <strong>LEXOFT brings your ideas to life with expertise, passion, and dedication.</strong>\n</p>\n",
+  "whoweare.image.description": "LEXOFT – Expertise, consulting & software innovation",
 
+  "certification.main.title": "Certifications",
+  "certification.main.title2": "Technical certifications: a mark of quality and reliability",
+  "certification.main.description": "<p> I am certified by industry leaders such as <strong>AWS</strong>, <strong>Oracle</strong>, <strong>VMware</strong>, <strong>HashiCorp</strong>, and <strong>the Linux Foundation</strong>. </p> <p> These certifications validate my advanced skills in software development, cloud computing, infrastructure as code, cybersecurity, DevOps, and artificial intelligence. </p> <p> <strong>For you, the client</strong>, it is the guarantee of working with a qualified professional, up to date with industry best practices, and capable of delivering robust, secure, and sustainable solutions. </p>",
 
-  "ourvalues.section": "Our values",
-  "ourvalues.title": "We unite technical excellence, transparent collaboration, and agile innovation",
+  "ourvalues.section": "My values",
+  "ourvalues.title": "A guarantee of credibility and trust",
 
   "ourvalues.technical.title": "Technical Excellence",
-  "ourvalues.technical.description": "At <strong>LEXOFT</strong>, we are committed to delivering software solutions of exceptional quality. With sharp technical expertise in areas such as Java, Angular, AWS cloud, Kubernetes, Terraform... we are constantly striving for excellence. This relentless pursuit enables us to design products and services that exceed our clients' expectations.",
+  "ourvalues.technical.description": "At <strong>LEXOFT</strong>, we are committed to delivering software solutions of exceptional quality. With deep technical expertise in Java, Angular, AWS cloud, Kubernetes, Terraform... we continuously strive for excellence. This ongoing pursuit allows us to design products and services that exceed our clients’ expectations.",
 
-  "ourvalues.collaboration.title": "Transparent Collaboration",
-  "ourvalues.collaboration.description": "At <strong>LEXOFT</strong>, we place transparent collaboration at the heart of our approach. We believe in open and honest communication with our clients throughout the development process. By fostering close collaboration, we ensure mutual understanding of goals, challenges, and successes, leading to the creation of strong and lasting partnerships.",
+  "ourvalues.collaboration.title": "Provigis Certificate",
+  "ourvalues.collaboration.description": "<p>\n  We, <strong>Provigis SAS</strong>, acting as a trusted third party, hereby certify that:\n</p>\n<p>\n  The company <strong>LEXOFT</strong> (SIREN: <strong>984607226</strong>), headquartered at <strong>6 ALLÉE DE LA CHAVANNERIE, 45240 LA FERTE ST AUBIN, France</strong>,\n  has received the <strong>Bronze Responsible Third Party Medal</strong> under the Provigis medal program.\n</p>\n<p>\n  The Bronze Responsible Third Party Medal certifies that the company LEXOFT has compliant legal documentation\n  (<em>Kbis</em> and <em>URSSAF</em>).\n</p>",
 
   "ourvalues.innovation.title": "Agile Innovation",
-  "ourvalues.innovation.description": "At <strong>LEXOFT</strong>, we embrace agile innovation in an ever-evolving technological environment. By staying constantly abreast of new trends, best practices, and emerging technologies, we position ourselves at the forefront. This agility enables us to design flexible and tailored solutions, thereby providing our clients with an unparalleled competitive advantage in their industry.",
+  "ourvalues.innovation.description": "At <strong>LEXOFT</strong>, we embrace agile innovation in an ever-evolving technological environment. By staying constantly informed about new trends, best practices, and emerging technologies, we remain at the forefront. This agility allows us to design flexible and tailored solutions, providing our clients with a unique competitive edge in their sector.",
+
+
 
   "header.title": "<h1>Bring your ideas to life with tailor-made software solutions</h1>",
-  "header.description": "<h2>Software solutions that reflect your vision</h2>\n\n<p><strong>Every business has unique needs.</strong></p>\n\n<p>\n  That’s why I offer <strong>fully customized software</strong>,\n  designed to precisely match <em>your business goals</em>.\n</p>\n\n<p>\n  With <strong>solid development expertise</strong>,\n  I turn your digital vision into\n  <strong>concrete</strong>, <strong>innovative</strong>, and <strong>reliable</strong> solutions.\n</p>\n",
 
-  "expertise.title": "Our Expertise",
-  "expertise.description": "Specialist in business software development",
+  "expertise.title": "My expertise",
+  "expertise.description": "Expertise in software development and AWS cloud",
   "expertise.language": "Power and Versatility with Java and Spring",
-  "expertise.ui": "Advanced User Experience through Angular and Typescript",
+  "expertise.ui": "Advanced User Experience with Angular and TypeScript",
   "expertise.scalability": "Elasticity and Scalability on AWS with Kubernetes and Terraform",
   "expertise.orchestration": "Agile Orchestration with Kubernetes",
   "expertise.security": "Integrated Security and Compliance",
-  "expertise.optimisation": "Lifecycle Optimization through a DevOps Approach",
+  "expertise.optimisation": "Lifecycle Optimization with a DevOps Approach",
 
-
-  "expertise.realisation.title": "Keys to Achieving Innovative Software",
-  "expertise.realisation.programming.title": "Deep Expertise in Java and Angular Development",
-  "expertise.realisation.programming.description": "We have extensive experience in development with Java and Angular, showcasing our ability to design robust and high-performing solutions using these modern development technologies.",
+  "expertise.realisation.title": "Keys to building innovative software",
+  "expertise.realisation.programming.title": "Advanced Expertise in Java and Angular Development",
+  "expertise.realisation.programming.description": "We have solid experience in development with Java and Angular, demonstrating our ability to design robust and high-performance solutions using these modern development technologies.",
 
   "expertise.realisation.cloud.title": "Mastery of AWS Cloud Services",
-  "expertise.realisation.cloud.description": "Our expertise encompasses the design, deployment, and management of applications on AWS. We highlight our skills in provisioning cloud infrastructures, utilizing services such as EC2, S3, RDS, as well as our ability to optimize the performance and reliability of applications deployed on AWS.",
+  "expertise.realisation.cloud.description": "Our expertise covers the design, deployment, and management of applications on AWS. We highlight our skills in cloud infrastructure provisioning, use of services such as EC2, S3, and RDS, as well as our ability to optimize the performance and reliability of applications deployed on AWS.",
 
   "expertise.realisation.orchestration.title": "Advanced Knowledge of Kubernetes for Container Orchestration",
-  "expertise.realisation.orchestration.description": "We excel in using Kubernetes for container orchestration, thereby contributing to the improvement of agility and availability of your applications.",
+  "expertise.realisation.orchestration.description": "We excel in the use of Kubernetes for container orchestration, thus contributing to improved agility and availability of your applications.",
 
-  "expertise.realisation.devops.title": "Advanced DevOps Practices for Continuous Quality Delivery",
-  "expertise.realisation.devops.description": "We have the ability to automate development, testing, and deployment processes, implementing effective CI/CD pipelines. We also integrate practices such as infrastructure as code, monitoring, and logging to ensure continuous high-quality delivery.",
 
-  "expertise.realisation.team.title": "Experience Collaborating within Multidisciplinary Teams",
+
   "expertise.realisation.team.description": "Our ability to work effectively within multidisciplinary teams is highlighted, with experience collaborating with developers, cloud engineers, system administrators, and other stakeholders to ensure project success.",
 
   "expertise.realisation.security.title": "Commitment to Security and Compliance",
-  "expertise.realisation.security.description": "We are committed to security and compliance, with experience in implementing data security best practices, identity and access management, as well as adhering to industry regulations and standards.",
 
 
-  "services.main.title": "Our Services",
+  "expertise.realisation.devops.title": "Advanced DevOps Practices for High-Quality Continuous Delivery",
+  "expertise.realisation.devops.description": "We have the ability to automate development, testing, and deployment processes by implementing effective CI/CD pipelines. We also integrate practices such as infrastructure as code, monitoring, and logging to ensure high-quality continuous delivery.",
 
-  "services.development.title": "Custom Software Development",
-  "services.development.description": "Design and develop tailor-made applications using Java, Angular, and other technologies according to specific needs of the client company.",
+  "expertise.realisation.team.title": "Collaboration Experience in Multidisciplinary Teams",
 
-  "services.migration.title": "Cloud Migration",
-  "services.migration.description": "Assist companies in migrating their existing applications to cloud environments, including AWS, ensuring reliability, security, and performance.",
+  "expertise.realisation.security.description": "We are committed to security and compliance, with experience implementing best practices in data protection, identity and access management, and adherence to industry standards and regulations.",
 
-  "services.cloud.native.app.title": "Cloud-Native Application Development",
+  "services.main.title": "My services",
+
+  "services.development.description": "Design and development of custom business solutions using Java, Python, and Angular, tailored to the specific needs of the company.",
+
+  "services.migration.title": "Cloud Applications and AWS Migration",
+  "services.migration.description": "Support for migrating to the AWS cloud with a focus on reliability, security, and performance. Design of cloud-native applications based on microservices architecture.",
+
+  "services.cloud.native.app.title": "Infrastructure as Code (IaC) & DevOps",
+
+  "services.infrastructure.title": "Kubernetes Orchestration",
+  "services.infrastructure.description": "Deployment and management of containerized applications at scale with Kubernetes, ensuring high availability.",
+
+
+
+
   "services.cloud.native.app.description": "Design cloud-optimized applications using microservices-based architectures, Kubernetes, and other cloud technologies.",
 
-  "services.infrastructure.title": "Infrastructure as Code (IaC) with Terraform",
-  "services.infrastructure.description": "Set up and manage cloud infrastructure efficiently and reproducibly using Terraform to automate provisioning and management of cloud resources.",
 
   "services.management.containers.title": "Container Management with Kubernetes",
   "services.management.containers.description": "Deploy and manage containerized applications at scale using Kubernetes for container orchestration, ensuring optimal scalability and availability.",
@@ -89,5 +100,117 @@
   "services.support.maintenance.description": "Ensure continuous support and maintenance of developed applications, including monitoring, security patches, and functional updates.",
 
 
-  "portfolio.title": "In English"
+  "portfolio.title": "In English",
+
+  "provigis.section": "",
+  "provigis.title": "Responsible third party",
+  "provigis.medal.title": "Responsible third party",
+  "provigis.medal.description": "I provide proof of the compliance of my legal file (Art. D8222-5 of the Labor Code) regarding official company registration documents and regularity of social contributions.",
+  "provigis.pdf.description": "",
+
+  "header.description": "<h2>Software solutions that reflect your business</h2>\n\n<p><strong>Every company has unique needs.</strong></p>\n\n<p>\n  That’s why I offer <strong>fully customized software</strong>,\n  designed to precisely match <em>your business goals</em>.\n</p>\n\n<p>\n  With a <strong>solid background in development</strong>,\n  I turn your digital vision into\n  <strong>concrete</strong>, <strong>innovative</strong> and <strong>reliable</strong> solutions.\n</p>",
+
+
+  "team.whoami": "Who am I?",
+  "team.subtitle": "Alexandre, expertise at your service",
+  "team.title": "Founder & Software Engineer at LEXOFT",
+  "team.information": "I help businesses accelerate their digital transformation with robust, custom-made cloud, AI, and fullstack solutions.<br><br> An expertise built over more than 7 years on high-value strategic projects.",
+
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "🎯 Satisfied clients & guaranteed transparency",
+    "button": {
+      "1": "What are your specific skills in software development?",
+      "2": "How do you organize your work as a freelancer?",
+      "3": "How do you charge for your freelance services?",
+      "4": "What is your prior experience as a freelancer?",
+      "5": "How do you handle potential technical issues during a project?",
+      "6": "How do you keep your skills up to date?",
+      "7": "Do you provide recommendation letters?"
+    },
+    "answer": {
+      "1": "As a freelancer, I specialize in Java, Typescript, Spring Boot, Angular, AWS, Kubernetes, Terraform, Git, Jenkins, Kafka, etc., with proven experience in building high-performance web applications.",
+      "2": "I follow an agile and structured approach. I adapt to your priorities while ensuring regular communication and clear reporting.",
+      "3": "I offer flexible pricing: fixed-price or daily rate. Everything is defined up front to avoid surprises.",
+      "4": "With over 7 years of experience, I’ve worked on high-stakes technical projects for both public and private sector clients.",
+      "5": "I quickly analyze the source of the issue, communicate resolution options, and apply reliable, documented solutions.",
+      "6": "I continuously train through AWS, Spring, and Terraform certifications, as well as by staying up to date with the latest technologies and trends.",
+      "7": "Yes, authentic recommendation letters from previous clients are available upon request. Feel free to contact me to receive one."
+    }
+  },
+
+  "contact": {
+    "title": "Contact me",
+    "subtitle": "Have a project in mind? Let’s talk.",
+    "email": {
+      "title": "Email",
+      "value": "lexoft.eurl@gmail.com"
+    },
+    "phone": {
+      "title": "Phone",
+      "value": "+33 6 34 49 12 75 (FR)<br><br>+1 647 313 8837 (US/Canada)"
+    },
+    "address": {
+      "title": "Address",
+      "value": "BP 15<br>6 Allée de la Chavannerie<br>45240, La Ferté Saint Aubin<br>France"
+    },
+    "hours": {
+      "title": "Hours",
+      "value": "Monday – Friday<br>9:00 AM – 6:00 PM"
+    }
+  },
+
+  "certification.aws.title": "AWS Solutions Architect - Associate",
+  "certification.aws.description": "Ability to design scalable, resilient, efficient, and fault-tolerant distributed systems on AWS.",
+  "certification.aws.aria": "View AWS Solutions Architect Certification",
+
+  "certification.ml.title": "AWS Certified Machine Learning Engineer – Associate",
+  "certification.ml.description1": "Design, training, deployment, and maintenance of AI solutions on the AWS cloud.",
+  "certification.ml.description2": "Turn your data into predictive models to automate, anticipate, and optimize your business processes.",
+  "certification.ml.aria": "View AWS ML Certification",
+
+  "certification.dev.title": "AWS Certified Developer – Associate",
+  "certification.dev.description": "Design and development of cloud-native applications on AWS.",
+  "certification.dev.aria": "View AWS Developer Certification",
+
+  "certification.java11.title": "Certified Professional: Java SE 11",
+  "certification.java11.description": "Industry-recognized certification validating advanced expertise in Java Standard Edition development.",
+  "certification.java11.aria": "View Java SE 11 Certification",
+
+  "certification.java8.title": "Oracle Certified Professional: Java SE 8",
+  "certification.java8.description": "Validated mastery of the Java language through real-world scenarios and complex enterprise problems.",
+  "certification.java8.aria": "View Java SE 8 Certification",
+
+  "certification.spring.title": "VMware Spring Professional",
+  "certification.spring.description": "Proven skills in building robust applications with the Spring framework (Spring Boot, Spring Security, etc.).",
+  "certification.spring.aria": "View Spring Certification",
+
+  "certification.k8s.title": "Certified Kubernetes Application Developer (CKAD)",
+  "certification.k8s.description": "Mastery of application development, deployment, and debugging in a Kubernetes environment.",
+  "certification.k8s.aria": "View Kubernetes Certification",
+
+  "certification.terraform.title": "Terraform Associate",
+  "certification.terraform.description": "Understanding of core Terraform concepts, infrastructure as code management, and DevOps best practices.",
+  "certification.terraform.aria": "View Terraform Certification",
+
+  "certification.ai.title": "AWS Certified AI Practitioner",
+  "certification.ai.description": "Foundational knowledge of artificial intelligence, machine learning, and use cases on AWS.",
+  "certification.ai.aria": "View AI Practitioner Certification",
+
+  "footer.description": "LEXOFT specializes in providing services and solutions for businesses and public organizations in custom software development.",
+  "footer.links.title": "Links",
+  "footer.links.home": "Home",
+
+  "footer.services.title": "My Services",
+  "footer.services.dev": "Custom software development",
+  "footer.services.migration": "Cloud migration",
+  "footer.services.cloud_native": "Cloud-native application development",
+  "footer.services.terraform": "Infrastructure as Code (IaC) with Terraform",
+  "footer.services.kubernetes": "Container management with Kubernetes",
+  "footer.services.support": "Support and maintenance",
+  "footer.services.consulting": "Consulting and training",
+  "footer.services.devops": "DevOps practices",
+
+  "footer.contact.title": "Contact Us",
+  "footer.copyright": "&copy; 2024 Copyright <strong><span>LEXOFT</span></strong>. All rights reserved."
 }

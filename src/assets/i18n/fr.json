@@ -1,19 +1,20 @@
 {
   "demo.header": "Bienvenue sur ma nouvelle application",
   "demo.text": "On explique comment cela marche",
-  "nav.whoweare": "Entreprise",
+  "nav.whoweare": "Qu'est ce que LEXOFT ?",
   "nav.values": "Mes valeurs",
   "nav.expertise": "Mon expertise",
   "nav.certifications": "Certifications",
   "nav.team": "Equipes",
-  "nav.faq": "FAQ",
+  "nav.faq": "F.A.Q",
   "nav.clients": "Clients",
   "nav.contact": "Contact",
+
+
   "whoweare.section": "Qu'est ce que LEXOFT ?",
   "whoweare.title": "<h1><span>LEXOFT</span>, c’est bien plus qu’un prestataire : c’est un partenaire dédié à la réussite de vos projets.</h1>",
   "whoweare.description": "<h2>Votre partenaire technique de confiance</h2>\n\n<p>\n  Je suis <strong>Alexandre Bessard</strong>, fondateur et dirigeant de la societe LEXOFT.<br><br> <strong>Spécialisé en Java, Spring, TypeScript, Angular, Kubernetes, Terraform, AWS et en intelligence artificielle</strong>,\n  je conçois des solutions logicielles performantes, scalables et entièrement sur mesure.\n</p>\n\n<p>\n  Je dispose de <strong>certifications techniques reconnues</strong>\n  (AWS, Oracle, HashiCorp, Kubernetes, Spring...), garantissant un haut niveau\n  d’expertise et de fiabilité.\n</p>\n\n<p>\n  LEXOFT est une société française légalement déclarée et en conformité avec la réglementation, pour une collaboration transparente, simple et professionnelle.\n</p>\n\n<p>\n  <strong>Ma priorité absolue : votre satisfaction.</strong><br>\n  Chaque projet est mené avec écoute, rigueur et engagement pour répondre précisément à vos besoins.\n</p>\n\n<p>\n  Vous souhaitez développer une application Java, moderniser une interface,\n  migrer vers le cloud AWS ou renforcer votre présence en ligne ?<br>\n  <strong>LEXOFT donne vie à vos idées avec expertise, passion et sérieux.</strong>\n</p>\n",
   "whoweare.image.description": "LEXOFT – Expertise, conseil & innovation logiciel",
-  "certification.main.title": "Certifications",
   "certification.main.title2": "Certifications techniques : un gage de qualité et de fiabilité",
   "certification.main.description": "<p> Je suis certifié par des leaders de l’industrie tels qu’<strong>AWS</strong>, <strong>Oracle</strong>, <strong>VMware</strong>, <strong>HashiCorp</strong> et <strong>la Linux Foundation</strong>. </p> <p> Ces certifications valident mes compétences avancées en développement logiciel, cloud computing, infrastructure as code, cybersécurité, DevOps et intelligence artificielle. </p> <p> <strong>Pour vous, client</strong>, c’est la garantie de travailler avec un professionnel qualifié, à jour des meilleures pratiques du marché, et capable de livrer des solutions robustes, sécurisées et pérennes. </p>",
   "ourvalues.section": "Mes valeurs",
@@ -24,6 +25,8 @@
   "ourvalues.collaboration.description": "  <p>\n    Nous soussignés, <strong>Provigis SAS</strong>, agissant en qualité de tiers de confiance, attestons par le présent certificat que :\n  </p>\n  <p>\n    La société <strong>LEXOFT</strong> (SIREN : <strong>984607226</strong>), dont le siège social est situé <strong>6 ALLÉE DE LA CHAVANNERIE, 45240 LA FERTE ST AUBIN, France</strong>, \n    a obtenu la <strong>médaille Tiers Responsable Bronze</strong> dans le cadre du programme de médailles Provigis.\n  </p>\n  <p>\n    La médaille Tiers Responsable Bronze atteste que la société LEXOFT détient une documentation juridique conforme \n    (<em>Kbis</em> et <em>URSSAF</em>).\n  </p>",
   "ourvalues.innovation.title": "Innovation Agile",
   "ourvalues.innovation.description": "Chez <strong>LEXOFT</strong>, nous embrassons l'innovation agile dans un environnement technologique en perpétuelle évolution. En restant constamment à l'affût des nouvelles tendances, des meilleures pratiques et des technologies émergentes, nous nous positionnons en avant-garde. Cette agilité nous permet de concevoir des solutions flexibles et adaptées, offrant ainsi à nos clients un avantage concurrentiel inégalé dans leur secteur d'activité.",
+
+
   "expertise.title": "Mon expertise",
   "expertise.description": "Expertise en développement logiciel et cloud AWS",
   "expertise.language": "Puissance et Polyvalence avec Java et Spring",
@@ -39,6 +42,8 @@
   "expertise.realisation.cloud.description": "Notre expertise englobe la conception, le déploiement et la gestion d'applications sur AWS. Nous mettons en lumière nos compétences dans le provisionnement d'infrastructures cloud, l'utilisation de services tels que EC2, S3, RDS, ainsi que notre capacité à optimiser les performances et la fiabilité des applications déployées sur AWS.",
   "expertise.realisation.orchestration.title": "Connaissance Avancée de Kubernetes pour l'Orchestration de Conteneurs",
   "expertise.realisation.orchestration.description": "Nous excellons dans l'utilisation de Kubernetes pour l'orchestration de conteneurs, contribuant ainsi à l'amélioration de l'agilité et de la disponibilité de vos applications.",
+
+
   "expertise.realisation.devops.title": "Pratiques DevOps Évoluées pour une Livraison Continue de Qualité",
   "expertise.realisation.devops.description": "Nous avons la capacité d'automatiser les processus de développement, de test et de déploiement, en mettant en place des pipelines CI/CD efficaces. Nous intégrons également des pratiques telles que l'infrastructure as code, la surveillance et le logging pour garantir une livraison continue de haute qualité.",
   "expertise.realisation.team.title": "Expérience de Collaboration au sein d'Équipes Multidisciplinaires",
@@ -58,6 +63,8 @@
   "services.management.containers.description": "Mise en œuvre de solutions d’IA avec les services AWS tels que SageMaker, Bedrock, Lambda, S3, Athena, Rekognition... pour créer, entraîner et déployer des modèles prédictifs et génératifs. Applications : automatisation, analyse de données, recommandations, vision par ordinateur, NLP et assistants intelligents.",
   "services.practice.devops.title": "Formation & accompagnement",
   "services.practice.devops.description": "Conseil technique et formations ciblées sur les technologies Java, AWS, Terraform, Kubernetes et IA.",
+
+
   "provigis.section": "",
   "provigis.title": "Tiers responsable",
   "provigis.medal.title": "Tiers responsable",
@@ -93,7 +100,7 @@
     }
   },
   "contact": {
-    "title": "Contactez-moi",
+    "title": "Mes coordonnées",
     "subtitle": "Un projet en tête ? Parlons-en.",
     "email": {
       "title": "Email",
@@ -101,7 +108,7 @@
     },
     "phone": {
       "title": "Téléphone",
-      "value": "+33 6 34 49 12 75<br>+1 647 313 8837"
+      "value": "+33 6 34 49 12 75 (FR)<br><br>+1 647 313 8837 (US/Canada)"
     },
     "address": {
       "title": "Adresse",
@@ -111,5 +118,59 @@
       "title": "Horaires",
       "value": "Lundi – Vendredi<br>9h00 – 18h00"
     }
-  }
+  },
+  "certification.main.title": "Mes certifications",
+
+  "certification.aws.title": "AWS Solutions Architect - Associate",
+  "certification.aws.description": "Capacité à concevoir des systèmes distribués évolutifs, résilients, efficaces et tolérants aux pannes sur AWS.",
+  "certification.aws.aria": "Voir la certification AWS Solutions Architect",
+
+  "certification.ml.title": "AWS Certified Machine Learning Engineer – Associate",
+  "certification.ml.description1": "Conception, entraînement, déploiement et maintien de solutions IA sur le cloud AWS.",
+  "certification.ml.description2": "Transformer vos données en modèles prédictifs pour automatiser, anticiper et optimiser vos processus métiers.",
+  "certification.ml.aria": "Voir la certification AWS ML",
+
+  "certification.dev.title": "AWS Certified Developer – Associate",
+  "certification.dev.description": "Conception et développement d'applications cloud-native sur AWS.",
+  "certification.dev.aria": "Voir la certification AWS Developer",
+
+  "certification.java11.title": "Certified Professional: Java SE 11",
+  "certification.java11.description": "Certification reconnue dans l'industrie validant une expertise avancée en développement Java (Standard Edition).",
+  "certification.java11.aria": "Voir la certification Java SE 11",
+
+  "certification.java8.title": "Oracle Certified Professional: Java SE 8",
+  "certification.java8.description": "Maîtrise du langage Java validée via des scénarios concrets et des problèmes complexes en entreprise.",
+  "certification.java8.aria": "Voir la certification Java SE 8",
+
+  "certification.spring.title": "VMware Spring Professional",
+  "certification.spring.description": "Compétences validées sur le développement d’applications robustes avec le framework Spring (Spring Boot, Spring Security, etc.).",
+  "certification.spring.aria": "Voir la certification Spring",
+
+  "certification.k8s.title": "Certified Kubernetes Application Developer (CKAD)",
+  "certification.k8s.description": "Maîtrise du développement, déploiement et debugging d’applications dans un environnement Kubernetes.",
+  "certification.k8s.aria": "Voir la certification Kubernetes",
+
+  "certification.terraform.title": "Terraform Associate",
+  "certification.terraform.description": "Compréhension des concepts fondamentaux de Terraform, gestion de l'infrastructure as code et bonnes pratiques DevOps.",
+  "certification.terraform.aria": "Voir la certification Terraform",
+
+  "certification.ai.title": "AWS Certified AI Practitioner",
+  "certification.ai.description": "Notions fondamentales de l'intelligence artificielle, apprentissage automatique et cas d’usage sur AWS.",
+  "certification.ai.aria": "Voir la certification AI Practitioner",
+  "footer.description": "LEXOFT, spécialisée dans les services aux entreprises et administrations, propose une gamme de services et solutions dans le développement logiciel.",
+  "footer.links.title": "Liens",
+  "footer.links.home": "Accueil",
+
+  "footer.services.title": "Mes Services",
+  "footer.services.dev": "Développement de logiciels sur mesure",
+  "footer.services.migration": "Migration vers le cloud",
+  "footer.services.cloud_native": "Développement d'applications cloud-native",
+  "footer.services.terraform": "Infrastructure as Code (IaC) avec Terraform",
+  "footer.services.kubernetes": "Gestion de conteneurs avec Kubernetes",
+  "footer.services.support": "Support et maintenance",
+  "footer.services.consulting": "Consulting et formation",
+  "footer.services.devops": "Pratiques DevOps",
+
+  "footer.contact.title": "Contactez-nous",
+  "footer.copyright": "&copy; 2024 Copyright <strong><span>LEXOFT</span></strong>. Tous droits réservés."
 }

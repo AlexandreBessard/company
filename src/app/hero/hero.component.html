@@ -1,21 +1,27 @@
-<section id="hero" class="hero d-flex align-items-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up">
-        <div [innerHTML]="'header.title' | translate | sanitizeHtml"></div>
-        <h2 data-aos-delay="400" [innerHTML]="'header.description' | translate | sanitizeHtml"></h2>
+<section id="hero" class="hero d-flex align-items-center bg-white min-vh-100">
+  <div class="container py-5" data-aos="fade-up">
+    <div class="row align-items-center">
+
+      <!-- Texte à gauche -->
+      <div class="col-lg-6 d-flex flex-column justify-content-center text-center text-lg-start">
+        <h1 class="display-4 fw-bold mb-3" [innerHTML]="'header.title' | translate | sanitizeHtml"></h1>
+        <h2 class="fs-4 text-muted mb-4" data-aos-delay="400" [innerHTML]="'header.description' | translate | sanitizeHtml"></h2>
+
       </div>
-      <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+
+      <!-- Image à droite -->
+      <div class="col-lg-6 text-center" data-aos="zoom-out" data-aos-delay="200">
         <img
-          ngSrc="assets/img/ChatGPT%20Image%20Jun%209,%202025,%2002_00_07%20PM.png"
+          ngSrc="assets/img/img.png"
           ngOptimizedImage
-          width="1024"
+          width="1536"
           height="1024"
           alt="Illustration IA LEXOFT"
-          class="img-fluid rounded shadow-sm"
+          class="img-fluid rounded-4 shadow-lg"
           priority
         />
       </div>
+
     </div>
   </div>
 </section>
