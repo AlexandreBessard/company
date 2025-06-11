@@ -1,0 +1,5 @@
+.hover-shadow:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.03);
+  transition: all 0.2s ease-in-out;
+}

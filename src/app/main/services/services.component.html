@@ -2,6 +2,7 @@
   <div class="container" data-aos="fade-up">
     <header class="section-header">
     <h2>{{ 'certification.main.title' | translate }}</h2>
+      <p [innerHTML]="'certification.main.title2' | translate | sanitizeHtml"></p>
     </header>
     <div class="text-center">
       <p [innerHTML]="'certification.main.description' | translate | sanitizeHtml"></p>

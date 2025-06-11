@@ -16,10 +16,16 @@
         </div>
       </div>
 
-      <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-        <img ngSrc="assets/img/sotware_engineering.jpg" width="1280" height="720" class="img-fluid" alt="">
-      </div>
+      <!-- Image à droite, centrée -->
+      <div class="col-lg-6 d-flex justify-content-center align-items-center" data-aos="zoom-in" data-aos-delay="300">
+        <div class="position-relative text-center">
+          <img ngSrc="assets/img/sotware_engineering.jpg" width="600" height="400"
+               class="img-fluid rounded-4 shadow-lg" alt="Ingénierie logicielle">
+          <div [innerHTML]="'whoweare.image.description' | translate | sanitizeHtml" class="position-absolute bottom-0 end-0 p-2 text-white bg-dark bg-opacity-75 rounded-start small">
 
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 

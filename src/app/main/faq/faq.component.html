@@ -1,106 +1,87 @@
-<section id="faq" class="faq">
-
+<section id="faq" class="faq bg-light py-5">
   <div class="container" data-aos="fade-up">
-
-    <header class="section-header">
-      <h2>F.A.Q</h2>
-      <p>Questions fréquemment posées</p>
+    <header class="section-header text-center mb-5">
+      <h2 [innerHTML]="'faq.title' | translate | sanitizeHtml"></h2>
+      <p [innerHTML]="'faq.subtitle' | translate" class="text-muted"></p>
     </header>
 
-    <div class="row">
+    <div class="row gy-4">
+      <!-- Colonne gauche -->
       <div class="col-lg-6">
-        <!-- F.A.Q List 1-->
         <div class="accordion accordion-flush" id="faqlist1">
+
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
-                Quelles sont vos compétences spécifiques en développement informatique ?
-              </button>
+              <button [innerHTML]="'faq.button.1' | translate" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq-content-1"></button>
             </h2>
             <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
-              <div class="accordion-body">
-                En tant que freelance en développement informatique, je suis spécialisé dans les technologies spécifiques comme Java, Typescript, Spring Boot, Angular, AWS, Kubernetes, Terraform, Git, Jenkins, Kafka etc... avec une expérience prouvée dans la création d'applications web</div>
+              <div class="accordion-body" [innerHTML]="'faq.answer.1' | translate"></div>
             </div>
           </div>
 
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
-                Comment organisez-vous votre travail en tant que freelance ?
-              </button>
+              <button [innerHTML]="'faq.button.2' | translate" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq-content-2"></button>
             </h2>
             <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
-              <div class="accordion-body">
-                J'adopte une approche méthodique et flexible. Je planifie mes tâches, respecte les délais et suis ouvert à la communication régulière avec le client pour assurer un suivi transparent du projet.
-              </div>
+              <div class="accordion-body" [innerHTML]="'faq.answer.2' | translate"></div>
             </div>
           </div>
 
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
-                Comment facturez-vous vos services en tant que freelance ?
-              </button>
+              <button [innerHTML]="'faq.button.3' | translate" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq-content-3"></button>
             </h2>
             <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
-              <div class="accordion-body">
-                Ma tarification est basée sur un tarif journalier ou forfait mensuel/hebdomadaire. Je m'efforce de proposer des solutions tarifaires flexibles et transparentes en fonction des besoins spécifiques du projet.
-              </div>
+              <div class="accordion-body" [innerHTML]="'faq.answer.3' | translate"></div>
             </div>
           </div>
 
         </div>
       </div>
 
+      <!-- Colonne droite -->
       <div class="col-lg-6">
-
-        <!-- F.A.Q List 2-->
         <div class="accordion accordion-flush" id="faqlist2">
 
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-1">
-                Quelle est votre expérience antérieure en tant que freelance ?
-              </button>
+              <button [innerHTML]="'faq.button.4' | translate" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2-content-1"></button>
             </h2>
             <div id="faq2-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
-              <div class="accordion-body">
-                Avec plus de 5 ans d'expérience et détenteur de certifications reconnues sur le marché, j'ai collaboré à une variété de projets, allant de la conception d'applications complexes à la résolution de problèmes spécifiques liés au développement informatique.
-              </div>
+              <div class="accordion-body" [innerHTML]="'faq.answer.4' | translate"></div>
             </div>
           </div>
 
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-2">
-                Comment gérez-vous les problèmes techniques éventuels pendant un projet ?
-              </button>
+              <button [innerHTML]="'faq.button.5' | translate" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2-content-2"></button>
             </h2>
             <div id="faq2-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
-              <div class="accordion-body">
-                Je suis habitué à résoudre rapidement les problèmes techniques. La communication ouverte avec le client est primordiale. En cas de problème, je travaille en étroite collaboration pour identifier, résoudre et mettre en œuvre des solutions efficaces.
-              </div>
+              <div class="accordion-body" [innerHTML]="'faq.answer.5' | translate"></div>
             </div>
           </div>
 
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-3">
-                Comment maintenez-vous vos compétences à jour en tant que freelance en développement informatique ?
-              </button>
+              <button [innerHTML]="'faq.button.6' | translate" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2-content-3"></button>
             </h2>
             <div id="faq2-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
-              <div class="accordion-body">
-                Je reste constamment informé des dernières tendances et technologies en participant à des formations, en lisant des articles spécialisés et en collaborant avec d'autres professionnels du secteur. Cela me permet d'apporter les solutions les plus actuelles à mes clients.
-              </div>
+              <div class="accordion-body" [innerHTML]="'faq.answer.6' | translate"></div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button [innerHTML]="'faq.button.7' | translate" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2-content-4"></button>
+            </h2>
+            <div id="faq2-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+              <div class="accordion-body" [innerHTML]="'faq.answer.7' | translate"></div>
             </div>
           </div>
 
         </div>
       </div>
-
     </div>
-
   </div>
-
 </section>
