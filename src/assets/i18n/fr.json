@@ -86,10 +86,30 @@
       "1": "En tant que freelance, je suis spécialisé en Java, Typescript, Spring Boot, Angular, AWS, Kubernetes, Terraform, Git, Jenkins, Kafka, etc. avec une expérience prouvée dans le développement d'applications web performantes.",
       "2": "Je planifie mes tâches selon une méthode agile, je m’adapte à vos priorités tout en assurant une communication régulière et un reporting clair.",
       "3": "Je propose une tarification flexible : au forfait ou en régie (tarif journalier). Tout est défini en amont pour éviter les surprises.",
-      "4": "Avec plus de 5 ans d'expérience, je suis intervenu sur des projets à fort enjeu technique pour des entreprises du secteur public et privé.",
+      "4": "Avec plus de 7 ans d'expérience, je suis intervenu sur des projets à fort enjeu technique pour des entreprises du secteur public et privé.",
       "5": "J’analyse rapidement l’origine du problème, je communique les options de résolution, puis j’applique une solution fiable et documentée.",
       "6": "Je me forme en continu via des certifications AWS, Spring, Terraform, ainsi que par veille technologique et projets personnels.",
       "7": "Oui, des lettres de recommandation authentiques de mes anciens clients sont disponibles sur simple demande. N'hésitez pas à me contacter pour en recevoir une."
+    }
+  },
+  "contact": {
+    "title": "Contactez-moi",
+    "subtitle": "Un projet en tête ? Parlons-en.",
+    "email": {
+      "title": "Email",
+      "value": "lexoft.eurl@gmail.com"
+    },
+    "phone": {
+      "title": "Téléphone",
+      "value": "+33 6 34 49 12 75<br>+1 647 313 8837"
+    },
+    "address": {
+      "title": "Adresse",
+      "value": "BP 15<br>6 Allée de la Chavannerie<br>45240, La Ferté Saint Aubin<br>France"
+    },
+    "hours": {
+      "title": "Horaires",
+      "value": "Lundi – Vendredi<br>9h00 – 18h00"
     }
   }
 }

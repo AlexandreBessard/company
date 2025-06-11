@@ -1,40 +1,46 @@
-<section id="contact" class="contact py-5">
+<section id="contact" class="contact bg-light py-5">
   <div class="container" data-aos="fade-up">
+
     <header class="section-header text-center mb-5">
-      <h2 class="fw-bold">Contact</h2>
+      <h2 class="fw-bold display-5" [innerHTML]="'contact.title' | translate"></h2>
+      <p class="fs-5 text-muted" [innerHTML]="'contact.subtitle' | translate"></p>
     </header>
 
-    <div class="row gy-4 justify-content-center">
+    <div class="row g-4 justify-content-center">
 
-      <div class="col-lg-4 col-md-6">
-        <div class="info-box shadow-sm p-4 text-center rounded-4 h-100">
-          <i class="bi bi-envelope display-5 mb-3 text-primary"></i>
-          <h4>Email</h4>
-          <p class="mb-0">lexoft.eurl&#64;gmail.com</p>
+      <!-- Email -->
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="info-box h-100 p-4 text-center rounded-4 shadow-sm bg-white transition-hover">
+          <i class="bi bi-envelope display-4 mb-3 text-primary"></i>
+          <h5 class="fw-bold fs-4 mb-2" [innerHTML]="'contact.email.title' | translate"></h5>
+          <p class="fs-5 mb-0" [innerHTML]="'contact.email.value' | translate"></p>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6">
-        <div class="info-box shadow-sm p-4 text-center rounded-4 h-100">
-          <i class="bi bi-telephone display-5 mb-3 text-success"></i>
-          <h4>Téléphone</h4>
-          <p class="mb-0">+33 6 34 49 12 75 (France)<br>+1 647 313 8837 (US/Canada)</p>
+      <!-- Téléphone -->
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="info-box h-100 p-4 text-center rounded-4 shadow-sm bg-white transition-hover">
+          <i class="bi bi-telephone display-4 mb-3 text-success"></i>
+          <h5 class="fw-bold fs-4 mb-2" [innerHTML]="'contact.phone.title' | translate"></h5>
+          <p class="fs-5 mb-0" [innerHTML]="'contact.phone.value' | translate"></p>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6">
-        <div class="info-box shadow-sm p-4 text-center rounded-4 h-100">
-          <i class="bi bi-geo-alt display-5 mb-3 text-danger"></i>
-          <h4>Adresse</h4>
-          <p class="mb-0">BP 15<br>6 Allée de la Chavannerie<br>45240, La Ferté Saint Aubin</p> <p>France</p>
+      <!-- Adresse -->
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="info-box h-100 p-4 text-center rounded-4 shadow-sm bg-white transition-hover">
+          <i class="bi bi-geo-alt display-4 mb-3 text-danger"></i>
+          <h5 class="fw-bold fs-4 mb-2" [innerHTML]="'contact.address.title' | translate"></h5>
+          <p class="fs-5 mb-0" [innerHTML]="'contact.address.value' | translate"></p>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6">
-        <div class="info-box shadow-sm p-4 text-center rounded-4 h-100">
-          <i class="bi bi-clock display-5 mb-3 text-warning"></i>
-          <h4>Horaires</h4>
-          <p class="mb-0">Lundi - Vendredi<br>9:00 - 18:00</p>
+      <!-- Horaires -->
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="info-box h-100 p-4 text-center rounded-4 shadow-sm bg-white transition-hover">
+          <i class="bi bi-clock display-4 mb-3 text-warning"></i>
+          <h5 class="fw-bold fs-4 mb-2" [innerHTML]="'contact.hours.title' | translate"></h5>
+          <p class="fs-5 mb-0" [innerHTML]="'contact.hours.value' | translate"></p>
         </div>
       </div>
 
