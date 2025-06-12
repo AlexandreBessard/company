@@ -120,6 +120,7 @@
     }
   },
   "certification.main.title": "Mes certifications",
+  "certification.read.more": "Lire la suite",
 
   "certification.aws.title": "AWS Solutions Architect - Associate",
   "certification.aws.description": "Capacité à concevoir des systèmes distribués évolutifs, résilients, efficaces et tolérants aux pannes sur AWS.",

@@ -82,7 +82,7 @@
   "services.infrastructure.description": "Deployment and management of containerized applications at scale with Kubernetes, ensuring high availability.",
 
 
-
+  "services.development.title": "Custom application development",
 
   "services.cloud.native.app.description": "Design cloud-optimized applications using microservices-based architectures, Kubernetes, and other cloud technologies.",
 
@@ -159,6 +159,8 @@
       "value": "Monday – Friday<br>9:00 AM – 6:00 PM"
     }
   },
+
+  "certification.read.more": "Read more",
 
   "certification.aws.title": "AWS Solutions Architect - Associate",
   "certification.aws.description": "Ability to design scalable, resilient, efficient, and fault-tolerant distributed systems on AWS.",
