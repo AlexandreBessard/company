@@ -20,6 +20,22 @@ export const routes: Routes = [
         data: { seo: 'home' },
       },
       {
+        path: 'projects/secure-rag-assistant',
+        loadComponent: () =>
+          import('./main/projects/secure-rag/secure-rag.component').then(
+            (m) => m.SecureRagComponent
+          ),
+        data: { seo: 'projects.rag' },
+      },
+      {
+        path: 'projects/ai-appointment-scheduler',
+        loadComponent: () =>
+          import('./main/projects/ai-scheduler/ai-scheduler.component').then(
+            (m) => m.AiSchedulerComponent
+          ),
+        data: { seo: 'projects.agent' },
+      },
+      {
         path: 'portfolio-details/:id',
         loadComponent: () =>
           import('./main/portfolio/portfolio-details/portfolio-details.component').then(

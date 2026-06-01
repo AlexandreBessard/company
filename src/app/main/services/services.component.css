@@ -1,38 +1,89 @@
 .certifications {
-  font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #333; /* Couleur de texte */
-  margin-bottom: 20px; /* Marge en bas */
+  color: var(--lx-ink);
+  margin-bottom: 20px;
   text-align: center;
 }
 
 .cert-group-title {
-  font-size: 1.4rem;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.45rem;
   font-weight: 700;
+  color: var(--lx-navy);
   text-align: center;
-  margin-top: 2.5rem;
-  margin-bottom: 1.5rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--bs-primary, #0d6efd);
+  margin: 3rem auto 1.75rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 0;
   display: table;
+}
+.cert-group-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 3px;
+  border-radius: 99px;
+  background: var(--lx-grad-h);
 }
 
 .card {
-  transition: transform 0.3s ease;
+  position: relative;
+  border: 1px solid var(--lx-border);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--lx-grad-h);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  border-color: rgba(47, 107, 242, .22);
+  box-shadow: var(--lx-shadow) !important;
 }
+.card:hover::before { transform: scaleX(1); }
 
+/* Uniform badge box so every logo occupies the same footprint */
+.card img {
+  height: 200px;
+  width: auto !important;
+  max-width: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+.card:hover img { transform: scale(1.04); }
+
+/* Reserve a constant title height so 1- and 2-line titles keep the
+   descriptions (and everything below) on the same baseline across cards */
 .card h5 {
   font-size: 1.25rem;
+  min-height: 3.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: .75rem;
 }
 
+/* Description grows to fill the gap so the button always pins to the bottom */
 .card p {
   font-size: 0.95rem;
-  color: #555;
+  color: #555f76;
+  flex-grow: 1;
+  margin-bottom: 1.25rem;
 }
+
+.card .btn { margin-top: auto; }

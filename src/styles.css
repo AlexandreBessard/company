@@ -1,2 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 /*@import 'bootstrap/dist/css/bootstrap.min.css'; */
+
+/*
+ * Accessibility / AOS safety net.
+ *
+ * AOS is disabled when the user has "Reduce motion" enabled (see hero.component.ts).
+ * When disabled, AOS strips `data-aos` attributes only from the nodes that exist at
+ * init time — but content rendered later by Angular control flow (e.g. the
+ * Expérience timeline `@for`) keeps `data-aos`, so `aos.css` holds it at opacity:0
+ * forever and the cards never appear. Force every animated element fully visible
+ * (and untransformed) under reduce-motion so content always shows, without animation.
+ */
+@media (prefers-reduced-motion: reduce) {
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

@@ -1,0 +1,81 @@
+<section id="projects" class="projects-section py-5 bg-light">
+  <div class="container" data-aos="fade-up">
+
+    <header class="section-header text-center mb-5">
+      <h2>{{ 'projects.section' | translate }}</h2>
+      <p class="lead">{{ 'projects.title' | translate }}</p>
+      <p class="text-muted">{{ 'projects.subtitle' | translate }}</p>
+    </header>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- RAG · Spring Boot -->
+      <div class="col-md-6 col-lg-5" data-aos="fade-up" data-aos-delay="100">
+        <article class="project-card h-100 p-4 p-lg-5 rounded-4 shadow-sm bg-white">
+
+          <div class="project-card__top">
+            <span class="project-icon"><i class="bi bi-database-gear"></i></span>
+            <span class="project-badge">{{ 'projects.rag.badge' | translate }}</span>
+          </div>
+
+          <h3 class="project-card__title">{{ 'projects.rag.title' | translate }}</h3>
+          <p class="project-card__desc text-muted">{{ 'projects.rag.description' | translate }}</p>
+
+          <div class="project-chips">
+            <span class="project-chip">Spring Boot</span>
+            <span class="project-chip">Spring AI</span>
+            <span class="project-chip">AWS Bedrock</span>
+            <span class="project-chip">pgvector</span>
+            <span class="project-chip">Keycloak</span>
+            <span class="project-chip">Terraform</span>
+          </div>
+
+          <div class="project-card__actions">
+            <a [routerLink]="['/', lang.current, 'projects', 'secure-rag-assistant']"
+               class="btn btn-primary">
+              {{ 'projects.learnmore' | translate }}<i class="bi bi-arrow-right ms-2"></i>
+            </a>
+            <a href="https://github.com/AlexandreBessard/secure-rag-assistant" target="_blank" rel="noopener"
+               class="btn btn-outline-primary">
+              <i class="bi bi-github me-2"></i>{{ 'projects.github' | translate }}
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Autonomous AI agent · Python -->
+      <div class="col-md-6 col-lg-5" data-aos="fade-up" data-aos-delay="200">
+        <article class="project-card h-100 p-4 p-lg-5 rounded-4 shadow-sm bg-white">
+
+          <div class="project-card__top">
+            <span class="project-icon"><i class="bi bi-diagram-3"></i></span>
+            <span class="project-badge">{{ 'projects.agent.badge' | translate }}</span>
+          </div>
+
+          <h3 class="project-card__title">{{ 'projects.agent.title' | translate }}</h3>
+          <p class="project-card__desc text-muted">{{ 'projects.agent.description' | translate }}</p>
+
+          <div class="project-chips">
+            <span class="project-chip">Python</span>
+            <span class="project-chip">FastAPI</span>
+            <span class="project-chip">LangGraph</span>
+            <span class="project-chip">Claude</span>
+            <span class="project-chip">Angular</span>
+          </div>
+
+          <div class="project-card__actions">
+            <a [routerLink]="['/', lang.current, 'projects', 'ai-appointment-scheduler']"
+               class="btn btn-primary">
+              {{ 'projects.learnmore' | translate }}<i class="bi bi-arrow-right ms-2"></i>
+            </a>
+            <a href="https://github.com/AlexandreBessard/ai-scheduler-poc" target="_blank" rel="noopener"
+               class="btn btn-outline-primary">
+              <i class="bi bi-github me-2"></i>{{ 'projects.github' | translate }}
+            </a>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>

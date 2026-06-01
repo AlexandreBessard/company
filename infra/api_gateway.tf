@@ -27,6 +27,13 @@ resource "aws_apigatewayv2_stage" "default" {
   api_id      = aws_apigatewayv2_api.contact.id
   name        = "$default"
   auto_deploy = true
+
+  # Cap total throughput to the contact endpoint so it can't be flooded
+  # (protects the SES quota and the bill). This is a global limit, not per-IP.
+  default_route_settings {
+    throttling_burst_limit = var.throttle_burst_limit
+    throttling_rate_limit  = var.throttle_rate_limit
+  }
 }
 
 resource "aws_lambda_permission" "apigw_invoke" {

@@ -5,13 +5,11 @@
       <p [innerHTML]="'certification.main.title2' | translate | sanitizeHtml"></p>
     </header>
 
-    <div class="text-center">
-      <p [innerHTML]="'certification.main.description' | translate | sanitizeHtml"></p>
-    </div>
+    <div class="text-center" [innerHTML]="'certification.main.description' | translate | sanitizeHtml"></div>
 
     <!-- ===== Cloud & AI ===== -->
     <h3 class="cert-group-title">{{ 'certification.group.cloud' | translate }}</h3>
-    <div class="row gy-5">
+    <div class="row gy-5 justify-content-center">
       <!-- AWS Solutions Architect -->
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
         <div class="card h-100 shadow-sm text-center p-4 border-0 rounded-4">
@@ -28,7 +26,6 @@
         <div class="card h-100 shadow-sm text-center p-4 border-0 rounded-4">
           <img src="assets/img/machine_learning.png" alt="Logo AWS ML" class="img-fluid mx-auto mb-3" style="width: 220px;">
           <h5 [innerHTML]="'certification.ml.title' | translate | sanitizeHtml" class="fw-bold"></h5>
-          <p [innerHTML]="'certification.ml.description1' | translate | sanitizeHtml"></p>
           <p [innerHTML]="'certification.ml.description2' | translate | sanitizeHtml"></p>
           <a href="https://www.credly.com/badges/93ebf048-ca61-40ba-acab-55e85f0bb7e8/linked_in_profile"
              class="btn btn-outline-primary mt-auto" target="_blank">{{'certification.read.more' | translate}} <i class="bi bi-arrow-right"></i></a>
@@ -60,7 +57,7 @@
 
     <!-- ===== DevOps ===== -->
     <h3 class="cert-group-title">{{ 'certification.group.devops' | translate }}</h3>
-    <div class="row gy-5">
+    <div class="row gy-5 justify-content-center">
       <!-- Kubernetes -->
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
         <div class="card h-100 shadow-sm text-center p-4 border-0 rounded-4">
@@ -86,7 +83,7 @@
 
     <!-- ===== Programming ===== -->
     <h3 class="cert-group-title">{{ 'certification.group.programming' | translate }}</h3>
-    <div class="row gy-5">
+    <div class="row gy-5 justify-content-center">
       <!-- Java SE 11 -->
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
         <div class="card h-100 shadow-sm text-center p-4 border-0 rounded-4">

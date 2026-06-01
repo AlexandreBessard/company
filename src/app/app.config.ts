@@ -1,5 +1,5 @@
 import { ApplicationConfig, importProvidersFrom, TransferState } from '@angular/core';
-import { provideRouter, withEnabledBlockingInitialNavigation } from '@angular/router';
+import { provideRouter, withEnabledBlockingInitialNavigation, withInMemoryScrolling } from '@angular/router';
 
 import { routes } from './app.routes';
 import { HttpClient, provideHttpClient, withFetch } from '@angular/common/http';
@@ -20,7 +20,12 @@ export const appConfig: ApplicationConfig = {
         },
       })
     ),
-    provideRouter(routes, withEnabledBlockingInitialNavigation()),
+    provideRouter(
+      routes,
+      withEnabledBlockingInitialNavigation(),
+      // Let cross-route links scroll to #fragments (e.g. project page → home #contact)
+      withInMemoryScrolling({ anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled' })
+    ),
     provideClientHydration(),
   ],
 };

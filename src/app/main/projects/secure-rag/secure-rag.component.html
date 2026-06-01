@@ -1,0 +1,140 @@
+<article class="pd-detail">
+
+  <!-- ===== Header ===== -->
+  <header class="pd-hero">
+    <div class="container">
+      <a class="pd-back" [routerLink]="['/', lang.current]" fragment="projects">
+        <i class="bi bi-arrow-left"></i> {{ 'projects.rag.detail.back' | translate }}
+      </a>
+
+      <span class="pd-eyebrow">{{ 'projects.rag.detail.eyebrow' | translate }}</span>
+      <h1 class="pd-title">Secure RAG Assistant</h1>
+      <p class="pd-tagline">{{ 'projects.rag.detail.tagline' | translate }}</p>
+
+      <div class="pd-badges">
+        <span class="pd-badge"><i class="bi bi-shield-lock"></i> Enterprise PoC</span>
+        <span class="pd-badge"><i class="bi bi-cpu"></i> RAG / GenAI</span>
+        <span class="pd-badge"><i class="bi bi-cloud"></i> AWS Bedrock</span>
+      </div>
+
+      <div class="pd-hero__actions">
+        <a [href]="repoUrl" target="_blank" rel="noopener" class="btn btn-light btn-lg">
+          <i class="bi bi-github me-2"></i>{{ 'projects.github' | translate }}
+        </a>
+        <a [routerLink]="['/', lang.current]" [queryParams]="{ from: 'contact' }" class="btn btn-outline-light btn-lg">
+          {{ 'projects.rag.detail.cta.button' | translate }}
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container pd-body">
+
+    <!-- ===== Overview ===== -->
+    <section class="pd-section">
+      <h2 class="pd-h2">{{ 'projects.rag.detail.overview.title' | translate }}</h2>
+      <p class="pd-lead" [innerHTML]="'projects.rag.detail.overview.body' | translate | sanitizeHtml"></p>
+    </section>
+
+    <!-- ===== Key highlights ===== -->
+    <section class="pd-section">
+      <h2 class="pd-h2">{{ 'projects.rag.detail.highlights.title' | translate }}</h2>
+      <div class="row g-4">
+        @for (h of [1,2,3,4,5]; track h) {
+          <div class="col-md-6">
+            <div class="pd-highlight h-100">
+              <span class="pd-highlight__num">{{ h }}</span>
+              <div>
+                <h3 class="pd-highlight__title">{{ ('projects.rag.detail.h' + h + '.title') | translate }}</h3>
+                <p class="pd-highlight__desc" [innerHTML]="('projects.rag.detail.h' + h + '.body') | translate | sanitizeHtml"></p>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+    </section>
+
+    <!-- ===== Architecture ===== -->
+    <section class="pd-section">
+      <h2 class="pd-h2">{{ 'projects.rag.detail.architecture.title' | translate }}</h2>
+      <div class="pd-arch">
+        <div class="pd-arch__dots"><span></span><span></span><span></span></div>
+        <pre class="pd-arch__diagram">{{ architecture }}</pre>
+      </div>
+      <div class="pd-insight">
+        <i class="bi bi-lightbulb"></i>
+        <p [innerHTML]="'projects.rag.detail.insight' | translate | sanitizeHtml"></p>
+      </div>
+    </section>
+
+    <!-- ===== Tech stack ===== -->
+    <section class="pd-section">
+      <h2 class="pd-h2">{{ 'projects.rag.detail.stack.title' | translate }}</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="pd-stack h-100">
+            <h3 class="pd-stack__title"><i class="bi bi-hdd-stack"></i>{{ 'projects.rag.detail.stack.backend' | translate }}</h3>
+            <ul>
+              <li>Spring Boot 3.5</li>
+              <li>Spring AI 1.1</li>
+              <li>PostgreSQL + pgvector</li>
+              <li>AWS Bedrock — Claude Haiku</li>
+              <li>Titan Embeddings V2</li>
+              <li>Amazon Comprehend</li>
+              <li>S3 · SQS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="pd-stack h-100">
+            <h3 class="pd-stack__title"><i class="bi bi-window"></i>{{ 'projects.rag.detail.stack.frontend' | translate }}</h3>
+            <ul>
+              <li>Angular 21</li>
+              <li>TypeScript (strict)</li>
+              <li>Signals-first architecture</li>
+              <li>Keycloak JS — PKCE / OIDC</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="pd-stack h-100">
+            <h3 class="pd-stack__title"><i class="bi bi-diagram-3"></i>{{ 'projects.rag.detail.stack.infra' | translate }}</h3>
+            <ul>
+              <li>Docker Compose</li>
+              <li>Terraform (IaC)</li>
+              <li>AWS ECS Fargate</li>
+              <li>Aurora Serverless</li>
+              <li>Keycloak 26</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="pd-stack h-100">
+            <h3 class="pd-stack__title"><i class="bi bi-activity"></i>{{ 'projects.rag.detail.stack.observability' | translate }}</h3>
+            <ul>
+              <li>Prometheus</li>
+              <li>Grafana</li>
+              <li>Jaeger</li>
+              <li>OpenTelemetry tracing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="pd-cta">
+      <h2 class="pd-cta__title">{{ 'projects.rag.detail.cta.title' | translate }}</h2>
+      <p class="pd-cta__body">{{ 'projects.rag.detail.cta.body' | translate }}</p>
+      <div class="pd-cta__actions">
+        <a [routerLink]="['/', lang.current]" [queryParams]="{ from: 'contact' }" class="btn btn-primary btn-lg">
+          {{ 'projects.rag.detail.cta.button' | translate }}<i class="bi bi-arrow-right ms-2"></i>
+        </a>
+        <a [href]="repoUrl" target="_blank" rel="noopener" class="btn btn-outline-primary btn-lg">
+          <i class="bi bi-github me-2"></i>{{ 'projects.github' | translate }}
+        </a>
+      </div>
+    </section>
+
+  </div>
+</article>

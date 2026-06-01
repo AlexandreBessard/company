@@ -1,5 +1,9 @@
 /fr
 /en
+/fr/projects/secure-rag-assistant
+/en/projects/secure-rag-assistant
+/fr/projects/ai-appointment-scheduler
+/en/projects/ai-appointment-scheduler
 /fr/portfolio-details/1
 /fr/portfolio-details/2
 /en/portfolio-details/1
