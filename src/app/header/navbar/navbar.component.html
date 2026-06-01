@@ -1,23 +1,22 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top shadow-sm">
   <div class="container-fluid d-flex align-items-center">
 
-    <!-- Language Switcher (far left, always visible) -->
+    <!-- Language Switcher -->
     <label class="form-check form-switch mb-0 me-3">
       <input class="form-check-input" type="checkbox" role="switch"
              id="flexSwitchCheckDefault"
              (change)="toggleLanguage()"
-             [checked]="defaultLanguageIsEnglish">
+             [checked]="isEnglish">
       <span class="ms-2 small text-muted">EN</span>
     </label>
 
     <!-- Brand -->
     <a class="navbar-brand me-auto d-flex align-items-center"
-       [routerLink]="['/']" (click)="scrollToElement('header'); closeNavbar()" style="cursor: pointer;">
-      <img src="assets/img/logo.png" alt="LEXOFT" width="30" height="24" class="d-inline-block align-text-top me-2">
-      LEXOFT
+       [routerLink]="['/', lang.current]" (click)="scrollToElement('header'); closeNavbar()" style="cursor: pointer;">
+      <img src="assets/img/lexoft-logo.png" alt="LEXOFT" height="36" class="d-inline-block align-text-top">
     </a>
 
-    <!-- Toggler button for mobile -->
+    <!-- Toggler -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -25,33 +24,16 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Collapsible navigation content -->
+    <!-- Links -->
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ms-auto">
-        <li style="cursor: pointer;"><a class="nav-link" (click)="scrollToElement('about'); closeNavbar()">{{ 'nav.whoweare' | translate }}</a></li>
-        <li style="cursor: pointer;"><a class="nav-link" (click)="scrollToElement('whoami'); closeNavbar()">{{ 'team.whoami' | translate }}</a></li>
+        <li style="cursor: pointer;"><a class="nav-link" (click)="scrollToElement('about'); closeNavbar()">{{ 'nav.about' | translate }}</a></li>
+        <li style="cursor: pointer;"><a class="nav-link" (click)="scrollToElement('expertise'); closeNavbar()">{{ 'nav.expertise' | translate }}</a></li>
+        <li style="cursor: pointer;"><a class="nav-link" (click)="scrollToElement('experience'); closeNavbar()">{{ 'nav.experience' | translate }}</a></li>
         <li style="cursor: pointer;"><a class="nav-link" (click)="scrollToElement('certifications'); closeNavbar()">{{ 'nav.certifications' | translate }}</a></li>
-        <li style="cursor: pointer;"><a class="nav-link" (click)="scrollToElement('features'); closeNavbar()">{{ 'nav.expertise' | translate }}</a></li>
-        <li style="cursor: pointer;"><a class="nav-link" (click)="scrollToElement('values'); closeNavbar()">{{ 'ourvalues.section' | translate }}</a></li>
-        <li style="cursor: pointer;"><a class="nav-link" (click)="scrollToElement('clients'); closeNavbar()">Clients</a></li>
+        <li style="cursor: pointer;"><a class="nav-link" (click)="scrollToElement('clients'); closeNavbar()">{{ 'nav.clients' | translate }}</a></li>
         <li style="cursor: pointer;"><a class="nav-link" (click)="scrollToElement('faq'); closeNavbar()">{{ 'nav.faq' | translate }}</a></li>
-
-
-
-        <!--        <li style="cursor: pointer;"><a class="nav-link" (click)="scrollToElement('services'); closeNavbar()">{{ 'nav.certifications' | translate }}</a></li>-->
-<!--        <li style="cursor: pointer;"><a class="nav-link" (click)="scrollToElement('values'); closeNavbar()">{{ 'nav.values' | translate }}</a></li>-->
-<!--        <li style="cursor: pointer;"><a class="nav-link" (click)="scrollToElement('team'); closeNavbar()">{{ 'nav.team' | translate }}</a></li>-->
-<!--        <li style="cursor: pointer;"><a class="nav-link" (click)="scrollToElement('faq'); closeNavbar()">{{ 'nav.faq' | translate }}</a></li>-->
-<!--        <li class="nav-item dropdown">-->
-<!--          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">-->
-<!--            Portfolio-->
-<!--          </a>-->
-<!--          <ul class="dropdown-menu">-->
-<!--            <li><a class="dropdown-item" [routerLink]="['home', 'portfolio-details', 1]">Projet 1</a></li>-->
-<!--            <li><a class="dropdown-item" [routerLink]="['home', 'portfolio-details', 2]">Projet 2</a></li>-->
-<!--          </ul>-->
-<!--        </li>-->
-        <li style="cursor: pointer;"><a class="nav-link" (click)="scrollToElement('contact'); closeNavbar()">Contact</a></li>
+        <li style="cursor: pointer;"><a class="nav-link" (click)="scrollToElement('contact'); closeNavbar()">{{ 'nav.contact' | translate }}</a></li>
       </div>
     </div>
 

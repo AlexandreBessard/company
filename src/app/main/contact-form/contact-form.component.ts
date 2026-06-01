@@ -3,13 +3,14 @@ import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angula
 import { HttpClient } from '@angular/common/http';
 import { TranslateModule } from '@ngx-translate/core';
 import { environment } from '../../../environments/environment';
+import { SanitizeHtmlPipe } from '../../pipes/sanitizeHtml.pipe';
 
 type FormStatus = 'idle' | 'sending' | 'success' | 'error';
 
 @Component({
   selector: 'app-contact-form',
   standalone: true,
-  imports: [ReactiveFormsModule, TranslateModule],
+  imports: [ReactiveFormsModule, TranslateModule, SanitizeHtmlPipe],
   templateUrl: './contact-form.component.html',
   styleUrl: './contact-form.component.css'
 })
@@ -21,13 +22,15 @@ export class ContactFormComponent {
     this.form = this.fb.group({
       name:    ['', Validators.required],
       email:   ['', [Validators.required, Validators.email]],
-      message: ['', [Validators.required, Validators.minLength(10)]]
+      message: ['', [Validators.required, Validators.minLength(10)]],
+      consent: [false, Validators.requiredTrue]
     });
   }
 
   get name()    { return this.form.get('name')!; }
   get email()   { return this.form.get('email')!; }
   get message() { return this.form.get('message')!; }
+  get consent() { return this.form.get('consent')!; }
 
   submit(): void {
     if (this.form.invalid) {

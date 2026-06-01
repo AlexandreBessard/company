@@ -5,11 +5,10 @@ import {FeaturesComponent} from "./features/features.component";
 import {FaqComponent} from "./faq/faq.component";
 import {ServicesComponent} from "./services/services.component";
 import {TeamComponent} from "./team/team.component";
-import {ContactComponent} from "./contact/contact.component";
 import {ContactFormComponent} from "./contact-form/contact-form.component";
 import {ClientsComponent} from "./clients/clients.component";
-import {PortfolioComponent} from "./portfolio/portfolio.component";
-import {RouterModule, RouterOutlet} from "@angular/router";
+import {ExperienceComponent} from "./experience/experience.component";
+import {RouterOutlet} from "@angular/router";
 import {CommonModule} from "@angular/common";
 import {HeroComponent} from "../hero/hero.component";
 
@@ -23,10 +22,9 @@ import {HeroComponent} from "../hero/hero.component";
     FaqComponent,
     ServicesComponent,
     TeamComponent,
-    ContactComponent,
     ContactFormComponent,
     ClientsComponent,
-    PortfolioComponent,
+    ExperienceComponent,
     CommonModule,
     RouterOutlet,
     HeroComponent

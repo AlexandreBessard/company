@@ -1,0 +1,40 @@
+.legal-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 120px 20px 80px;
+}
+
+.legal-back {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: #4154f1;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.legal-back:hover {
+  text-decoration: underline;
+}
+
+.legal-page h1 {
+  color: #012970;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.legal-content :is(h3) {
+  color: #012970;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+
+.legal-content p {
+  line-height: 1.7;
+  color: #444;
+}
+
+.legal-content a {
+  color: #4154f1;
+}

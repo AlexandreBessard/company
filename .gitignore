@@ -40,3 +40,35 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Terraform (infra/)
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# Lambda build artifacts
+infra/lambda.zip
+
+# Tooling artifacts
+.playwright-mcp/
+playwright-report/
+test-results/

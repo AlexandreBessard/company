@@ -4,24 +4,28 @@
       <div class="row gy-4">
 
         <!-- Bloc logo + description -->
-        <div class="col-lg-5 col-md-12 footer-info">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <img src="assets/img/logo.png" alt="">
-            <span>LEXOFT</span>
+        <div class="col-lg-4 col-md-12 footer-info">
+          <a href="#hero" class="logo d-flex align-items-center">
+            <img src="assets/img/lexoft-logo.png" alt="LEXOFT" height="44">
           </a>
           <p [innerHTML]="'footer.description' | translate | sanitizeHtml"></p>
           <div class="social-links mt-3">
-            <a href="https://www.linkedin.com/company/102575184/admin/feed/posts/" class="linkedin" target="_blank">
+            <a href="https://www.linkedin.com/in/alexandre-bessard/" class="linkedin" target="_blank" rel="noopener" aria-label="LinkedIn">
               <i class="bi bi-linkedin"></i>
             </a>
           </div>
         </div>
 
         <!-- Bloc liens -->
-        <div class="col-lg-1 col-6 footer-links">
+        <div class="col-lg-2 col-6 footer-links">
           <h4 [innerHTML]="'footer.links.title' | translate"></h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#" [innerHTML]="'footer.links.home' | translate"></a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#hero" [innerHTML]="'footer.links.home' | translate"></a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#about" [innerHTML]="'nav.about' | translate"></a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#expertise" [innerHTML]="'nav.expertise' | translate"></a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#experience" [innerHTML]="'nav.experience' | translate"></a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#faq" [innerHTML]="'nav.faq' | translate"></a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#contact" [innerHTML]="'nav.contact' | translate"></a></li>
           </ul>
         </div>
 
@@ -34,9 +38,8 @@
             <li><i class="bi bi-chevron-right"></i> <span [innerHTML]="'footer.services.cloud_native' | translate"></span></li>
             <li><i class="bi bi-chevron-right"></i> <span [innerHTML]="'footer.services.terraform' | translate"></span></li>
             <li><i class="bi bi-chevron-right"></i> <span [innerHTML]="'footer.services.kubernetes' | translate"></span></li>
-            <li><i class="bi bi-chevron-right"></i> <span [innerHTML]="'footer.services.support' | translate"></span></li>
+            <li><i class="bi bi-chevron-right"></i> <span [innerHTML]="'footer.services.iam' | translate"></span></li>
             <li><i class="bi bi-chevron-right"></i> <span [innerHTML]="'footer.services.consulting' | translate"></span></li>
-            <li><i class="bi bi-chevron-right"></i> <span [innerHTML]="'footer.services.devops' | translate"></span></li>
           </ul>
         </div>
 
@@ -44,13 +47,14 @@
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4 [innerHTML]="'footer.contact.title' | translate"></h4>
           <p>
-            BP 15<br>
-            6 All de la Chavannerie<br>
-            45240, La Ferté Saint Aubin<br><br>
-            <strong>Phone FR:</strong> +33 6 34 49 12 75<br>
-            <strong>Phone US:</strong> +1 647 313 8837<br>
-            <strong>Email:</strong> lexoft.eurl&#64;gmail.com<br>
+            Orléans (45), France<br><br>
+            <strong>Tél :</strong> +33 6 34 49 12 75<br>
+            <strong>Email :</strong> lexoft.eurl&#64;gmail.com<br>
           </p>
+          <a href="https://www.linkedin.com/in/alexandre-bessard/" target="_blank" rel="noopener"
+             class="btn btn-sm btn-outline-primary mt-2">
+            <i class="bi bi-linkedin me-1"></i>LinkedIn
+          </a>
         </div>
 
       </div>
@@ -59,5 +63,10 @@
 
   <div class="container">
     <div class="copyright" [innerHTML]="'footer.copyright' | translate"></div>
+    <div class="footer-legal text-center">
+      <a [routerLink]="['/', lang.current, 'mentions-legales']">{{ 'footer.legal.mentions' | translate }}</a>
+      <span class="mx-2">·</span>
+      <a [routerLink]="['/', lang.current, 'politique-de-confidentialite']">{{ 'footer.legal.privacy' | translate }}</a>
+    </div>
   </div>
 </footer>

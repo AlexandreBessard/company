@@ -1,30 +1,35 @@
-<section id="about" class="about">
-  <div class="container" data-aos="fade-up">
-    <div class="row gx-0 align-items-center">
+<section id="stats" class="stats-section">
+  <div class="container-fluid px-0">
+    <div class="row g-0 text-center" data-aos="fade-up">
 
-      <!-- Image à gauche, centrée -->
-      <div class="col-lg-6 d-flex justify-content-center align-items-center" data-aos="zoom-in" data-aos-delay="300">
-        <div class="position-relative text-center">
-          <img ngSrc="assets/img/sotware_engineering.jpg"
-               width="600" height="338"
-               class="img-fluid rounded-4 shadow-lg"
-               alt="Ingénierie logicielle"
-               priority>
-          <div [innerHTML]="'whoweare.image.description' | translate | sanitizeHtml"
-               class="position-absolute bottom-0 end-0 p-2 text-white bg-dark bg-opacity-75 rounded-start small">
-          </div>
-        </div>
+      <div class="col-6 col-md-4 col-lg-2 stat-item">
+        <div class="stat-value">9+</div>
+        <div class="stat-label">{{ 'stats.years.label' | translate }}</div>
       </div>
 
-      <!-- Texte à droite -->
-      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-        <div class="content px-lg-5">
-          <h3 [innerHTML]="'whoweare.section' | translate"></h3>
-          <div>
-            <h1 [innerHTML]="'whoweare.title' | translate"></h1>
-            <p [innerHTML]="'whoweare.description' | translate"></p>
-          </div>
-        </div>
+      <div class="col-6 col-md-4 col-lg-2 stat-item">
+        <div class="stat-value">8</div>
+        <div class="stat-label">{{ 'stats.certs.label' | translate }}</div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2 stat-item">
+        <div class="stat-value">5M+</div>
+        <div class="stat-label">{{ 'stats.users.label' | translate }}</div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2 stat-item">
+        <div class="stat-value">0</div>
+        <div class="stat-label">{{ 'stats.incidents.label' | translate }}</div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2 stat-item">
+        <div class="stat-value">6+</div>
+        <div class="stat-label">{{ 'stats.missions.label' | translate }}</div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2 stat-item">
+        <div class="stat-value">2</div>
+        <div class="stat-label">{{ 'stats.countries.label' | translate }}</div>
       </div>
 
     </div>

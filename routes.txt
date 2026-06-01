@@ -1,0 +1,10 @@
+/fr
+/en
+/fr/portfolio-details/1
+/fr/portfolio-details/2
+/en/portfolio-details/1
+/en/portfolio-details/2
+/fr/mentions-legales
+/en/mentions-legales
+/fr/politique-de-confidentialite
+/en/politique-de-confidentialite

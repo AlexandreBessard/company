@@ -1,39 +1,54 @@
-<section id="faq" class="faq bg-light py-5">
+<section id="faq" class="faq py-5 bg-light">
   <div class="container" data-aos="fade-up">
+
     <header class="section-header text-center mb-5">
-      <h2 [innerHTML]="'faq.title' | translate | sanitizeHtml"></h2>
-      <p [innerHTML]="'faq.subtitle' | translate" class="text-muted"></p>
+      <h2>{{ 'faq.title' | translate }}</h2>
+      <p class="text-muted">{{ 'faq.subtitle' | translate }}</p>
     </header>
 
     <div class="row gy-4">
+
       <!-- Colonne gauche -->
       <div class="col-lg-6">
         <div class="accordion accordion-flush" id="faqlist1">
 
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button [innerHTML]="'faq.button.1' | translate" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq-content-1"></button>
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq-content-1"
+                      [innerHTML]="'faq.button.1' | translate"></button>
             </h2>
             <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
-              <div class="accordion-body" [innerHTML]="'faq.answer.1' | translate"></div>
+              <div class="accordion-body" [innerHTML]="'faq.answer.1' | translate | sanitizeHtml"></div>
             </div>
           </div>
 
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button [innerHTML]="'faq.button.2' | translate" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq-content-2"></button>
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq-content-2"
+                      [innerHTML]="'faq.button.2' | translate"></button>
             </h2>
             <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
-              <div class="accordion-body" [innerHTML]="'faq.answer.2' | translate"></div>
+              <div class="accordion-body" [innerHTML]="'faq.answer.2' | translate | sanitizeHtml"></div>
             </div>
           </div>
 
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button [innerHTML]="'faq.button.3' | translate" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq-content-3"></button>
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq-content-3"
+                      [innerHTML]="'faq.button.3' | translate"></button>
             </h2>
             <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
-              <div class="accordion-body" [innerHTML]="'faq.answer.3' | translate"></div>
+              <div class="accordion-body" [innerHTML]="'faq.answer.3' | translate | sanitizeHtml"></div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq-content-4"
+                      [innerHTML]="'faq.button.4' | translate"></button>
+            </h2>
+            <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+              <div class="accordion-body" [innerHTML]="'faq.answer.4' | translate | sanitizeHtml"></div>
             </div>
           </div>
 
@@ -46,42 +61,37 @@
 
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button [innerHTML]="'faq.button.4' | translate" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2-content-1"></button>
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2-content-1"
+                      [innerHTML]="'faq.button.5' | translate"></button>
             </h2>
             <div id="faq2-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
-              <div class="accordion-body" [innerHTML]="'faq.answer.4' | translate"></div>
+              <div class="accordion-body" [innerHTML]="'faq.answer.5' | translate | sanitizeHtml"></div>
             </div>
           </div>
 
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button [innerHTML]="'faq.button.5' | translate" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2-content-2"></button>
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2-content-2"
+                      [innerHTML]="'faq.button.6' | translate"></button>
             </h2>
             <div id="faq2-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
-              <div class="accordion-body" [innerHTML]="'faq.answer.5' | translate"></div>
+              <div class="accordion-body" [innerHTML]="'faq.answer.6' | translate | sanitizeHtml"></div>
             </div>
           </div>
 
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button [innerHTML]="'faq.button.6' | translate" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2-content-3"></button>
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2-content-3"
+                      [innerHTML]="'faq.button.7' | translate"></button>
             </h2>
             <div id="faq2-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
-              <div class="accordion-body" [innerHTML]="'faq.answer.6' | translate"></div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button [innerHTML]="'faq.button.7' | translate" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2-content-4"></button>
-            </h2>
-            <div id="faq2-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
-              <div class="accordion-body" [innerHTML]="'faq.answer.7' | translate"></div>
+              <div class="accordion-body" [innerHTML]="'faq.answer.7' | translate | sanitizeHtml"></div>
             </div>
           </div>
 
         </div>
       </div>
+
     </div>
   </div>
 </section>

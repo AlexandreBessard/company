@@ -1,23 +1,57 @@
-<section id="hero" class="hero d-flex align-items-center bg-white min-vh-100">
-  <div class="container py-5" data-aos="fade-up">
-    <div class="row align-items-center">
+<section id="hero" class="hero d-flex align-items-center min-vh-100">
+  <div class="container py-5">
+    <div class="row align-items-center gy-5">
 
-      <!-- Texte à gauche -->
-      <div class="col-lg-6 d-flex flex-column justify-content-center text-center text-lg-start">
-        <h1 class="display-4 fw-bold mb-3" [innerHTML]="'header.title' | translate | sanitizeHtml"></h1>
-        <h2 class="fs-4 text-muted mb-4" data-aos-delay="400" [innerHTML]="'header.description' | translate | sanitizeHtml"></h2>
+      <!-- Left: Text -->
+      <div class="col-lg-7 d-flex flex-column justify-content-center text-center text-lg-start" data-aos="fade-right">
+
+        <div class="mb-3">
+          <span class="badge bg-success px-3 py-2 rounded-pill availability-badge">
+            <span class="availability-dot"></span>
+            {{ 'hero.availability' | translate }}
+          </span>
+        </div>
+
+        <h1 class="display-3 fw-bold mb-2">Alexandre Bessard</h1>
+        <p class="hero-subtitle fw-semibold mb-2">{{ 'hero.subtitle' | translate }}</p>
+        <p class="hero-tagline text-muted mb-4">{{ 'hero.tagline' | translate }}</p>
+
+        <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mb-5">
+          <span class="hero-meta-item">
+            <i class="bi bi-currency-euro"></i>
+            {{ 'hero.tjm' | translate }}
+          </span>
+          <span class="hero-meta-item">
+            <i class="bi bi-geo-alt"></i>
+            {{ 'hero.location' | translate }}
+          </span>
+        </div>
+
+        <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+          <a href="#contact" class="btn btn-primary btn-lg px-4">
+            {{ 'hero.cta.primary' | translate }}
+            <i class="bi bi-arrow-right ms-2"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/alexandre-bessard/" target="_blank" rel="noopener"
+             class="btn btn-outline-primary btn-lg px-4">
+            <i class="bi bi-linkedin me-2"></i>LinkedIn
+          </a>
+          <a href="https://alexandrebessard.github.io/resume/" target="_blank" rel="noopener"
+             class="btn btn-outline-secondary btn-lg px-4">
+            <i class="bi bi-file-person me-2"></i>{{ 'hero.cta.secondary' | translate }}
+          </a>
+        </div>
 
       </div>
 
-      <!-- Image à droite -->
-      <div class="col-lg-6 text-center" data-aos="zoom-out" data-aos-delay="200">
+      <!-- Right: Photo -->
+      <div class="col-lg-5 text-center" data-aos="fade-left" data-aos-delay="200">
         <img
-          ngSrc="assets/img/img.png"
-          ngOptimizedImage
-          width="1536"
-          height="1024"
-          alt="Illustration IA LEXOFT"
-          class="img-fluid rounded-4 shadow-lg"
+          ngSrc="assets/img/team/profil.jpeg"
+          width="600"
+          height="600"
+          alt="Alexandre Bessard – Senior Cloud Architect"
+          class="hero-photo img-fluid rounded-4 shadow-lg"
           priority
         />
       </div>

@@ -4,6 +4,7 @@ import {AsyncPipe, CommonModule} from "@angular/common";
 import {PortfolioDetailsService} from "./portfolio-details.service";
 import {filter, map, Observable, tap} from "rxjs";
 import {TranslateService} from "@ngx-translate/core";
+import {LanguageService} from "../../../core/language.service";
 
 @Component({
   selector: 'app-portfolio-details',
@@ -24,7 +25,8 @@ export class PortfolioDetailsComponent implements OnInit {
 
   constructor(private route: ActivatedRoute,
               private router: Router,
-              private translate: TranslateService) {}
+              private translate: TranslateService,
+              public lang: LanguageService) {}
 
   ngOnInit(): void {
     this.portfolio$ = this.route.paramMap.pipe(

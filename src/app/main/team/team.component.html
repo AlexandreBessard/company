@@ -1,34 +1,55 @@
-<section id="whoami" class="py-5 bg-light">
+<section id="about" class="about-section py-5">
   <div class="container" data-aos="fade-up">
 
-    <header class="section-header">
-      <h2 class="fw-bold">{{ 'team.whoami' | translate }}</h2>
-      <p>{{ 'team.subtitle' | translate }}</p>
+    <header class="section-header text-center mb-5">
+      <h2>{{ 'about.section' | translate }}</h2>
     </header>
 
-    <div class="row justify-content-center">
-      <div class="col-md-6 col-lg-4">
-        <div class="card border-0 shadow-sm text-center">
-          <div class="position-relative">
-            <img ngSrc="assets/img/team/profil.jpeg" width="600" height="600" class="card-img-top img-fluid rounded-top" alt="Photo de profil Alexandre Bessard" priority>
-            <div class="position-absolute top-0 end-0 p-2 d-flex flex-column gap-2">
-              <a href="https://www.linkedin.com/in/alexandre-bessard/" target="_blank" class="btn btn-outline-primary btn-sm rounded-circle" title="LinkedIn">
-                <i class="bi bi-linkedin"></i>
-              </a>
-              <a href="https://alexandrebessard.github.io/resume/" target="_blank" class="btn btn-outline-secondary btn-sm rounded-circle" title="CV en ligne">
-                <i class="bi bi-link"></i>
-              </a>
-            </div>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title mb-1">Alexandre Bessard</h4>
-            <p class="text-muted mb-2">{{ 'team.title' | translate }}</p>
-            <p class="card-text" [innerHTML]="'team.information' | translate | sanitizeHtml">
-            </p>
-          </div>
+    <div class="row align-items-center gy-5">
+
+      <!-- Photo -->
+      <div class="col-lg-4 text-center" data-aos="zoom-in" data-aos-delay="100">
+        <img ngSrc="assets/img/team/profil.jpeg"
+             width="600" height="600"
+             class="about-photo img-fluid rounded-4 shadow"
+             alt="Alexandre Bessard"
+             priority>
+      </div>
+
+      <!-- Text -->
+      <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
+        <h3 class="fw-bold mb-1">Alexandre Bessard</h3>
+        <p class="text-primary fw-semibold fs-5 mb-4">{{ 'about.title' | translate }}</p>
+
+        <p [innerHTML]="'about.p1' | translate | sanitizeHtml"></p>
+        <p [innerHTML]="'about.p2' | translate | sanitizeHtml"></p>
+        <p [innerHTML]="'about.p3' | translate | sanitizeHtml"></p>
+
+        <div class="d-flex flex-wrap gap-2 mt-4 mb-4">
+          <span class="badge bg-success px-3 py-2 rounded-pill availability-badge">
+            <span class="availability-dot"></span>
+            {{ 'about.availability.label' | translate }}
+          </span>
+          <span class="badge bg-primary px-3 py-2 rounded-pill fs-6">
+            {{ 'about.rate.label' | translate }}
+          </span>
+          <span class="badge bg-secondary px-3 py-2 rounded-pill fs-6">
+            <i class="bi bi-laptop me-1"></i>{{ 'about.remote.label' | translate }}
+          </span>
+        </div>
+
+        <div class="d-flex flex-wrap gap-3">
+          <a href="https://www.linkedin.com/in/alexandre-bessard/" target="_blank" rel="noopener"
+             class="btn btn-outline-primary">
+            <i class="bi bi-linkedin me-2"></i>{{ 'about.linkedin' | translate }}
+          </a>
+          <a href="https://alexandrebessard.github.io/resume/" target="_blank" rel="noopener"
+             class="btn btn-outline-secondary">
+            <i class="bi bi-file-person me-2"></i>{{ 'about.cv' | translate }}
+          </a>
         </div>
       </div>
-    </div>
 
+    </div>
   </div>
 </section>
