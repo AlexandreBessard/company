@@ -32,6 +32,20 @@ Remove the cache from CloudFront first and then replace the file stored from S3
 
 Steps to deploy:
 
-- execute the command: "ng build --configuration=production".
-- Upload all the files from the browser folder to the s3 bucket.
-- Go to CloudFront and create invalidations for both distributions.
+cd /Users/Alex/Dev/lexoft
+
+# 1) Upload the static site to your S3 bucket
+aws s3 sync dist/browser/ s3://<YOUR_BUCKET_NAME>/ --delete
+
+# 2) Invalidate CloudFront so visitors get the new bundle immediately
+aws cloudfront create-invalidation --distribution-id <YOUR_DISTRIBUTION_ID> --paths "/*"
+
+If you don't remember the bucket / distribution ID:
+aws s3 ls   # lists your buckets
+aws cloudfront list-distributions \
+--query "DistributionList.Items[].{Id:Id,Domain:DomainName,Aliases:Aliases.Items}" --output table
+(The distribution whose Aliases include lexoft-eurl.com is the one.)
+
+After the invalidation completes (~1–2 min), verify on the live site:
+1. Hard-refresh https://www.lexoft-eurl.com/fr, scroll to the contact form — you should see the Turnstile check render.
+2. Submit a real message → you should receive the email at lexoft.eurl@gmail.com.

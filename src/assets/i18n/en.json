@@ -138,7 +138,7 @@
   "contactform.success": "Your message has been sent! I'll get back to you shortly.",
   "contactform.error": "Something went wrong. Please try again or contact me directly by email.",
   "contactform.captcha.error": "Please confirm you're not a robot before sending.",
-  "contactform.consent.label": "I agree that the data submitted via this form may be used to respond to my enquiry, in accordance with the <a href=\"/politique-de-confidentialite\" target=\"_blank\" rel=\"noopener\">privacy policy</a>.",
+  "contactform.consent.label": "I agree that the data submitted via this form may be used to respond to my enquiry, in accordance with the <a href=\"/en/politique-de-confidentialite\" target=\"_blank\" rel=\"noopener\">privacy policy</a>.",
   "contactform.consent.error": "Please accept the privacy policy to continue.",
   "provigis.medal.title": "Responsible third party",
   "provigis.medal.description": "I provide proof of compliance of my legal file (Art. D8222-5 of the Labour Code) regarding official company registration documents and social contribution regularity.",

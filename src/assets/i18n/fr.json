@@ -138,7 +138,7 @@
   "contactform.success": "Votre message a bien été envoyé ! Je vous répondrai très prochainement.",
   "contactform.error": "Une erreur s'est produite. Veuillez réessayer ou me contacter directement par e-mail.",
   "contactform.captcha.error": "Veuillez confirmer que vous n'êtes pas un robot avant d'envoyer.",
-  "contactform.consent.label": "J'accepte que les données transmises via ce formulaire soient utilisées pour répondre à ma demande, conformément à la <a href=\"/politique-de-confidentialite\" target=\"_blank\" rel=\"noopener\">politique de confidentialité</a>.",
+  "contactform.consent.label": "J'accepte que les données transmises via ce formulaire soient utilisées pour répondre à ma demande, conformément à la <a href=\"/fr/politique-de-confidentialite\" target=\"_blank\" rel=\"noopener\">politique de confidentialité</a>.",
   "contactform.consent.error": "Veuillez accepter la politique de confidentialité pour continuer.",
   "provigis.medal.title": "Tiers responsable",
   "provigis.medal.description": "Je justifie de la conformité de mon dossier légal (Art. D8222-5 du Code du Travail) sur les documents officiels d'immatriculation d'entreprise et de régularité des cotisations sociales.",

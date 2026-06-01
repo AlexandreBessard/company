@@ -42,6 +42,10 @@ resource "aws_lambda_function" "contact" {
   runtime          = "nodejs20.x"
   role             = aws_iam_role.lambda_exec.arn
 
+  # Default is 3s, which the Cloudflare Turnstile verification + SES send can
+  # exceed on a cold start. Give it headroom so requests return instead of timing out.
+  timeout = 10
+
   environment {
     variables = {
       CONTACT_EMAIL    = var.contact_email
