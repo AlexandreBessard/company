@@ -1,0 +1,65 @@
+<section id="contact-form" class="contact-form py-5">
+  <div class="container" data-aos="fade-up">
+
+    <header class="section-header text-center mb-5">
+      <h2 class="fw-bold display-5" [innerHTML]="'contactform.title' | translate"></h2>
+      <p class="fs-5 text-muted" [innerHTML]="'contactform.subtitle' | translate"></p>
+    </header>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        @if (status === 'success') {
+          <div class="alert alert-success d-flex align-items-center gap-2 mb-4" role="alert">
+            <i class="bi bi-check-circle-fill fs-5"></i>
+            <span [innerHTML]="'contactform.success' | translate"></span>
+          </div>
+        }
+
+        @if (status === 'error') {
+          <div class="alert alert-danger d-flex align-items-center gap-2 mb-4" role="alert">
+            <i class="bi bi-exclamation-triangle-fill fs-5"></i>
+            <span [innerHTML]="'contactform.error' | translate"></span>
+          </div>
+        }
+
+        <form [formGroup]="form" (ngSubmit)="submit()" novalidate class="bg-white rounded-4 shadow-sm p-4 p-lg-5">
+
+          <div class="mb-4">
+            <label for="cf-name" class="form-label fw-semibold">{{ 'contactform.name.label' | translate }}</label>
+            <input id="cf-name" type="text" class="form-control form-control-lg" formControlName="name"
+                   [class.is-invalid]="name.invalid && name.touched"
+                   [placeholder]="'contactform.name.placeholder' | translate">
+            <div class="invalid-feedback" [innerHTML]="'contactform.name.error' | translate"></div>
+          </div>
+
+          <div class="mb-4">
+            <label for="cf-email" class="form-label fw-semibold">{{ 'contactform.email.label' | translate }}</label>
+            <input id="cf-email" type="email" class="form-control form-control-lg" formControlName="email"
+                   [class.is-invalid]="email.invalid && email.touched"
+                   [placeholder]="'contactform.email.placeholder' | translate">
+            <div class="invalid-feedback" [innerHTML]="'contactform.email.error' | translate"></div>
+          </div>
+
+          <div class="mb-5">
+            <label for="cf-message" class="form-label fw-semibold">{{ 'contactform.message.label' | translate }}</label>
+            <textarea id="cf-message" class="form-control form-control-lg" formControlName="message" rows="6"
+                      [class.is-invalid]="message.invalid && message.touched"
+                      [placeholder]="'contactform.message.placeholder' | translate"></textarea>
+            <div class="invalid-feedback" [innerHTML]="'contactform.message.error' | translate"></div>
+          </div>
+
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary btn-lg px-5" [disabled]="status === 'sending'">
+              @if (status === 'sending') {
+                <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+              }
+              {{ (status === 'sending' ? 'contactform.sending' : 'contactform.submit') | translate }}
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

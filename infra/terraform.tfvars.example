@@ -1,0 +1,6 @@
+aws_region    = "eu-west-3"
+contact_email = "you@example.com"
+allowed_origins = [
+  "https://lexoft-eurl.com",
+  "https://www.lexoft-eurl.com"
+]

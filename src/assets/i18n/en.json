@@ -199,6 +199,30 @@
   "certification.ai.description": "Foundational knowledge of artificial intelligence, machine learning, and use cases on AWS.",
   "certification.ai.aria": "View AI Practitioner Certification",
 
+  "contactform": {
+    "title": "Send a message",
+    "subtitle": "Fill in the form below and I'll get back to you as soon as possible.",
+    "name": {
+      "label": "Full name",
+      "placeholder": "John Doe",
+      "error": "Please enter your name."
+    },
+    "email": {
+      "label": "Email address",
+      "placeholder": "john@example.com",
+      "error": "Please enter a valid email address."
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "Tell me about your project...",
+      "error": "Message must be at least 10 characters."
+    },
+    "submit": "Send message",
+    "sending": "Sending...",
+    "success": "Your message has been sent! I'll get back to you shortly.",
+    "error": "Something went wrong. Please try again or contact me directly by email."
+  },
+
   "footer.description": "LEXOFT specializes in providing services and solutions for businesses and public organizations in custom software development.",
   "footer.links.title": "Links",
   "footer.links.home": "Home",

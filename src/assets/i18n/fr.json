@@ -158,6 +158,30 @@
   "certification.ai.title": "AWS Certified AI Practitioner",
   "certification.ai.description": "Notions fondamentales de l'intelligence artificielle, apprentissage automatique et cas d’usage sur AWS.",
   "certification.ai.aria": "Voir la certification AI Practitioner",
+  "contactform": {
+    "title": "Envoyer un message",
+    "subtitle": "Remplissez le formulaire ci-dessous et je vous répondrai dans les plus brefs délais.",
+    "name": {
+      "label": "Nom complet",
+      "placeholder": "Jean Dupont",
+      "error": "Veuillez saisir votre nom."
+    },
+    "email": {
+      "label": "Adresse e-mail",
+      "placeholder": "jean@exemple.com",
+      "error": "Veuillez saisir une adresse e-mail valide."
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "Parlez-moi de votre projet...",
+      "error": "Le message doit contenir au moins 10 caractères."
+    },
+    "submit": "Envoyer le message",
+    "sending": "Envoi en cours...",
+    "success": "Votre message a bien été envoyé ! Je vous répondrai très prochainement.",
+    "error": "Une erreur s'est produite. Veuillez réessayer ou me contacter directement par e-mail."
+  },
+
   "footer.description": "LEXOFT, spécialisée dans les services aux entreprises et administrations, propose une gamme de services et solutions dans le développement logiciel.",
   "footer.links.title": "Liens",
   "footer.links.home": "Accueil",

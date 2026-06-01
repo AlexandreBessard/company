@@ -1,0 +1,8 @@
+{
+  "/contact": {
+    "target": "https://ib4bc92tl4.execute-api.eu-west-3.amazonaws.com",
+    "secure": true,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}

@@ -6,6 +6,7 @@ import {FaqComponent} from "./faq/faq.component";
 import {ServicesComponent} from "./services/services.component";
 import {TeamComponent} from "./team/team.component";
 import {ContactComponent} from "./contact/contact.component";
+import {ContactFormComponent} from "./contact-form/contact-form.component";
 import {ClientsComponent} from "./clients/clients.component";
 import {PortfolioComponent} from "./portfolio/portfolio.component";
 import {RouterModule, RouterOutlet} from "@angular/router";
@@ -23,6 +24,7 @@ import {HeroComponent} from "../hero/hero.component";
     ServicesComponent,
     TeamComponent,
     ContactComponent,
+    ContactFormComponent,
     ClientsComponent,
     PortfolioComponent,
     CommonModule,
