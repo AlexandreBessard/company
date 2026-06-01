@@ -4,3 +4,11 @@ allowed_origins = [
   "https://lexoft-eurl.com",
   "https://www.lexoft-eurl.com"
 ]
+
+# Cloudflare Turnstile secret key (Dashboard → Turnstile → your widget).
+# The matching *site* key goes in src/environments/environment.prod.ts.
+turnstile_secret = "REPLACE_WITH_TURNSTILE_SECRET_KEY"
+
+# Optional — request throttling on the contact endpoint (defaults shown).
+# throttle_burst_limit = 5
+# throttle_rate_limit  = 2

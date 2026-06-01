@@ -44,8 +44,9 @@ resource "aws_lambda_function" "contact" {
 
   environment {
     variables = {
-      CONTACT_EMAIL  = var.contact_email
-      ALLOWED_ORIGINS = join(",", var.allowed_origins)
+      CONTACT_EMAIL    = var.contact_email
+      ALLOWED_ORIGINS  = join(",", var.allowed_origins)
+      TURNSTILE_SECRET = var.turnstile_secret
     }
   }
 }

@@ -3,6 +3,7 @@ import {RouterLink} from "@angular/router";
 import {TranslateModule} from "@ngx-translate/core";
 import {SanitizeHtmlPipe} from "../pipes/sanitizeHtml.pipe";
 import { LanguageService } from '../core/language.service';
+import { FragmentScrollDirective } from '../directives/fragment-scroll.directive';
 
 @Component({
   selector: 'app-footer',
@@ -10,7 +11,8 @@ import { LanguageService } from '../core/language.service';
   imports: [
     RouterLink,
     TranslateModule,
-    SanitizeHtmlPipe
+    SanitizeHtmlPipe,
+    FragmentScrollDirective
   ],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.css'

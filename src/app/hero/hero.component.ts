@@ -3,11 +3,12 @@ import { isPlatformBrowser, NgOptimizedImage } from '@angular/common';
 import AOS from 'aos';
 import { TranslateModule } from '@ngx-translate/core';
 import { SanitizeHtmlPipe } from '../pipes/sanitizeHtml.pipe';
+import { FragmentScrollDirective } from '../directives/fragment-scroll.directive';
 
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [TranslateModule, SanitizeHtmlPipe, NgOptimizedImage],
+  imports: [TranslateModule, SanitizeHtmlPipe, NgOptimizedImage, FragmentScrollDirective],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.css',
 })

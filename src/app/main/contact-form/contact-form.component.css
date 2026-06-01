@@ -1,3 +1,15 @@
+/* Honeypot anti-spam field — pushed off-screen rather than display:none, since
+   some bots ignore display:none fields. Invisible and unfocusable for humans. */
+.hp-field {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
 .contact-form {
   position: relative;
   background:

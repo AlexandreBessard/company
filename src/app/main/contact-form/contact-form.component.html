@@ -98,7 +98,23 @@
             <div class="invalid-feedback" [innerHTML]="'contactform.consent.error' | translate"></div>
           </div>
 
-          <button type="submit" class="btn btn-primary btn-lg w-100" [disabled]="status === 'sending'">
+          <!-- Honeypot: invisible to humans, only bots fill it. Kept off-screen
+               (not display:none, which some bots skip) and out of the tab order. -->
+          <div aria-hidden="true" class="hp-field">
+            <label for="cf-company">Company</label>
+            <input id="cf-company" type="text" formControlName="company"
+                   tabindex="-1" autocomplete="off">
+          </div>
+
+          <!-- Cloudflare Turnstile renders here -->
+          <div #turnstile class="mb-3"></div>
+          @if (captchaError) {
+            <div class="alert alert-warning py-2 small mb-3" role="alert"
+                 [innerHTML]="'contactform.captcha.error' | translate"></div>
+          }
+
+          <button type="submit" class="btn btn-primary btn-lg w-100"
+                  [disabled]="status === 'sending' || status === 'success'">
             @if (status === 'sending') {
               <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
             }
