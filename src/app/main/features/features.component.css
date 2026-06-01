@@ -1,24 +1,18 @@
-.services {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+.expertise-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #e9ecef;
 }
 
-.services ul {
-  list-style: none;
+.expertise-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1) !important;
 }
 
-.services li {
-  margin-bottom: 20px;
+.expertise-card--highlight {
+  background: linear-gradient(135deg, #f0f4ff, #e8f0fe) !important;
+  border-color: #c5d3f8;
 }
 
-.services h3 {
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 5px;
-}
-
-.services p {
-  font-size: 16px;
-  color: #666;
+.expertise-skills {
+  line-height: 1.8;
 }

@@ -1,40 +1,23 @@
-import {
-  ActivatedRouteSnapshot,
-  CanActivate,
-  CanActivateFn,
-  Router,
-  RouterStateSnapshot,
-  UrlTree
-} from '@angular/router';
-import {inject, Injectable} from "@angular/core";
-import {Observable} from "rxjs";
+import { inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { ActivatedRouteSnapshot, CanActivateFn } from '@angular/router';
 
-@Injectable({
-  providedIn: 'root'
-})
-export class PortfolioGuard implements CanActivate {
+/**
+ * When the home route is reached with `?from=portfolio`, smooth-scroll to the
+ * #portfolio anchor once the view has rendered. No-op during prerendering.
+ */
+export const portfolioScrollGuard: CanActivateFn = (next: ActivatedRouteSnapshot) => {
+  const platformId = inject(PLATFORM_ID);
 
-  constructor(private router: Router) {}
+  if (isPlatformBrowser(platformId) && next.queryParams['from'] === 'portfolio') {
+    setTimeout(() => {
+      document.getElementById('portfolio')?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest',
+      });
+    }, 100);
+  }
 
-  canActivate(
-    next: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    // Accessing query parameters
-    const queryParams = next.queryParams;
-    const fromQueryParam = queryParams['from'];
-
-    // Your logic here based on the query parameters
-    // For example, if you want to allow navigation only if fromQueryParam exists and has a specific value
-    if (fromQueryParam && fromQueryParam === 'portfolio') {
-        this.router.navigate(['/home']).then(() => {
-          setTimeout(() => {
-            const element = document.getElementById('portfolio');
-            if (element) {
-              element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
-            }
-          }, 100); // Adjust the timeout value as needed to ensure the home page is fully loaded before scrolling
-        });
-    }
-    return true;
-    }
-}
+  return true;
+};

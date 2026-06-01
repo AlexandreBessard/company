@@ -9,6 +9,8 @@
       <p [innerHTML]="'certification.main.description' | translate | sanitizeHtml"></p>
     </div>
 
+    <!-- ===== Cloud & AI ===== -->
+    <h3 class="cert-group-title">{{ 'certification.group.cloud' | translate }}</h3>
     <div class="row gy-5">
       <!-- AWS Solutions Architect -->
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
@@ -44,41 +46,23 @@
         </div>
       </div>
 
-      <!-- Java SE 11 -->
+      <!-- AI Practitioner -->
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
         <div class="card h-100 shadow-sm text-center p-4 border-0 rounded-4">
-          <img src="assets/img/02_Java-SE-11-Developer_Professional__1_.png" alt="Logo Java SE 11" class="img-fluid mx-auto mb-3" style="width: 220px;">
-          <h5 [innerHTML]="'certification.java11.title' | translate | sanitizeHtml" class="fw-bold"></h5>
-          <p [innerHTML]="'certification.java11.description' | translate | sanitizeHtml"></p>
-          <a href="https://www.credly.com/badges/858cb86b-9094-45ff-9739-eab43e0517fd?source=linked_in_profile"
+          <img src="assets/img/ia_practitionner.png" alt="Logo AI Practitioner" class="img-fluid mx-auto mb-3" style="width: 220px;">
+          <h5 [innerHTML]="'certification.ai.title' | translate | sanitizeHtml" class="fw-bold"></h5>
+          <p [innerHTML]="'certification.ai.description' | translate | sanitizeHtml"></p>
+          <a href="https://www.credly.com/badges/43832cbc-d606-45e0-8d0c-acfa23361c3f/linked_in_profile"
              class="btn btn-outline-primary mt-auto" target="_blank">{{'certification.read.more' | translate}} <i class="bi bi-arrow-right"></i></a>
         </div>
       </div>
+    </div>
 
-      <!-- Java SE 8 -->
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-        <div class="card h-100 shadow-sm text-center p-4 border-0 rounded-4">
-          <img src="assets/img/java.png" alt="Logo Java SE 8" class="img-fluid mx-auto mb-3" style="width: 220px;">
-          <h5 [innerHTML]="'certification.java8.title' | translate | sanitizeHtml" class="fw-bold"></h5>
-          <p [innerHTML]="'certification.java8.description' | translate | sanitizeHtml"></p>
-          <a href="https://www.credly.com/badges/b91dcf21-ad84-46e7-87fd-bf360854de6b"
-             class="btn btn-outline-primary mt-auto" target="_blank">{{'certification.read.more' | translate}} <i class="bi bi-arrow-right"></i></a>
-        </div>
-      </div>
-
-      <!-- Spring -->
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
-        <div class="card h-100 shadow-sm text-center p-4 border-0 rounded-4">
-          <img src="assets/img/vmware.png" alt="Logo VMware Spring" class="img-fluid mx-auto mb-3" style="width: 220px;">
-          <h5 [innerHTML]="'certification.spring.title' | translate | sanitizeHtml" class="fw-bold"></h5>
-          <p [innerHTML]="'certification.spring.description' | translate | sanitizeHtml"></p>
-          <a href="https://www.credly.com/badges/a492a8ec-d5ef-4569-b81c-31c324cdc475?source=linked_in_profile"
-             class="btn btn-outline-primary mt-auto" target="_blank">{{'certification.read.more' | translate}} <i class="bi bi-arrow-right"></i></a>
-        </div>
-      </div>
-
+    <!-- ===== DevOps ===== -->
+    <h3 class="cert-group-title">{{ 'certification.group.devops' | translate }}</h3>
+    <div class="row gy-5">
       <!-- Kubernetes -->
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
         <div class="card h-100 shadow-sm text-center p-4 border-0 rounded-4">
           <img src="assets/img/kubernetes.png" alt="Logo Kubernetes" class="img-fluid mx-auto mb-3" style="width: 220px;">
           <h5 [innerHTML]="'certification.k8s.title' | translate | sanitizeHtml" class="fw-bold"></h5>
@@ -89,7 +73,7 @@
       </div>
 
       <!-- Terraform -->
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="450">
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
         <div class="card h-100 shadow-sm text-center p-4 border-0 rounded-4">
           <img src="assets/img/terraform.png" alt="Logo Terraform" class="img-fluid mx-auto mb-3" style="width: 220px;">
           <h5 [innerHTML]="'certification.terraform.title' | translate | sanitizeHtml" class="fw-bold"></h5>
@@ -98,14 +82,40 @@
              class="btn btn-outline-primary mt-auto" target="_blank">{{'certification.read.more' | translate}} <i class="bi bi-arrow-right"></i></a>
         </div>
       </div>
+    </div>
 
-      <!-- AI Practitioner -->
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+    <!-- ===== Programming ===== -->
+    <h3 class="cert-group-title">{{ 'certification.group.programming' | translate }}</h3>
+    <div class="row gy-5">
+      <!-- Java SE 11 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
         <div class="card h-100 shadow-sm text-center p-4 border-0 rounded-4">
-          <img src="assets/img/ia_practitionner.png" alt="Logo AI Practitioner" class="img-fluid mx-auto mb-3" style="width: 220px;">
-          <h5 [innerHTML]="'certification.ai.title' | translate | sanitizeHtml" class="fw-bold"></h5>
-          <p [innerHTML]="'certification.ai.description' | translate | sanitizeHtml"></p>
-          <a href="https://www.credly.com/badges/43832cbc-d606-45e0-8d0c-acfa23361c3f/linked_in_profile"
+          <img src="assets/img/02_Java-SE-11-Developer_Professional__1_.png" alt="Logo Java SE 11" class="img-fluid mx-auto mb-3" style="width: 220px;">
+          <h5 [innerHTML]="'certification.java11.title' | translate | sanitizeHtml" class="fw-bold"></h5>
+          <p [innerHTML]="'certification.java11.description' | translate | sanitizeHtml"></p>
+          <a href="https://www.credly.com/badges/858cb86b-9094-45ff-9739-eab43e0517fd?source=linked_in_profile"
+             class="btn btn-outline-primary mt-auto" target="_blank">{{'certification.read.more' | translate}} <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Spring -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+        <div class="card h-100 shadow-sm text-center p-4 border-0 rounded-4">
+          <img src="assets/img/vmware.png" alt="Logo VMware Spring" class="img-fluid mx-auto mb-3" style="width: 220px;">
+          <h5 [innerHTML]="'certification.spring.title' | translate | sanitizeHtml" class="fw-bold"></h5>
+          <p [innerHTML]="'certification.spring.description' | translate | sanitizeHtml"></p>
+          <a href="https://www.credly.com/badges/a492a8ec-d5ef-4569-b81c-31c324cdc475?source=linked_in_profile"
+             class="btn btn-outline-primary mt-auto" target="_blank">{{'certification.read.more' | translate}} <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Java SE 8 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="card h-100 shadow-sm text-center p-4 border-0 rounded-4">
+          <img src="assets/img/java.png" alt="Logo Java SE 8" class="img-fluid mx-auto mb-3" style="width: 220px;">
+          <h5 [innerHTML]="'certification.java8.title' | translate | sanitizeHtml" class="fw-bold"></h5>
+          <p [innerHTML]="'certification.java8.description' | translate | sanitizeHtml"></p>
+          <a href="https://www.credly.com/badges/b91dcf21-ad84-46e7-87fd-bf360854de6b"
              class="btn btn-outline-primary mt-auto" target="_blank">{{'certification.read.more' | translate}} <i class="bi bi-arrow-right"></i></a>
         </div>
       </div>

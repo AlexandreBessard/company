@@ -1,25 +1,30 @@
-import {ApplicationConfig, importProvidersFrom} from '@angular/core';
-import {provideRouter, withEnabledBlockingInitialNavigation} from '@angular/router';
+import { ApplicationConfig, importProvidersFrom, TransferState } from '@angular/core';
+import { provideRouter, withEnabledBlockingInitialNavigation } from '@angular/router';
 
 import { routes } from './app.routes';
-import {HttpClient, HttpClientModule} from "@angular/common/http";
-import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
-import {TranslateHttpLoader} from "@ngx-translate/http-loader";
+import { HttpClient, provideHttpClient, withFetch } from '@angular/common/http';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { provideClientHydration } from '@angular/platform-browser';
+import { BrowserTranslateLoader } from './core/browser-translate.loader';
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    importProvidersFrom(HttpClientModule),
-    importProvidersFrom(TranslateModule.forRoot({
+    // withFetch() is recommended for SSR/prerendering (perf + compatibility).
+    provideHttpClient(withFetch()),
+    importProvidersFrom(
+      TranslateModule.forRoot({
         loader: {
           provide: TranslateLoader,
           useFactory: HttpLoaderFactory,
-          deps: [HttpClient]
-        }
-      }
-    )),
-    provideRouter(routes, withEnabledBlockingInitialNavigation())],
+          deps: [HttpClient, TransferState],
+        },
+      })
+    ),
+    provideRouter(routes, withEnabledBlockingInitialNavigation()),
+    provideClientHydration(),
+  ],
 };
 
-export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
-  return new TranslateHttpLoader(http);
+export function HttpLoaderFactory(http: HttpClient, transferState: TransferState): BrowserTranslateLoader {
+  return new BrowserTranslateLoader(http, transferState);
 }

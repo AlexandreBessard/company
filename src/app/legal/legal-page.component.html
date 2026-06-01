@@ -1,0 +1,7 @@
+<section class="legal-page">
+  <div class="container">
+    <a [routerLink]="['/', lang.current]" class="legal-back">{{ 'legal.back' | translate }}</a>
+    <h1>{{ (prefix + '.title') | translate }}</h1>
+    <div class="legal-content" [innerHTML]="(prefix + '.content') | translate | sanitizeHtml"></div>
+  </div>
+</section>

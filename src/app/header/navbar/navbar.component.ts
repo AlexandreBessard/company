@@ -1,77 +1,52 @@
-import {Component, OnInit, Renderer2} from '@angular/core';
-import {Router, RouterModule} from "@angular/router";
-import {NgStyle} from "@angular/common";
-import {TranslateModule, TranslateService} from "@ngx-translate/core";
-declare var bootstrap: any;
+import { Component } from '@angular/core';
+import { Router, RouterModule } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
+import { LanguageService } from '../../core/language.service';
 
+declare var bootstrap: any;
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterModule, NgStyle, TranslateModule],
+  imports: [RouterModule, TranslateModule],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+  styleUrl: './navbar.component.css',
 })
-export class NavbarComponent implements OnInit{
+export class NavbarComponent {
+  constructor(
+    private router: Router,
+    public lang: LanguageService
+  ) {}
 
-  private toggle: boolean = false;
-  defaultLanguageIsEnglish: boolean = true;
-
-
-  constructor(private router: Router,
-              private translate: TranslateService) {}
-
-  ngOnInit(): void {
-    this.setDefaultLanguage();
-
-    // Initialize Bootstrap components
-    //var navbarCollapse = new bootstrap.Collapse(document.getElementById('navbarNav'));
-  }
-
-  scrollToElement(elementId: string) {
-    this.router.navigate(['/home']).then(() => {
-      setTimeout(() => {
-        const element = document.getElementById(elementId);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
-        }
-      }, 100); // Adjust the timeout value as needed to ensure the home page is fully loaded before scrolling
-    });
+  /** Drives the EN/FR switch state. */
+  get isEnglish(): boolean {
+    return this.lang.current === 'en';
   }
 
   toggleLanguage(): void {
-    this.toggle = !this.toggle;
-    const newLanguage = this.toggle ? 'fr' : 'en';
-    this.translate.use(newLanguage);
-    // Store language preference in local storage
-    localStorage.setItem('preferredLanguage', newLanguage);
+    this.lang.toggle();
   }
 
-  private setDefaultLanguage(): void {
-    const language = this.translate.getBrowserLang() || 'en';
-    if (localStorage.getItem("preferredLanguage") === 'fr') {
-      const language = localStorage.getItem("preferredLanguage");
-      if (language === 'fr') {
-        this.defaultLanguageIsEnglish = false;
-        this.toggle = true;
-        localStorage.setItem("preferredLanguage", 'fr');
-        return;
-      } else {
-        this.defaultLanguageIsEnglish = true;
-        this.toggle = false;
-        localStorage.setItem("preferredLanguage", 'en');
-      }
-    } else if (language === 'en') {
-      this.defaultLanguageIsEnglish = true;
-      localStorage.setItem("preferredLanguage", language);
-    }
+  /** Navigate to the current-language home, then smooth-scroll to a section. */
+  scrollToElement(elementId: string): void {
+    this.router.navigate(['/', this.lang.current]).then(() => {
+      setTimeout(() => {
+        document.getElementById(elementId)?.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+          inline: 'nearest',
+        });
+      }, 100);
+    });
   }
 
-  closeNavbar() {
+  closeNavbar(): void {
     const navbar = document.getElementById('navbarNavAltMarkup');
-    const bsCollapse = bootstrap.Collapse.getInstance(navbar) || new bootstrap.Collapse(navbar!, { toggle: false });
+    if (!navbar) {
+      return;
+    }
+    const bsCollapse =
+      bootstrap.Collapse.getInstance(navbar) || new bootstrap.Collapse(navbar, { toggle: false });
     bsCollapse.hide();
   }
-
-
 }

@@ -1,31 +1,26 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import {HeaderComponent} from "./header/header.component";
-import {HeroComponent} from "./hero/hero.component";
-import {MainComponent} from "./main/main.component";
-import {FooterComponent} from "./footer/footer.component";
-import {TranslateModule, TranslateService} from "@ngx-translate/core";
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { DEFAULT_LANG, SUPPORTED_LANGS } from './core/i18n';
+import { SeoService } from './core/seo.service';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, HeroComponent, MainComponent, FooterComponent, TranslateModule],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, TranslateModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'LEXOFT';
 
-  constructor(private translate: TranslateService) {
-    // fall-back language that is used if a translation can not be found.
-    //translate.setDefaultLang('fr');
-    // Gives fr or en
-    const language: string | undefined = translate.getBrowserLang() || 'en';
-    translate.use(language);
-    localStorage.setItem("preferredLanguage", language);
-  }
-
-  useLanguage(language: string): void {
-    this.translate.use(language);
+  constructor(translate: TranslateService, seo: SeoService) {
+    // The active language is driven by the URL (see langGuard); here we only
+    // register the supported set and a fallback for missing keys.
+    translate.addLangs([...SUPPORTED_LANGS]);
+    translate.setDefaultLang(DEFAULT_LANG);
+    seo.init();
   }
 }

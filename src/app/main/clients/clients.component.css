@@ -1,4 +1,35 @@
-.carousel-item img {
-  width: 300px; /* Adjust this value as needed */
-  height: 150px; /* Adjust this value as needed */
+.client-card {
+  min-height: 130px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.client-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Uniform logo sizing so every brand occupies the same visual footprint.
+   Fixed height (not max-height) normalizes every logo to the same visual
+   height — scaling small/padded marks UP instead of only shrinking large ones. */
+.client-logo {
+  height: 60px;
+  max-width: 85%;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.9;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.client-card:hover .client-logo {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* Touch devices have no hover — show logos in full color */
+@media (hover: none) {
+  .client-logo {
+    filter: grayscale(0%);
+    opacity: 1;
+  }
 }

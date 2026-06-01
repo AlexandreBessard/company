@@ -1,0 +1,58 @@
+<section id="experience" class="experience-section py-5">
+  <div class="container" data-aos="fade-up">
+
+    <header class="section-header text-center mb-5">
+      <h2>{{ 'experience.section' | translate }}</h2>
+      <p class="lead">{{ 'experience.title' | translate }}</p>
+      <p class="text-muted">{{ 'experience.subtitle' | translate }}</p>
+    </header>
+
+    <div class="timeline">
+
+      @for (i of missions; track i) {
+        <div class="timeline-item" data-aos="fade-up" [attr.data-aos-delay]="i * 60">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content rounded-4 shadow-sm p-4">
+
+            <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-2">
+              <div>
+                <h5 class="fw-bold mb-1">{{ ('experience.' + i + '.role') | translate }}</h5>
+                <p class="timeline-company mb-0">
+                  <i class="bi bi-building me-1"></i>{{ ('experience.' + i + '.company') | translate }}
+                </p>
+              </div>
+              <div class="text-end">
+                <span class="badge bg-primary rounded-pill px-3 py-2 mb-1 d-block">
+                  {{ ('experience.' + i + '.period') | translate }}
+                </span>
+                <span class="timeline-location text-muted small">
+                  <i class="bi bi-geo-alt me-1"></i>{{ ('experience.' + i + '.location') | translate }}
+                </span>
+              </div>
+            </div>
+
+            <p class="timeline-desc" [innerHTML]="('experience.' + i + '.description') | translate | sanitizeHtml"></p>
+
+            <ul class="timeline-highlights mb-3"
+                [innerHTML]="('experience.' + i + '.highlights') | translate | sanitizeHtml"></ul>
+
+            <div class="timeline-stack">
+              <i class="bi bi-stack me-2 text-muted"></i>
+              <span class="text-muted small">{{ ('experience.' + i + '.stack') | translate }}</span>
+            </div>
+
+          </div>
+        </div>
+      }
+
+    </div>
+
+    <div class="text-center mt-5" data-aos="fade-up">
+      <div class="alert alert-info d-inline-flex align-items-center gap-2 rounded-pill px-4 py-2 border-0">
+        <i class="bi bi-envelope-paper"></i>
+        {{ 'experience.recommendation' | translate }}
+      </div>
+    </div>
+
+  </div>
+</section>

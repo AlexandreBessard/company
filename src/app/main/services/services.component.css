@@ -7,6 +7,19 @@
   text-align: center;
 }
 
+.cert-group-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--bs-primary, #0d6efd);
+  display: table;
+}
+
 .card {
   transition: transform 0.3s ease;
 }

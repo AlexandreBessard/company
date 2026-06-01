@@ -1,13 +1,54 @@
-<section id="contact-form" class="contact-form py-5">
+<section id="contact" class="contact-form py-5">
   <div class="container" data-aos="fade-up">
 
     <header class="section-header text-center mb-5">
-      <h2 class="fw-bold display-5" [innerHTML]="'contactform.title' | translate"></h2>
-      <p class="fs-5 text-muted" [innerHTML]="'contactform.subtitle' | translate"></p>
+      <h2 class="fw-bold display-5" [innerHTML]="'contact.title' | translate"></h2>
+      <p class="fs-5 text-muted" [innerHTML]="'contact.subtitle' | translate"></p>
     </header>
 
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
+    <div class="row g-4 g-lg-5 justify-content-center align-items-stretch">
+
+      <!-- Coordonnées -->
+      <div class="col-lg-5">
+        <div class="info-panel h-100 rounded-4 shadow-sm bg-white p-4 p-lg-5">
+
+          <div class="d-flex align-items-start gap-3 mb-4">
+            <i class="bi bi-envelope fs-3 text-primary lh-1"></i>
+            <div>
+              <h5 class="fw-bold mb-1" [innerHTML]="'contact.email.title' | translate"></h5>
+              <p class="text-muted mb-0" [innerHTML]="'contact.email.value' | translate"></p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start gap-3 mb-4">
+            <i class="bi bi-telephone fs-3 text-success lh-1"></i>
+            <div>
+              <h5 class="fw-bold mb-1" [innerHTML]="'contact.phone.title' | translate"></h5>
+              <p class="text-muted mb-0" [innerHTML]="'contact.phone.value' | translate"></p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start gap-3 mb-4">
+            <i class="bi bi-geo-alt fs-3 text-danger lh-1"></i>
+            <div>
+              <h5 class="fw-bold mb-1" [innerHTML]="'contact.address.title' | translate"></h5>
+              <p class="text-muted mb-0" [innerHTML]="'contact.address.value' | translate"></p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start gap-3">
+            <i class="bi bi-clock fs-3 text-warning lh-1"></i>
+            <div>
+              <h5 class="fw-bold mb-1" [innerHTML]="'contact.hours.title' | translate"></h5>
+              <p class="text-muted mb-0" [innerHTML]="'contact.hours.value' | translate"></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Formulaire -->
+      <div class="col-lg-7">
 
         @if (status === 'success') {
           <div class="alert alert-success d-flex align-items-center gap-2 mb-4" role="alert">
@@ -41,7 +82,7 @@
             <div class="invalid-feedback" [innerHTML]="'contactform.email.error' | translate"></div>
           </div>
 
-          <div class="mb-5">
+          <div class="mb-4">
             <label for="cf-message" class="form-label fw-semibold">{{ 'contactform.message.label' | translate }}</label>
             <textarea id="cf-message" class="form-control form-control-lg" formControlName="message" rows="6"
                       [class.is-invalid]="message.invalid && message.touched"
@@ -49,17 +90,24 @@
             <div class="invalid-feedback" [innerHTML]="'contactform.message.error' | translate"></div>
           </div>
 
-          <div class="text-center">
-            <button type="submit" class="btn btn-primary btn-lg px-5" [disabled]="status === 'sending'">
-              @if (status === 'sending') {
-                <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
-              }
-              {{ (status === 'sending' ? 'contactform.sending' : 'contactform.submit') | translate }}
-            </button>
+          <div class="mb-4 form-check">
+            <input id="cf-consent" type="checkbox" class="form-check-input" formControlName="consent"
+                   [class.is-invalid]="consent.invalid && consent.touched">
+            <label for="cf-consent" class="form-check-label small text-muted"
+                   [innerHTML]="'contactform.consent.label' | translate | sanitizeHtml"></label>
+            <div class="invalid-feedback" [innerHTML]="'contactform.consent.error' | translate"></div>
           </div>
+
+          <button type="submit" class="btn btn-primary btn-lg w-100" [disabled]="status === 'sending'">
+            @if (status === 'sending') {
+              <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+            }
+            {{ (status === 'sending' ? 'contactform.sending' : 'contactform.submit') | translate }}
+          </button>
 
         </form>
       </div>
+
     </div>
   </div>
 </section>

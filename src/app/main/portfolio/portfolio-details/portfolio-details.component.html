@@ -1,8 +1,8 @@
 <section class="breadcrumbs">
   <div class="container">
     <ol>
-      <li><a [routerLink]="['/home']">Accueil</a></li>
-      <li><a [routerLink]="['/home']" [queryParams]="{ from: 'portfolio' }">Portfolio</a></li>
+      <li><a [routerLink]="['/', lang.current]">Accueil</a></li>
+      <li><a [routerLink]="['/', lang.current]" [queryParams]="{ from: 'portfolio' }">Portfolio</a></li>
       <li>Portfolio Details</li>
     </ol>
     <h2>Portfolio Details</h2>

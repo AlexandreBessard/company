@@ -1,242 +1,236 @@
 {
-  "demo.header": "Welcome to my new application",
-  "demo.text": "Here’s how it works",
-  "nav.whoweare": "What is LEXOFT ?",
-  "nav.values": "My values",
-  "nav.expertise": "My expertise",
+  "seo.home.title": "LEXOFT — Senior Freelance AWS Cloud & IAM Architect | France & Canada",
+  "seo.home.description": "Alexandre Bessard — senior freelance cloud architect & engineer (LEXOFT EURL). AWS, DevOps, IAM/security (Keycloak, FIDO2), Java & Angular. 6–24 month missions, France & Canada.",
+  "seo.portfolio.title": "Portfolio — LEXOFT | Cloud & DevOps case studies",
+  "seo.portfolio.description": "Selected freelance engagements by LEXOFT: AWS architecture, DevOps, IAM and software delivery for enterprise and public-sector clients.",
+  "seo.legal.mentions.title": "Legal notice — LEXOFT",
+  "seo.legal.mentions.description": "Legal notice for the LEXOFT EURL website: publisher, hosting and contact details.",
+  "seo.legal.privacy.title": "Privacy policy — LEXOFT",
+  "seo.legal.privacy.description": "How LEXOFT EURL collects, uses and protects your personal data, in line with the GDPR.",
+
+  "nav.about": "About",
+  "nav.expertise": "Expertise",
+  "nav.experience": "Experience",
   "nav.certifications": "Certifications",
-  "nav.team": "Team",
-  "nav.faq": "Q&A",
   "nav.clients": "Clients",
+  "nav.faq": "FAQ",
   "nav.contact": "Contact",
 
+  "hero.availability": "Available immediately",
+  "hero.subtitle": "Senior Cloud Architect & Engineer",
+  "hero.tagline": "AWS · DevOps · IAM · Java / Angular",
+  "hero.tjm": "Day rate: €750 – €850 excl. VAT",
+  "hero.location": "Orléans, France · Remote / Hybrid · 6–24 month missions",
+  "hero.cta.primary": "Let's discuss your project",
+  "hero.cta.secondary": "Online CV",
 
-  "whoweare.section": "What is LEXOFT?",
-  "whoweare.title": "<h1><span>LEXOFT</span> is much more than a provider: it's a dedicated partner for the success of your projects.</h1>",
-  "whoweare.description": "<h2>Your trusted technical partner</h2>\n\n<p>\n  I am <strong>Alexandre Bessard</strong>, founder and CEO of LEXOFT.<br><br><strong>Specialized in Java, Spring, TypeScript, Angular, Kubernetes, Terraform, AWS, and artificial intelligence</strong>,\n  I design powerful, scalable, and fully customized software solutions.\n</p>\n\n<p>\n  I hold <strong>recognized technical certifications</strong>\n  (AWS, Oracle, HashiCorp, Kubernetes, Spring...), ensuring a high level\n  of expertise and reliability.\n</p>\n\n<p>\n  LEXOFT is a legally registered French company compliant with regulations, enabling transparent, simple, and professional collaboration.\n</p>\n\n<p>\n  <strong>My top priority: your satisfaction.</strong><br>\n  Each project is carried out with attentiveness, rigor, and commitment to meet your exact needs.\n</p>\n\n<p>\n  Looking to develop a Java application, modernize an interface,\n  migrate to the AWS cloud, or strengthen your online presence?<br>\n  <strong>LEXOFT brings your ideas to life with expertise, passion, and dedication.</strong>\n</p>\n",
-  "whoweare.image.description": "LEXOFT – Expertise, consulting & software innovation",
+  "stats.years.label": "years of experience",
+  "stats.certs.label": "cloud & vendor certifications",
+  "stats.users.label": "users protected",
+  "stats.incidents.label": "critical incident (2 years)",
+  "stats.missions.label": "completed missions",
+  "stats.countries.label": "countries (France + Canada)",
+
+  "about.section": "About",
+  "about.title": "Senior Cloud & IAM Architect, founder of LEXOFT",
+  "about.p1": "With <strong>9 years of experience</strong> on high-criticality projects, I work as a senior cloud architect and engineer, designing and industrializing secure cloud-native platforms for the public sector, banking, and SaaS vendors.",
+  "about.p2": "My strength: <strong>high-security IAM systems</strong>. Most recent reference mission: 2 years at Atos / French Ministry of Education on the <strong>National Identity Registry</strong> — 33 academies, 5M+ users, <strong>0 critical security incidents</strong>.",
+  "about.p3": "Proven international experience in Canada (Toronto, Montréal) in <strong>fintech</strong> and <strong>cloud SaaS</strong>. Atos recommendation letters available on request.",
+  "about.availability.label": "Available immediately",
+  "about.rate.label": "€750 – €850/day excl. VAT",
+  "about.remote.label": "Remote / Hybrid",
+  "about.linkedin": "LinkedIn profile",
+  "about.cv": "Online CV",
+
+  "expertise.section": "Expertise",
+  "expertise.title": "Areas of excellence",
+  "expertise.subtitle": "Full-stack expertise grounded in critical projects — public cloud, banking, national education.",
+  "expertise.domain.cloud.title": "Cloud AWS",
+  "expertise.domain.cloud.skills": "EKS · ECS Fargate · Lambda · S3 · RDS · EC2 · CloudWatch · IAM · SNS · SQS · Bedrock · VPC · Route 53",
+  "expertise.domain.devops.title": "DevOps & IaC",
+  "expertise.domain.devops.skills": "Terraform · Kubernetes (CKAD) · Docker · GitLab CI/CD · Jenkins · Ansible · Helm · Prometheus · Grafana",
+  "expertise.domain.iam.title": "IAM & Security",
+  "expertise.domain.iam.skills": "Keycloak (SPI) · MidPoint · LDAP · OAuth2/OIDC · SAML 2.0 · FIDO2/WebAuthn · MFA · TOTP · GDPR",
+  "expertise.domain.java.title": "Backend Java",
+  "expertise.domain.java.skills": "Java 11/17 · Spring Boot · Spring Batch · Spring Security · Micronaut · Python · REST APIs · Kafka · Microservices",
+  "expertise.domain.frontend.title": "Front-end Angular",
+  "expertise.domain.frontend.skills": "Angular 14–21 · TypeScript · RxJS · HTML5 · CSS3 · Bootstrap",
+  "expertise.domain.ai.title": "AI & GenAI",
+  "expertise.domain.ai.skills": "AWS Bedrock · Claude · Titan · RAG · LangChain · pgvector · Prompt Engineering · AI Agents",
+
+  "experience.section": "Experience",
+  "experience.title": "Recent missions",
+  "experience.subtitle": "9 years on high-stakes technical projects — public sector, banking, cloud SaaS, international.",
+  "experience.recommendation": "Recommendation letters available on request",
+
+  "experience.1.role": "Senior Cloud / IAM Architect & Engineer",
+  "experience.1.company": "Atos · French Ministry of Education",
+  "experience.1.period": "Jun 2024 – May 2026 · 2 years",
+  "experience.1.location": "Orléans / Remote",
+  "experience.1.description": "National Identity Registry (RNI) — national IAM platform covering <strong>33 academies and 5M+ users</strong>.",
+  "experience.1.highlights": "<li>End-to-end IAM architecture: Keycloak + MidPoint + LDAP, <strong>0 critical security incidents</strong> over 2 years.</li><li>Strong authentication: FIDO2/WebAuthn, OTP/TOTP, enforced MFA — <strong>–60% access support tickets</strong>.</li><li>Zero-downtime GitLab CI/CD pipelines across 5 environments (dev → prod).</li><li>Spring Batch processing <strong>500K+ LDAP/CSV entries</strong> per cycle.</li>",
+  "experience.1.stack": "Java 17 · Spring Boot · Spring Batch · Angular 14–18 · Keycloak · MidPoint · LDAP · FIDO2/WebAuthn · GitLab CI/CD · Docker · PostgreSQL · Python",
+
+  "experience.2.role": "Senior Full-Stack Engineer (reinforcement)",
+  "experience.2.company": "Atos · BRGM",
+  "experience.2.period": "Apr. – May 2024 · 2 months",
+  "experience.2.location": "Orléans",
+  "experience.2.description": "French Geological Survey — full-stack reinforcement on a geotechnical sensor platform.",
+  "experience.2.highlights": "<li>New features validated by Tech Leads; robust REST APIs.</li><li>Angular 17 UX overhaul; unit test coverage raised to <strong>85%</strong>.</li>",
+  "experience.2.stack": "Angular 17 · Java · Spring Boot · REST APIs · PostgreSQL",
+
+  "experience.3.role": "Senior Software Engineer Cloud / AWS",
+  "experience.3.company": "Mimecast",
+  "experience.3.period": "Jan. – Dec. 2023 · 1 year",
+  "experience.3.location": "Toronto, Canada",
+  "experience.3.description": "Cloud-native SaaS platform for large-scale data collection and analytics.",
+  "experience.3.highlights": "<li>Java/Micronaut microservices on AWS ECS Fargate, multi-AZ architecture — <strong>99.9% SLA</strong>.</li><li>Multi-threaded Java library for S3 transfers — <strong>–50% batch processing time</strong>.</li><li>FinOps: <strong>–25% cloud costs</strong> via Spot instances and S3 lifecycle policies.</li>",
+  "experience.3.stack": "Java 11 · Micronaut · AWS ECS Fargate · S3 · CloudWatch · Lambda · SNS · Terraform · Jenkins · Docker · Kafka · PostgreSQL",
+
+  "experience.4.role": "Lead Full-Stack Developer",
+  "experience.4.company": "National Bank of Canada",
+  "experience.4.period": "Nov. 2021 – Oct. 2022 · 1 year",
+  "experience.4.location": "Toronto, Canada",
+  "experience.4.description": "Critical real-time financial analytics platform (ActiveViam) — highly regulated environment.",
+  "experience.4.highlights": "<li>Java/Spring Boot + React microservices architecture, OAuth2 APIs — <strong>99.95% production availability</strong>.</li><li>Multi-AZ AWS EKS infrastructure, automated CI/CD, CloudWatch/Prometheus/Grafana monitoring.</li><li>FinOps: <strong>–20% cloud costs</strong>.</li>",
+  "experience.4.stack": "Java · Spring Boot · Spring Security · React · AWS EKS · Kubernetes · GitLab · Prometheus · Grafana",
+
+  "experience.5.role": "Full-Stack Java Developer",
+  "experience.5.company": "Desjardins",
+  "experience.5.period": "Jul. 2019 – Jul. 2021 · 2 years",
+  "experience.5.location": "Montréal, Canada",
+  "experience.5.description": "Critical account-opening application deployed across all Desjardins branches in Canada.",
+  "experience.5.highlights": "<li>Critical Spring Boot/Spring MVC features serving thousands of daily internal users.</li><li>Responsive UX for banking agents; end-to-end ownership: requirements → design → dev → prod → follow-up.</li>",
+  "experience.5.stack": "Java · Spring Boot · Spring MVC · Bootstrap · JavaScript · Oracle DB",
+
+  "experience.6.role": "Java Developer / DevOps",
+  "experience.6.company": "Accenture · BNP Paribas",
+  "experience.6.period": "Nov. 2017 – Aug. 2018 · 10 months",
+  "experience.6.location": "Paris",
+  "experience.6.description": "BNP Paribas banking project — DevOps tooling and application development.",
+  "experience.6.highlights": "<li>Set up DevOps toolchain: Ansible, Jenkins, Nexus, GEMFIRE.</li><li>Java email library reused by <strong>4 teams</strong>.</li>",
+  "experience.6.stack": "Java · Ansible · Jenkins · Nexus · GEMFIRE · IBM WAS · Splunk",
+
+  "faq.title": "Frequently Asked Questions",
+  "faq.subtitle": "Everything you need to know before contacting me",
+  "faq.button.1": "What is your day rate?",
+  "faq.button.2": "Are you available immediately?",
+  "faq.button.3": "Remote or on-site?",
+  "faq.button.4": "What contract types do you accept?",
+  "faq.button.5": "What sectors have you worked in?",
+  "faq.button.6": "Do you provide recommendation letters?",
+  "faq.button.7": "What is your main specialty?",
+  "faq.answer.1": "My day rate is <strong>€750 to €850 excl. VAT</strong> depending on context and mission length. I work on a time-and-materials basis through LEXOFT EURL.",
+  "faq.answer.2": "Yes, I am <strong>available immediately</strong> for missions of <strong>6 to 24 months</strong>.",
+  "faq.answer.3": "I work <strong>fully remote or hybrid</strong> from Orléans (45) or Paris. Occasional on-site visits are possible in the Centre-Val de Loire and Île-de-France regions.",
+  "faq.answer.4": "I work exclusively on a <strong>time-and-materials (day rate)</strong> basis through my company LEXOFT EURL — a legally compliant French entity (Kbis and URSSAF up to date, Provigis Bronze certificate).",
+  "faq.answer.5": "Public sector (French Ministry of Education), banking (BNP Paribas, National Bank of Canada, Desjardins), cloud SaaS (Mimecast), scientific research (BRGM). International experience in France and Canada.",
+  "faq.answer.6": "Yes. <strong>Recommendation letters from Atos / Ministry of Education</strong> and <strong>Atos / BRGM</strong> are available on request.",
+  "faq.answer.7": "My main strength is <strong>high-security IAM architecture</strong> (Keycloak SPI, MidPoint, FIDO2/WebAuthn, OAuth2/OIDC, SAML 2.0) combined with <strong>large-scale AWS cloud architecture</strong> (EKS, ECS Fargate, Lambda, Terraform).",
+
+  "contact.title": "Contact me",
+  "contact.subtitle": "Have a project in mind? Let's talk.",
+  "contact.email.title": "Email",
+  "contact.email.value": "lexoft.eurl@gmail.com",
+  "contact.phone.title": "Phone",
+  "contact.phone.value": "+33 6 34 49 12 75",
+  "contact.address.title": "Location",
+  "contact.address.value": "Orléans (45), France<br>Available in Paris",
+  "contact.hours.title": "Availability",
+  "contact.hours.value": "Monday – Friday<br>9:00 AM – 6:00 PM",
+
+  "contactform.name.label": "Full name",
+  "contactform.name.placeholder": "John Doe",
+  "contactform.name.error": "Please enter your name.",
+  "contactform.email.label": "Email address",
+  "contactform.email.placeholder": "john@example.com",
+  "contactform.email.error": "Please enter a valid email address.",
+  "contactform.message.label": "Message",
+  "contactform.message.placeholder": "Describe your need or project...",
+  "contactform.message.error": "Message must be at least 10 characters.",
+  "contactform.submit": "Send message",
+  "contactform.sending": "Sending...",
+  "contactform.success": "Your message has been sent! I'll get back to you shortly.",
+  "contactform.error": "Something went wrong. Please try again or contact me directly by email.",
+  "contactform.consent.label": "I agree that the data submitted via this form may be used to respond to my enquiry, in accordance with the <a href=\"/politique-de-confidentialite\" target=\"_blank\" rel=\"noopener\">privacy policy</a>.",
+  "contactform.consent.error": "Please accept the privacy policy to continue.",
+
+  "provigis.medal.title": "Responsible third party",
+  "provigis.medal.description": "I provide proof of compliance of my legal file (Art. D8222-5 of the Labour Code) regarding official company registration documents and social contribution regularity.",
+  "ourvalues.collaboration.title": "Provigis Certificate",
+  "ourvalues.collaboration.description": "<p>The company <strong>LEXOFT</strong> (SIREN: <strong>984607226</strong>) has been awarded the <strong>Bronze Responsible Third Party Medal</strong> under the Provigis program, certifying compliant legal documentation (<em>Kbis</em> and <em>URSSAF</em>).</p>",
+  "ourvalues.section": "Legal compliance",
+  "ourvalues.title": "A mark of credibility and transparency",
 
   "certification.main.title": "Certifications",
   "certification.main.title2": "Technical certifications: a mark of quality and reliability",
-  "certification.main.description": "<p> I am certified by industry leaders such as <strong>AWS</strong>, <strong>Oracle</strong>, <strong>VMware</strong>, <strong>HashiCorp</strong>, and <strong>the Linux Foundation</strong>. </p> <p> These certifications validate my advanced skills in software development, cloud computing, infrastructure as code, cybersecurity, DevOps, and artificial intelligence. </p> <p> <strong>For you, the client</strong>, it is the guarantee of working with a qualified professional, up to date with industry best practices, and capable of delivering robust, secure, and sustainable solutions. </p>",
+  "certification.main.description": "<p>Certified by industry leaders: <strong>AWS</strong>, <strong>Oracle</strong>, <strong>VMware</strong>, <strong>HashiCorp</strong>, and <strong>the Linux Foundation</strong>.</p><p>These certifications validate advanced skills in software development, cloud computing, infrastructure as code, cybersecurity, DevOps, and artificial intelligence.</p>",
+  "certification.read.more": "View badge",
+  "certification.group.cloud": "Cloud & AI",
+  "certification.group.devops": "DevOps",
+  "certification.group.programming": "Programming",
 
-  "ourvalues.section": "My values",
-  "ourvalues.title": "A guarantee of credibility and trust",
-
-  "ourvalues.technical.title": "Technical Excellence",
-  "ourvalues.technical.description": "At <strong>LEXOFT</strong>, we are committed to delivering software solutions of exceptional quality. With deep technical expertise in Java, Angular, AWS cloud, Kubernetes, Terraform... we continuously strive for excellence. This ongoing pursuit allows us to design products and services that exceed our clients’ expectations.",
-
-  "ourvalues.collaboration.title": "Provigis Certificate",
-  "ourvalues.collaboration.description": "<p>\n  We, <strong>Provigis SAS</strong>, acting as a trusted third party, hereby certify that:\n</p>\n<p>\n  The company <strong>LEXOFT</strong> (SIREN: <strong>984607226</strong>), headquartered at <strong>6 ALLÉE DE LA CHAVANNERIE, 45240 LA FERTE ST AUBIN, France</strong>,\n  has received the <strong>Bronze Responsible Third Party Medal</strong> under the Provigis medal program.\n</p>\n<p>\n  The Bronze Responsible Third Party Medal certifies that the company LEXOFT has compliant legal documentation\n  (<em>Kbis</em> and <em>URSSAF</em>).\n</p>",
-
-  "ourvalues.innovation.title": "Agile Innovation",
-  "ourvalues.innovation.description": "At <strong>LEXOFT</strong>, we embrace agile innovation in an ever-evolving technological environment. By staying constantly informed about new trends, best practices, and emerging technologies, we remain at the forefront. This agility allows us to design flexible and tailored solutions, providing our clients with a unique competitive edge in their sector.",
-
-
-
-  "header.title": "<h1>Bring your ideas to life with tailor-made software solutions</h1>",
-
-  "expertise.title": "My expertise",
-  "expertise.description": "Expertise in software development and AWS cloud",
-  "expertise.language": "Power and Versatility with Java and Spring",
-  "expertise.ui": "Advanced User Experience with Angular and TypeScript",
-  "expertise.scalability": "Elasticity and Scalability on AWS with Kubernetes and Terraform",
-  "expertise.orchestration": "Agile Orchestration with Kubernetes",
-  "expertise.security": "Integrated Security and Compliance",
-  "expertise.optimisation": "Lifecycle Optimization with a DevOps Approach",
-
-  "expertise.realisation.title": "Keys to building innovative software",
-  "expertise.realisation.programming.title": "Advanced Expertise in Java and Angular Development",
-  "expertise.realisation.programming.description": "We have solid experience in development with Java and Angular, demonstrating our ability to design robust and high-performance solutions using these modern development technologies.",
-
-  "expertise.realisation.cloud.title": "Mastery of AWS Cloud Services",
-  "expertise.realisation.cloud.description": "Our expertise covers the design, deployment, and management of applications on AWS. We highlight our skills in cloud infrastructure provisioning, use of services such as EC2, S3, and RDS, as well as our ability to optimize the performance and reliability of applications deployed on AWS.",
-
-  "expertise.realisation.orchestration.title": "Advanced Knowledge of Kubernetes for Container Orchestration",
-  "expertise.realisation.orchestration.description": "We excel in the use of Kubernetes for container orchestration, thus contributing to improved agility and availability of your applications.",
-
-
-
-  "expertise.realisation.team.description": "Our ability to work effectively within multidisciplinary teams is highlighted, with experience collaborating with developers, cloud engineers, system administrators, and other stakeholders to ensure project success.",
-
-  "expertise.realisation.security.title": "Commitment to Security and Compliance",
-
-
-  "expertise.realisation.devops.title": "Advanced DevOps Practices for High-Quality Continuous Delivery",
-  "expertise.realisation.devops.description": "We have the ability to automate development, testing, and deployment processes by implementing effective CI/CD pipelines. We also integrate practices such as infrastructure as code, monitoring, and logging to ensure high-quality continuous delivery.",
-
-  "expertise.realisation.team.title": "Collaboration Experience in Multidisciplinary Teams",
-
-  "expertise.realisation.security.description": "We are committed to security and compliance, with experience implementing best practices in data protection, identity and access management, and adherence to industry standards and regulations.",
-
-  "services.main.title": "My services",
-
-  "services.development.description": "Design and development of custom business solutions using Java, Python, and Angular, tailored to the specific needs of the company.",
-
-  "services.migration.title": "Cloud Applications and AWS Migration",
-  "services.migration.description": "Support for migrating to the AWS cloud with a focus on reliability, security, and performance. Design of cloud-native applications based on microservices architecture.",
-
-  "services.cloud.native.app.title": "Infrastructure as Code (IaC) & DevOps",
-
-  "services.infrastructure.title": "Kubernetes Orchestration",
-  "services.infrastructure.description": "Deployment and management of containerized applications at scale with Kubernetes, ensuring high availability.",
-
-
-  "services.development.title": "Custom application development",
-
-  "services.cloud.native.app.description": "Design cloud-optimized applications using microservices-based architectures, Kubernetes, and other cloud technologies.",
-
-
-  "services.management.containers.title": "Container Management with Kubernetes",
-  "services.management.containers.description": "Deploy and manage containerized applications at scale using Kubernetes for container orchestration, ensuring optimal scalability and availability.",
-
-  "services.practice.devops.title": "DevOps Practices",
-  "services.practice.devops.description": "Implement DevOps practices to automate development, testing, and deployment processes, fostering continuous delivery of high-quality software.",
-
-  "services.training.title": "Consulting and Training",
-  "services.training.description": "Provide consulting and training services to help companies optimize their use of Java, Angular, AWS, Kubernetes, Terraform, and DevOps technologies.",
-
-  "services.support.maintenance.title": "Support and Maintenance",
-  "services.support.maintenance.description": "Ensure continuous support and maintenance of developed applications, including monitoring, security patches, and functional updates.",
-
-
-  "portfolio.title": "In English",
-
-  "provigis.section": "",
-  "provigis.title": "Responsible third party",
-  "provigis.medal.title": "Responsible third party",
-  "provigis.medal.description": "I provide proof of the compliance of my legal file (Art. D8222-5 of the Labor Code) regarding official company registration documents and regularity of social contributions.",
-  "provigis.pdf.description": "",
-
-  "header.description": "<h2>Software solutions that reflect your business</h2>\n\n<p><strong>Every company has unique needs.</strong></p>\n\n<p>\n  That’s why I offer <strong>fully customized software</strong>,\n  designed to precisely match <em>your business goals</em>.\n</p>\n\n<p>\n  With a <strong>solid background in development</strong>,\n  I turn your digital vision into\n  <strong>concrete</strong>, <strong>innovative</strong> and <strong>reliable</strong> solutions.\n</p>",
-
-
-  "team.whoami": "Who am I?",
-  "team.subtitle": "Alexandre, expertise at your service",
-  "team.title": "Founder & Software Engineer at LEXOFT",
-  "team.information": "I help businesses accelerate their digital transformation with robust, custom-made cloud, AI, and fullstack solutions.<br><br> An expertise built over more than 7 years on high-value strategic projects.",
-
-  "faq": {
-    "title": "Frequently Asked Questions",
-    "subtitle": "🎯 Satisfied clients & guaranteed transparency",
-    "button": {
-      "1": "What are your specific skills in software development?",
-      "2": "How do you organize your work as a freelancer?",
-      "3": "How do you charge for your freelance services?",
-      "4": "What is your prior experience as a freelancer?",
-      "5": "How do you handle potential technical issues during a project?",
-      "6": "How do you keep your skills up to date?",
-      "7": "Do you provide recommendation letters?"
-    },
-    "answer": {
-      "1": "As a freelancer, I specialize in Java, Typescript, Spring Boot, Angular, AWS, Kubernetes, Terraform, Git, Jenkins, Kafka, etc., with proven experience in building high-performance web applications.",
-      "2": "I follow an agile and structured approach. I adapt to your priorities while ensuring regular communication and clear reporting.",
-      "3": "I offer flexible pricing: fixed-price or daily rate. Everything is defined up front to avoid surprises.",
-      "4": "With over 7 years of experience, I’ve worked on high-stakes technical projects for both public and private sector clients.",
-      "5": "I quickly analyze the source of the issue, communicate resolution options, and apply reliable, documented solutions.",
-      "6": "I continuously train through AWS, Spring, and Terraform certifications, as well as by staying up to date with the latest technologies and trends.",
-      "7": "Yes, authentic recommendation letters from previous clients are available upon request. Feel free to contact me to receive one."
-    }
-  },
-
-  "contact": {
-    "title": "Contact me",
-    "subtitle": "Have a project in mind? Let’s talk.",
-    "email": {
-      "title": "Email",
-      "value": "lexoft.eurl@gmail.com"
-    },
-    "phone": {
-      "title": "Phone",
-      "value": "+33 6 34 49 12 75 (FR)<br><br>+1 647 313 8837 (US/Canada)"
-    },
-    "address": {
-      "title": "Address",
-      "value": "BP 15<br>6 Allée de la Chavannerie<br>45240, La Ferté Saint Aubin<br>France"
-    },
-    "hours": {
-      "title": "Hours",
-      "value": "Monday – Friday<br>9:00 AM – 6:00 PM"
-    }
-  },
-
-  "certification.read.more": "Read more",
-
-  "certification.aws.title": "AWS Solutions Architect - Associate",
-  "certification.aws.description": "Ability to design scalable, resilient, efficient, and fault-tolerant distributed systems on AWS.",
+  "certification.aws.title": "AWS Solutions Architect – Associate",
+  "certification.aws.description": "Designing scalable, resilient, and fault-tolerant distributed systems on AWS.",
   "certification.aws.aria": "View AWS Solutions Architect Certification",
 
   "certification.ml.title": "AWS Certified Machine Learning Engineer – Associate",
   "certification.ml.description1": "Design, training, deployment, and maintenance of AI solutions on the AWS cloud.",
-  "certification.ml.description2": "Turn your data into predictive models to automate, anticipate, and optimize your business processes.",
+  "certification.ml.description2": "Turn your data into predictive models to automate and optimize your business processes.",
   "certification.ml.aria": "View AWS ML Certification",
 
   "certification.dev.title": "AWS Certified Developer – Associate",
   "certification.dev.description": "Design and development of cloud-native applications on AWS.",
   "certification.dev.aria": "View AWS Developer Certification",
 
-  "certification.java11.title": "Certified Professional: Java SE 11",
-  "certification.java11.description": "Industry-recognized certification validating advanced expertise in Java Standard Edition development.",
+  "certification.java11.title": "Oracle Certified Professional: Java SE 11",
+  "certification.java11.description": "Advanced expertise in Java Standard Edition development.",
   "certification.java11.aria": "View Java SE 11 Certification",
 
   "certification.java8.title": "Oracle Certified Professional: Java SE 8",
-  "certification.java8.description": "Validated mastery of the Java language through real-world scenarios and complex enterprise problems.",
+  "certification.java8.description": "Mastery of the Java language validated through real-world enterprise scenarios.",
   "certification.java8.aria": "View Java SE 8 Certification",
 
   "certification.spring.title": "VMware Spring Professional",
-  "certification.spring.description": "Proven skills in building robust applications with the Spring framework (Spring Boot, Spring Security, etc.).",
+  "certification.spring.description": "Building robust applications with Spring Boot, Spring Security, and the Spring ecosystem.",
   "certification.spring.aria": "View Spring Certification",
 
   "certification.k8s.title": "Certified Kubernetes Application Developer (CKAD)",
-  "certification.k8s.description": "Mastery of application development, deployment, and debugging in a Kubernetes environment.",
+  "certification.k8s.description": "Application development, deployment, and debugging in a Kubernetes environment.",
   "certification.k8s.aria": "View Kubernetes Certification",
 
-  "certification.terraform.title": "Terraform Associate",
-  "certification.terraform.description": "Understanding of core Terraform concepts, infrastructure as code management, and DevOps best practices.",
+  "certification.terraform.title": "HashiCorp Terraform Associate",
+  "certification.terraform.description": "Infrastructure as Code, infrastructure management, and DevOps best practices.",
   "certification.terraform.aria": "View Terraform Certification",
 
   "certification.ai.title": "AWS Certified AI Practitioner",
-  "certification.ai.description": "Foundational knowledge of artificial intelligence, machine learning, and use cases on AWS.",
+  "certification.ai.description": "Artificial intelligence, machine learning, and AWS use cases.",
   "certification.ai.aria": "View AI Practitioner Certification",
 
-  "contactform": {
-    "title": "Send a message",
-    "subtitle": "Fill in the form below and I'll get back to you as soon as possible.",
-    "name": {
-      "label": "Full name",
-      "placeholder": "John Doe",
-      "error": "Please enter your name."
-    },
-    "email": {
-      "label": "Email address",
-      "placeholder": "john@example.com",
-      "error": "Please enter a valid email address."
-    },
-    "message": {
-      "label": "Message",
-      "placeholder": "Tell me about your project...",
-      "error": "Message must be at least 10 characters."
-    },
-    "submit": "Send message",
-    "sending": "Sending...",
-    "success": "Your message has been sent! I'll get back to you shortly.",
-    "error": "Something went wrong. Please try again or contact me directly by email."
-  },
+  "clients.title": "Clients",
+  "clients.subtitle": "Companies that have trusted me in France and Canada",
 
-  "footer.description": "LEXOFT specializes in providing services and solutions for businesses and public organizations in custom software development.",
-  "footer.links.title": "Links",
+  "footer.description": "LEXOFT — Senior Cloud Architect & Engineer. Freelance missions through LEXOFT EURL.",
+  "footer.links.title": "Navigation",
   "footer.links.home": "Home",
+  "footer.services.title": "Services",
+  "footer.services.dev": "Java / Angular Development",
+  "footer.services.migration": "AWS Migration & Architecture",
+  "footer.services.cloud_native": "Cloud-native applications",
+  "footer.services.terraform": "Infrastructure as Code (Terraform)",
+  "footer.services.kubernetes": "Kubernetes Orchestration",
+  "footer.services.iam": "IAM & Security (Keycloak)",
+  "footer.services.consulting": "Consulting & coaching",
+  "footer.contact.title": "Contact",
+  "footer.copyright": "&copy; 2026 <strong><span>LEXOFT</span></strong> EURL — SIREN 984607226. All rights reserved.",
+  "footer.legal.mentions": "Legal notice",
+  "footer.legal.privacy": "Privacy policy",
 
-  "footer.services.title": "My Services",
-  "footer.services.dev": "Custom software development",
-  "footer.services.migration": "Cloud migration",
-  "footer.services.cloud_native": "Cloud-native application development",
-  "footer.services.terraform": "Infrastructure as Code (IaC) with Terraform",
-  "footer.services.kubernetes": "Container management with Kubernetes",
-  "footer.services.support": "Support and maintenance",
-  "footer.services.consulting": "Consulting and training",
-  "footer.services.devops": "DevOps practices",
+  "legal.back": "← Back to home",
 
-  "footer.contact.title": "Contact Us",
-  "footer.copyright": "&copy; 2024 Copyright <strong><span>LEXOFT</span></strong>. All rights reserved."
+  "legal.mentions.title": "Legal notice",
+  "legal.mentions.content": "<h3>Site publisher</h3><p><strong>LEXOFT</strong> — sole-shareholder limited liability company (EURL).<br>SIREN: <strong>984607226</strong><br>Registered office: Orléans (45), France<br>Email: lexoft.eurl&#64;gmail.com<br>Phone: +33 6 34 49 12 75<br>Director of publication: Alexandre Bessard</p><p><em>[To be completed: share capital, RCS registration city, intra-EU VAT number.]</em></p><h3>Hosting</h3><p>This website is hosted by Amazon Web Services (AWS) — Amazon Web Services EMEA SARL, 38 avenue John F. Kennedy, L-1855 Luxembourg.</p><h3>Intellectual property</h3><p>All content on this site (text, images, logos, layout) is the property of LEXOFT or its respective owners and is protected by intellectual property law. Any reproduction without prior authorisation is prohibited. Third-party logos and trademarks shown remain the property of their respective owners.</p><h3>Personal data</h3><p>How personal data is handled is described in our <a href=\"/politique-de-confidentialite\">Privacy policy</a>.</p>",
+
+  "legal.privacy.title": "Privacy policy",
+  "legal.privacy.content": "<p>LEXOFT is committed to protecting the privacy of visitors to this site, in compliance with the General Data Protection Regulation (GDPR) and the French Data Protection Act.</p><h3>Data controller</h3><p>LEXOFT EURL (SIREN 984607226), Orléans (45), France — lexoft.eurl&#64;gmail.com</p><h3>Data collected</h3><p>Via the contact form, we collect your <strong>name</strong>, <strong>email address</strong> and the <strong>content of your message</strong>. No data is collected without your action.</p><h3>Purpose and legal basis</h3><p>This data is used solely to respond to your enquiry. The legal basis is your <strong>consent</strong>, given when you submit the form.</p><h3>Recipients and retention</h3><p>Your data is processed only by LEXOFT and is never sold or transferred to third parties for commercial purposes. It is kept for a maximum of 24 months after the last contact, then deleted.</p><h3>Your rights</h3><p>You have the right to access, rectify, erase, restrict and object to the processing of your data, as well as the right to data portability. To exercise these rights, contact us at lexoft.eurl&#64;gmail.com. You also have the right to lodge a complaint with the CNIL (www.cnil.fr).</p><h3>Cookies</h3><p>This site does not use advertising or tracking cookies. Only the technical storage required for language preference is used.</p>"
 }
