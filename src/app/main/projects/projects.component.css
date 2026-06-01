@@ -1,0 +1,97 @@
+.project-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--lx-border);
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+/* Gradient accent bar that grows in on hover */
+.project-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--lx-grad-h);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(47, 107, 242, .25);
+  box-shadow: var(--lx-shadow) !important;
+}
+.project-card:hover::before { transform: scaleX(1); }
+
+.project-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.1rem;
+}
+
+.project-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  font-size: 1.6rem;
+  color: var(--lx-primary);
+  background: var(--lx-grad-soft);
+  box-shadow: inset 0 0 0 1px rgba(47, 107, 242, .10);
+}
+
+.project-badge {
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: #fff;
+  padding: .35rem .7rem;
+  border-radius: 99px;
+  background: var(--lx-grad);
+}
+
+.project-card__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--lx-navy);
+  margin-bottom: .6rem;
+}
+
+.project-card__desc {
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+}
+
+.project-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-bottom: 1.5rem;
+}
+.project-chip {
+  font-size: .8rem;
+  font-weight: 600;
+  color: var(--lx-navy);
+  padding: .3rem .7rem;
+  border-radius: 99px;
+  background: var(--lx-grad-soft);
+  border: 1px solid rgba(47, 107, 242, .12);
+}
+
+/* Pin actions to the bottom so both cards align regardless of text length */
+.project-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin-top: auto;
+}
+.project-card__actions .btn { font-size: .92rem; }

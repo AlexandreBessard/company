@@ -1,11 +1,13 @@
 .client-card {
   min-height: 130px;
-  border-radius: 10px;
+  border-radius: 14px;
+  background: #fff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .client-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-5px);
+  box-shadow: var(--lx-shadow) !important;
 }
 
 /* Uniform logo sizing so every brand occupies the same visual footprint.
@@ -17,7 +19,7 @@
   width: auto;
   object-fit: contain;
   filter: grayscale(100%);
-  opacity: 0.9;
+  opacity: 0.7;
   transition: filter 0.3s ease, opacity 0.3s ease;
 }
 

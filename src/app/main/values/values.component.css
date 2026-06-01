@@ -1,0 +1,43 @@
+.cert-pdf-trigger {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border: 2px dashed rgba(13, 110, 253, 0.3);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+  user-select: none;
+}
+
+.cert-pdf-trigger:hover,
+.cert-pdf-trigger:focus {
+  background: rgba(13, 110, 253, 0.05);
+  border-color: #0d6efd;
+  outline: none;
+}
+
+.cert-pdf-trigger__icon {
+  font-size: 2rem;
+  color: #dc3545;
+  flex-shrink: 0;
+}
+
+.cert-pdf-trigger__text {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.cert-pdf-trigger__text span {
+  color: #6c757d;
+  font-size: 0.8rem;
+}
+
+.cert-pdf-trigger__eye {
+  font-size: 1.2rem;
+  color: #0d6efd;
+  margin-left: auto;
+  flex-shrink: 0;
+}

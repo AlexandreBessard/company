@@ -1,0 +1,442 @@
+/*--------------------------------------------------------------
+# LEXOFT — Brand theme overlay
+# Logo-derived palette: deep navy ink + cyan→blue→violet gradient swoosh.
+# Loaded after style.css; defines design tokens (global :root vars that
+# inherit into Angular's scoped components) and overrides Bootstrap + the
+# FlexStart template globals. Per-section polish lives in component CSS.
+--------------------------------------------------------------*/
+:root {
+  /* Logo palette */
+  --lx-navy: #0d1b3e;       /* "Lexoft" wordmark ink */
+  --lx-navy-700: #15295c;
+  --lx-cyan: #21c7e6;       /* swoosh — top */
+  --lx-blue: #3a7bf0;       /* swoosh — middle */
+  --lx-indigo: #4154f1;
+  --lx-violet: #a78bfa;     /* swoosh — tail */
+  --lx-primary: #2f6bf2;
+  --lx-primary-rgb: 47, 107, 242;
+
+  /* Signature gradient (mirrors the logo arc) */
+  --lx-grad: linear-gradient(135deg, #21c7e6 0%, #3a7bf0 52%, #a78bfa 100%);
+  --lx-grad-h: linear-gradient(90deg, #21c7e6 0%, #3a7bf0 52%, #a78bfa 100%);
+  --lx-grad-soft: linear-gradient(135deg, rgba(33,199,230,.10), rgba(167,139,250,.12));
+
+  /* Surfaces & ink */
+  --lx-ink: #34405c;
+  --lx-muted: #6b7793;
+  --lx-surface: #f6f9ff;
+  --lx-border: rgba(13, 27, 62, .08);
+  --lx-ring: rgba(47, 107, 242, .18);
+  --lx-shadow-sm: 0 6px 18px -10px rgba(13, 27, 62, .25);
+  --lx-shadow: 0 16px 40px -18px rgba(13, 27, 62, .22);
+  --lx-shadow-lg: 0 30px 70px -24px rgba(13, 27, 62, .30);
+
+  /* Bootstrap remaps */
+  --bs-primary: #2f6bf2;
+  --bs-primary-rgb: 47, 107, 242;
+  --bs-link-color: #2f6bf2;
+  --bs-link-color-rgb: 47, 107, 242;
+  --bs-link-hover-color: #1b50c9;
+  --bs-body-color: #34405c;
+  --bs-body-color-rgb: 52, 64, 92;
+  --bs-border-radius: .65rem;
+  --bs-border-radius-lg: 1rem;
+}
+
+/*--------------------------------------------------------------
+# Base typography
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--lx-ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6,
+.navbar-brand, .display-1, .display-2, .display-3, .display-4, .display-5 {
+  font-family: "Poppins", "Nunito", sans-serif;
+  color: var(--lx-navy);
+  letter-spacing: -0.01em;
+}
+
+a { color: var(--lx-primary); }
+a:hover { color: var(--lx-blue); }
+
+/* Anchored sections clear the fixed navbar when scrolled to */
+html { scroll-padding-top: 84px; }
+section[id] { scroll-margin-top: 84px; }
+
+.text-primary { color: var(--lx-primary) !important; }
+
+::selection { background: rgba(33, 199, 230, .22); color: var(--lx-navy); }
+
+/* Slim branded scrollbar (WebKit) */
+::-webkit-scrollbar { width: 11px; height: 11px; }
+::-webkit-scrollbar-track { background: #eef2fb; }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #5e8bf3, #a78bfa);
+  border-radius: 99px;
+  border: 3px solid #eef2fb;
+}
+
+/*--------------------------------------------------------------
+# Section headers (FlexStart .section-header)
+# Section markup is inconsistent across the site, so each role is
+# targeted explicitly:
+#   eyebrow  = <h2> without an explicit display-* size class
+#   title    = <h2 class="display-*">  | <p class="lead">  | plain <p>
+#   subtitle = <p class="text-muted">  (and contact's .fs-5)
+--------------------------------------------------------------*/
+.section-header h2:not([class*="display-"]) {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  margin: 0 0 .6rem;
+  color: transparent;
+  background: var(--lx-grad-h);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.section-header h2[class*="display-"],
+.section-header .lead,
+.section-header > p:not([class]) {
+  color: var(--lx-navy);
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1.85rem, 3vw, 2.35rem);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0 auto;
+}
+
+/* Gradient accent rule beneath the section title */
+.section-header h2[class*="display-"]::after,
+.section-header .lead::after,
+.section-header > p:not([class])::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 4px;
+  margin: 16px auto 0;
+  border-radius: 99px;
+  background: var(--lx-grad-h);
+}
+
+/* Subtitle / intro sentence */
+.section-header p.text-muted {
+  font-size: 1.08rem;
+  font-weight: 400;
+  color: var(--lx-muted) !important;
+  max-width: 760px;
+  margin: .85rem auto 0;
+}
+
+/*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+.btn {
+  font-weight: 600;
+  border-radius: .65rem;
+  padding-top: .55rem;
+  padding-bottom: .55rem;
+  transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease, color .2s ease;
+}
+.btn-lg { border-radius: .8rem; }
+
+.btn-primary {
+  border: 0;
+  color: #fff;
+  background: var(--lx-grad);
+  background-size: 140% 140%;
+  background-position: 0% 50%;
+  box-shadow: 0 10px 22px -10px rgba(47, 107, 242, .65);
+}
+.btn-primary:hover,
+.btn-primary:focus-visible {
+  color: #fff;
+  background-position: 100% 50%;
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px -10px rgba(47, 107, 242, .7);
+}
+.btn-primary:active { transform: translateY(0); }
+
+.btn-outline-primary {
+  border: 1.5px solid rgba(47, 107, 242, .55);
+  color: var(--lx-primary);
+  background: #fff;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:focus-visible {
+  border-color: transparent;
+  color: #fff;
+  background: var(--lx-grad);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px -12px rgba(47, 107, 242, .55);
+}
+
+.btn-outline-secondary {
+  border: 1.5px solid rgba(13, 27, 62, .18);
+  color: var(--lx-navy);
+  background: #fff;
+}
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus-visible {
+  background: var(--lx-navy);
+  border-color: var(--lx-navy);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.btn-check:focus + .btn, .btn:focus-visible {
+  box-shadow: 0 0 0 .25rem var(--lx-ring);
+}
+
+/*--------------------------------------------------------------
+# Badges & pills
+--------------------------------------------------------------*/
+.badge { font-weight: 600; letter-spacing: .01em; }
+.badge.bg-primary { background: var(--lx-primary) !important; }
+.badge.bg-secondary { background: #5b6580 !important; }
+.badge.bg-success {
+  background: linear-gradient(135deg, #18b27a, #0e9e8f) !important;
+  box-shadow: 0 6px 16px -8px rgba(14, 158, 143, .6);
+}
+
+/*--------------------------------------------------------------
+# Navbar — glassy, blurred, branded underline on hover
+--------------------------------------------------------------*/
+.navbar.fixed-top {
+  background: rgba(255, 255, 255, .82) !important;
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  border-bottom: 1px solid var(--lx-border);
+  box-shadow: 0 6px 24px -18px rgba(13, 27, 62, .5) !important;
+  transition: background .3s ease, box-shadow .3s ease;
+}
+
+.navbar .nav-link {
+  position: relative;
+  font-weight: 600;
+  color: var(--lx-navy);
+  padding: .5rem .9rem;
+  transition: color .2s ease;
+}
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: .9rem;
+  right: .9rem;
+  bottom: .32rem;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--lx-grad-h);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .25s ease;
+}
+.navbar .nav-link:hover { color: var(--lx-primary); }
+.navbar .nav-link:hover::after { transform: scaleX(1); }
+
+.navbar-brand img { transition: transform .25s ease; }
+.navbar-brand:hover img { transform: scale(1.04); }
+
+/* Language switch tinted to brand */
+.form-switch .form-check-input:checked {
+  background-color: var(--lx-primary);
+  border-color: var(--lx-primary);
+}
+.form-check-input:focus { border-color: var(--lx-primary); box-shadow: 0 0 0 .2rem var(--lx-ring); }
+
+/*--------------------------------------------------------------
+# Generic cards & soft shadows
+--------------------------------------------------------------*/
+.shadow-sm { box-shadow: var(--lx-shadow-sm) !important; }
+.shadow, .shadow-lg { box-shadow: var(--lx-shadow) !important; }
+.rounded-4 { border-radius: 1rem !important; }
+
+.card { border-color: var(--lx-border); }
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+.form-control, .form-select {
+  border-color: rgba(13, 27, 62, .14);
+  border-radius: .65rem;
+}
+.form-control:focus, .form-select:focus {
+  border-color: var(--lx-primary);
+  box-shadow: 0 0 0 .25rem var(--lx-ring);
+}
+.form-label { color: var(--lx-navy); }
+
+/*--------------------------------------------------------------
+# FAQ accordion
+--------------------------------------------------------------*/
+.accordion {
+  --bs-accordion-active-color: var(--lx-primary);
+  --bs-accordion-active-bg: rgba(47, 107, 242, .06);
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 .25rem var(--lx-ring);
+  --bs-accordion-btn-icon-active: none;
+  --bs-accordion-color: var(--lx-ink);
+}
+.accordion-button { font-weight: 600; color: var(--lx-navy); }
+.accordion-flush .accordion-item { border-bottom: 1px solid var(--lx-border); }
+
+/*--------------------------------------------------------------
+# Alerts
+--------------------------------------------------------------*/
+.alert-info {
+  background: rgba(33, 199, 230, .10);
+  color: var(--lx-navy-700);
+  border: 1px solid rgba(33, 199, 230, .25);
+}
+
+/*--------------------------------------------------------------
+# Footer links (FlexStart globals + legal)
+--------------------------------------------------------------*/
+.footer .footer-top .footer-links ul a:hover,
+.footer .footer-top h4 { color: var(--lx-navy); }
+.footer-legal a { color: var(--lx-navy); }
+.footer-legal a:hover { color: var(--lx-primary); }
+.footer .social-links a {
+  background: var(--lx-grad) !important;
+  border: 0 !important;
+  color: #fff !important;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.footer .social-links a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -10px rgba(47, 107, 242, .6);
+}
+
+/*--------------------------------------------------------------
+# Motion: respect reduced-motion preference
+--------------------------------------------------------------*/
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: .001ms !important; transition-duration: .001ms !important; }
+}
+
+/*--------------------------------------------------------------
+# Project detail pages — shared layout for /:lang/projects/* routes
+# (used by the Secure RAG and AI Scheduler pages). Neutral `pd-` prefix.
+--------------------------------------------------------------*/
+.pd-detail { color: var(--lx-ink); }
+
+/* ── Header ── */
+.pd-hero {
+  position: relative;
+  padding: 130px 0 60px;
+  color: #fff;
+  background:
+    radial-gradient(600px 320px at 12% 0%, rgba(33,199,230,.35), transparent 60%),
+    radial-gradient(620px 340px at 88% 120%, rgba(167,139,250,.40), transparent 60%),
+    linear-gradient(120deg, #122a63 0%, #0d1b3e 60%);
+}
+.pd-back {
+  display: inline-flex; align-items: center; gap: .4rem;
+  color: rgba(255,255,255,.85); font-weight: 600; font-size: .9rem;
+  text-decoration: none; margin-bottom: 1.6rem; transition: color .2s;
+}
+.pd-back:hover { color: #fff; }
+.pd-eyebrow {
+  display: block; font-size: 13px; font-weight: 700; letter-spacing: .14em;
+  text-transform: uppercase; color: #7fd8f0; margin-bottom: .5rem;
+}
+.pd-title {
+  font-family: "Poppins", sans-serif; font-weight: 800; color: #fff;
+  font-size: clamp(2.1rem, 5vw, 3.1rem); letter-spacing: -.02em; margin: 0 0 .8rem;
+}
+.pd-tagline {
+  font-size: 1.15rem; line-height: 1.6; color: rgba(255,255,255,.88);
+  max-width: 760px; margin: 0 0 1.6rem;
+}
+.pd-badges { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 1.8rem; }
+.pd-badge {
+  display: inline-flex; align-items: center; gap: .4rem;
+  padding: .4rem .85rem; font-size: .82rem; font-weight: 600;
+  background: rgba(255,255,255,.10); border: 1px solid rgba(255,255,255,.18);
+  border-radius: 99px; backdrop-filter: blur(4px);
+}
+.pd-hero__actions { display: flex; flex-wrap: wrap; gap: .8rem; }
+.pd-hero__actions .btn-light { color: var(--lx-navy); font-weight: 600; }
+.pd-hero__actions .btn-outline-light { border-color: rgba(255,255,255,.5); }
+
+/* ── Body ── */
+.pd-body { max-width: 960px; }
+.pd-section { padding: 3rem 0 1rem; }
+.pd-h2 {
+  font-family: "Poppins", sans-serif; font-weight: 800; color: var(--lx-navy);
+  font-size: 1.7rem; margin-bottom: 1.4rem; position: relative; padding-bottom: .6rem;
+}
+.pd-h2::after {
+  content: ""; position: absolute; left: 0; bottom: 0; width: 56px; height: 4px;
+  border-radius: 99px; background: var(--lx-grad-h);
+}
+.pd-lead { font-size: 1.1rem; line-height: 1.75; color: #45506b; }
+
+/* ── Highlights ── */
+.pd-highlight {
+  display: flex; gap: 1rem; padding: 1.5rem;
+  background: #fff; border: 1px solid var(--lx-border); border-radius: 1rem;
+  box-shadow: var(--lx-shadow-sm); transition: transform .25s, box-shadow .25s;
+}
+.pd-highlight:hover { transform: translateY(-4px); box-shadow: var(--lx-shadow); }
+.pd-highlight__num {
+  flex: 0 0 auto; width: 38px; height: 38px; border-radius: 11px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: "Poppins", sans-serif; font-weight: 800; color: #fff;
+  background: var(--lx-grad);
+}
+.pd-highlight__title { font-size: 1.05rem; font-weight: 700; color: var(--lx-navy); margin: .15rem 0 .4rem; }
+.pd-highlight__desc { font-size: .92rem; line-height: 1.6; color: #56607a; margin: 0; }
+
+/* ── Architecture (terminal-style) ── */
+.pd-arch {
+  background: #0d1b3e; border-radius: 1rem; overflow: hidden;
+  box-shadow: var(--lx-shadow); border: 1px solid rgba(255,255,255,.06);
+}
+.pd-arch__dots { display: flex; gap: .5rem; padding: .9rem 1.1rem; border-bottom: 1px solid rgba(255,255,255,.08); }
+.pd-arch__dots span { width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,.25); }
+.pd-arch__dots span:first-child { background: #ff6058; }
+.pd-arch__dots span:nth-child(2) { background: #ffbd2e; }
+.pd-arch__dots span:nth-child(3) { background: #28c93f; }
+.pd-arch__diagram {
+  margin: 0; padding: 1.2rem; overflow-x: auto;
+  font-family: "SFMono-Regular", "Menlo", "Consolas", monospace;
+  font-size: .72rem; line-height: 1.45; color: #b9c6ea; white-space: pre;
+}
+
+/* ── Insight callout ── */
+.pd-insight {
+  display: flex; gap: .9rem; align-items: flex-start; margin-top: 1.4rem;
+  padding: 1.1rem 1.3rem; border-radius: 1rem;
+  background: var(--lx-grad-soft); border: 1px solid rgba(47,107,242,.16);
+}
+.pd-insight i { color: var(--lx-primary); font-size: 1.3rem; line-height: 1.4; }
+.pd-insight p { margin: 0; font-size: .98rem; line-height: 1.65; color: var(--lx-navy-700); }
+.pd-insight code {
+  background: rgba(13,27,62,.08); padding: .1rem .4rem; border-radius: .35rem;
+  font-size: .88em; color: var(--lx-navy);
+}
+
+/* ── Stack ── */
+.pd-stack { padding: 1.4rem; background: #fff; border: 1px solid var(--lx-border); border-radius: 1rem; box-shadow: var(--lx-shadow-sm); }
+.pd-stack__title { display: flex; align-items: center; gap: .5rem; font-size: 1rem; font-weight: 700; color: var(--lx-navy); margin-bottom: .9rem; }
+.pd-stack__title i { color: var(--lx-primary); }
+.pd-stack ul { list-style: none; padding: 0; margin: 0; }
+.pd-stack li { font-size: .88rem; color: #56607a; padding: .3rem 0 .3rem 1.1rem; position: relative; }
+.pd-stack li::before { content: ""; position: absolute; left: 0; top: .75rem; width: 6px; height: 6px; border-radius: 50%; background: var(--lx-grad); }
+
+/* ── CTA ── */
+.pd-cta { margin: 3.5rem 0 1rem; padding: 2.6rem 1.5rem; text-align: center; border-radius: 1.25rem; background: var(--lx-grad-soft); border: 1px solid rgba(47,107,242,.14); }
+.pd-cta__title { font-family: "Poppins", sans-serif; font-weight: 800; color: var(--lx-navy); font-size: 1.6rem; margin-bottom: .6rem; }
+.pd-cta__body { color: #45506b; max-width: 620px; margin: 0 auto 1.5rem; }
+.pd-cta__actions { display: flex; flex-wrap: wrap; gap: .8rem; justify-content: center; }
+
+@media (max-width: 576px) {
+  .pd-arch__diagram { font-size: .6rem; }
+}

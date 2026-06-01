@@ -7,13 +7,46 @@
 
     <div class="row align-items-center gy-5">
 
-      <!-- Photo -->
-      <div class="col-lg-4 text-center" data-aos="zoom-in" data-aos-delay="100">
-        <img ngSrc="assets/img/team/profil.jpeg"
-             width="600" height="600"
-             class="about-photo img-fluid rounded-4 shadow"
-             alt="Alexandre Bessard"
-             priority>
+      <!-- Credentials panel (no duplicate of the hero photo) -->
+      <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="cred-panel rounded-4 shadow-sm">
+
+          <div class="cred-panel__head">
+            <i class="bi bi-patch-check-fill"></i>
+            <span>{{ 'about.panel.heading' | translate }}</span>
+          </div>
+
+          <div class="cred-stats">
+            <div class="cred-stat">
+              <div class="cred-stat__value">9+</div>
+              <div class="cred-stat__label">{{ 'about.panel.stat.years' | translate }}</div>
+            </div>
+            <div class="cred-stat">
+              <div class="cred-stat__value">8</div>
+              <div class="cred-stat__label">{{ 'about.panel.stat.certs' | translate }}</div>
+            </div>
+            <div class="cred-stat">
+              <div class="cred-stat__value">0</div>
+              <div class="cred-stat__label">{{ 'about.panel.stat.incidents' | translate }}</div>
+            </div>
+            <div class="cred-stat">
+              <div class="cred-stat__value">2</div>
+              <div class="cred-stat__label">{{ 'about.panel.stat.countries' | translate }}</div>
+            </div>
+          </div>
+
+          <div class="cred-stack">
+            <p class="cred-stack__title">{{ 'about.panel.stack' | translate }}</p>
+            <div class="cred-chips">
+              <span class="cred-chip"><i class="bi bi-cloud-fill"></i>AWS</span>
+              <span class="cred-chip"><i class="bi bi-diagram-3-fill"></i>Terraform</span>
+              <span class="cred-chip"><i class="bi bi-box-seam"></i>Kubernetes</span>
+              <span class="cred-chip"><i class="bi bi-braces"></i>Java</span>
+              <span class="cred-chip"><i class="bi bi-shield-lock-fill"></i>Keycloak</span>
+            </div>
+          </div>
+
+        </div>
       </div>
 
       <!-- Text -->

@@ -1,0 +1,19 @@
+/* Thin brand-gradient bar that tracks scroll progress, pinned above the navbar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  z-index: 2000;
+  background: linear-gradient(90deg, #21c7e6 0%, #3a7bf0 52%, #a78bfa 100%);
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  box-shadow: 0 0 10px rgba(58, 123, 240, .5);
+  transition: width .08s ease-out;
+  will-change: width;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-progress { transition: none; }
+}

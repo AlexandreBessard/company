@@ -1,10 +1,13 @@
-import { Injectable } from '@angular/core';
+import { Injectable, PLATFORM_ID, inject } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { DEFAULT_LANG, Lang, normalizeLang, otherLang } from './i18n';
 
 @Injectable({ providedIn: 'root' })
 export class LanguageService {
+  private platformId = inject(PLATFORM_ID);
+
   constructor(
     private router: Router,
     private translate: TranslateService
@@ -25,8 +28,13 @@ export class LanguageService {
     return this.swapLangInPath(this.router.url, lang);
   }
 
-  /** Navigate to the other-language version of the current page. */
+  /** Navigate to the other-language version of the current page, preserving scroll position. */
   toggle(): void {
-    this.router.navigateByUrl(this.alternatePath(otherLang(this.current)));
+    const scrollY = isPlatformBrowser(this.platformId) ? window.scrollY : 0;
+    this.router.navigateByUrl(this.alternatePath(otherLang(this.current))).then(() => {
+      if (isPlatformBrowser(this.platformId)) {
+        setTimeout(() => window.scrollTo(0, scrollY), 0);
+      }
+    });
   }
 }

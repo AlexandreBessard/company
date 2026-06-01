@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit, PLATFORM_ID, inject } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { ActivatedRoute, RouterOutlet } from '@angular/router';
 import {AboutComponent} from "./about/about.component";
 import {ValuesComponent} from "./values/values.component";
 import {FeaturesComponent} from "./features/features.component";
@@ -8,7 +10,7 @@ import {TeamComponent} from "./team/team.component";
 import {ContactFormComponent} from "./contact-form/contact-form.component";
 import {ClientsComponent} from "./clients/clients.component";
 import {ExperienceComponent} from "./experience/experience.component";
-import {RouterOutlet} from "@angular/router";
+import {ProjectsComponent} from "./projects/projects.component";
 import {CommonModule} from "@angular/common";
 import {HeroComponent} from "../hero/hero.component";
 
@@ -25,6 +27,7 @@ import {HeroComponent} from "../hero/hero.component";
     ContactFormComponent,
     ClientsComponent,
     ExperienceComponent,
+    ProjectsComponent,
     CommonModule,
     RouterOutlet,
     HeroComponent
@@ -32,6 +35,20 @@ import {HeroComponent} from "../hero/hero.component";
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
 })
-export class MainComponent {
+export class MainComponent implements AfterViewInit {
+  private route = inject(ActivatedRoute);
+  private platformId = inject(PLATFORM_ID);
 
+  ngAfterViewInit(): void {
+    if (!isPlatformBrowser(this.platformId)) return;
+    const target = this.route.snapshot.queryParams['from'];
+    if (target === 'contact') {
+      setTimeout(() => {
+        document.getElementById('contact')?.scrollIntoView({
+          behavior: 'instant' as ScrollBehavior,
+          block: 'start',
+        });
+      }, 0);
+    }
+  }
 }

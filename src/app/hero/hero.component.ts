@@ -17,7 +17,17 @@ export class HeroComponent implements OnInit {
   ngOnInit(): void {
     // AOS touches the DOM/window — browser only.
     if (isPlatformBrowser(this.platformId)) {
-      AOS.init();
+      // Smoother reveals than the AOS defaults (longer, gentler easing) while
+      // keeping the default trigger logic, which continuously re-evaluates so
+      // no section can get stuck hidden if positions shift after images load.
+      AOS.init({
+        duration: 700,
+        easing: 'ease-out-cubic',
+        disable: () =>
+          window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+      });
+      // Recalculate trigger points once images/fonts have settled.
+      window.addEventListener('load', () => AOS.refresh());
     }
   }
 }

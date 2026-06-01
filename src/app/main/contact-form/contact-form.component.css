@@ -1,21 +1,33 @@
 .contact-form {
-  background-color: #f8f9fa;
-}
-
-.form-control:focus {
-  border-color: #0d6efd;
-  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+  position: relative;
+  background:
+    radial-gradient(700px 380px at 5% 0%, rgba(33, 199, 230, .08), transparent 55%),
+    radial-gradient(700px 420px at 100% 100%, rgba(167, 139, 250, .10), transparent 55%),
+    #f6f9ff;
 }
 
 textarea.form-control {
   resize: vertical;
 }
 
+/* Coordinates panel: branded left edge + lift on hover */
 .info-panel {
+  position: relative;
+  border: 1px solid var(--lx-border);
+  overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.info-panel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 5px;
+  background: var(--lx-grad);
 }
 
 .info-panel:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: var(--lx-shadow) !important;
 }

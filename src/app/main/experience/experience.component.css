@@ -1,5 +1,7 @@
 .experience-section {
-  background: #fff;
+  background:
+    radial-gradient(700px 380px at 95% 0%, rgba(167, 139, 250, .07), transparent 60%),
+    #fff;
 }
 
 .timeline {
@@ -13,8 +15,9 @@
   left: 0.65rem;
   top: 0;
   bottom: 0;
-  width: 2px;
-  background: linear-gradient(to bottom, #4361ee, #e0e7ff);
+  width: 3px;
+  border-radius: 3px;
+  background: linear-gradient(to bottom, #21c7e6, #3a7bf0 45%, #a78bfa 90%, transparent);
 }
 
 .timeline-item {
@@ -28,28 +31,36 @@
 
 .timeline-marker {
   position: absolute;
-  left: -1.95rem;
+  left: -2rem;
   top: 1.4rem;
-  width: 14px;
-  height: 14px;
-  background: #4361ee;
-  border: 3px solid #fff;
+  width: 15px;
+  height: 15px;
+  background: #fff;
   border-radius: 50%;
-  box-shadow: 0 0 0 2px #4361ee;
+  box-shadow: 0 0 0 4px #fff, 0 0 0 6px rgba(47, 107, 242, .9), 0 0 0 10px rgba(47, 107, 242, .18);
+}
+.timeline-marker::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border-radius: 50%;
+  background: var(--lx-grad);
 }
 
 .timeline-content {
-  background: #f8f9ff;
-  border: 1px solid #e4e9ff;
-  transition: box-shadow 0.2s;
+  background: #fff;
+  border: 1px solid var(--lx-border);
+  transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
 }
 
 .timeline-content:hover {
-  box-shadow: 0 6px 20px rgba(67, 97, 238, 0.12) !important;
+  transform: translateX(4px);
+  border-color: rgba(47, 107, 242, .22);
+  box-shadow: var(--lx-shadow) !important;
 }
 
 .timeline-company {
-  color: #4361ee;
+  color: var(--lx-primary);
   font-weight: 600;
   font-size: 0.95rem;
 }
@@ -60,7 +71,7 @@
 
 .timeline-desc {
   margin-bottom: 0.75rem;
-  color: #495057;
+  color: #4a566f;
 }
 
 .timeline-highlights {
@@ -75,14 +86,27 @@
 }
 
 .timeline-stack {
-  border-top: 1px solid #dee2f0;
+  border-top: 1px solid var(--lx-border);
   padding-top: 0.75rem;
   font-size: 0.82rem;
   color: #6c757d;
+}
+
+.timeline-recoletter {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.78rem;
+  color: #0d6efd;
+  background: rgba(13, 110, 253, 0.07);
+  border: 1px solid rgba(13, 110, 253, 0.2);
+  border-radius: 20px;
+  padding: 0.25rem 0.75rem;
 }
 
 @media (max-width: 576px) {
   .timeline {
     padding-left: 1.5rem;
   }
+  .timeline-marker { left: -1.5rem; }
 }

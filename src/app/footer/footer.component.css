@@ -1,3 +1,22 @@
+/* Gradient accent under each footer column heading */
+.footer-top h4 {
+  position: relative;
+}
+.footer-top h4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 36px;
+  height: 3px;
+  border-radius: 99px;
+  background: var(--lx-grad-h);
+}
+
+.footer-top .footer-links ul i {
+  color: var(--lx-primary) !important;
+}
+
 .footer-legal {
   padding-top: 8px;
   padding-bottom: 20px;
@@ -5,12 +24,12 @@
 }
 
 .footer-legal a {
-  color: #012970;
+  color: var(--lx-navy);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .footer-legal a:hover {
-  color: #4154f1;
+  color: var(--lx-primary);
   text-decoration: underline;
 }
