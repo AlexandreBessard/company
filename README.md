@@ -34,8 +34,10 @@ Steps to deploy:
 
 cd /Users/Alex/Dev/lexoft
 
+ng build
+
 # 1) Upload the static site to your S3 bucket
-aws s3 sync dist/browser/ s3://<YOUR_BUCKET_NAME>/ --delete
+aws s3 sync dist/browser/ s3://www.lexoft-eurl.com/ --delete
 
 # 2) Invalidate CloudFront so visitors get the new bundle immediately
 aws cloudfront create-invalidation --distribution-id <YOUR_DISTRIBUTION_ID> --paths "/*"
