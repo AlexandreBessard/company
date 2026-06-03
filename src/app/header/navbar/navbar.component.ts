@@ -29,15 +29,23 @@ export class NavbarComponent {
 
   /** Navigate to the current-language home, then smooth-scroll to a section. */
   scrollToElement(elementId: string): void {
-    this.router.navigate(['/', this.lang.current]).then(() => {
-      setTimeout(() => {
-        document.getElementById(elementId)?.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start',
-          inline: 'nearest',
-        });
-      }, 100);
-    });
+    const scroll = () =>
+      document.getElementById(elementId)?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest',
+      });
+
+    const homeUrl = `/${this.lang.current}`;
+    const currentUrl = this.router.url.split('?')[0];
+
+    if (currentUrl === homeUrl) {
+      scroll();
+    } else {
+      this.router.navigate(['/', this.lang.current]).then(() =>
+        setTimeout(scroll, 150)
+      );
+    }
   }
 
   closeNavbar(): void {
