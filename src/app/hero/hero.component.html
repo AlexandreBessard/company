@@ -5,7 +5,7 @@
       <!-- Left: Text -->
       <div class="col-lg-7 d-flex flex-column justify-content-center text-center text-lg-start" data-aos="fade-right">
 
-        <div class="mb-3">
+        <div class="mb-4">
           <span class="badge bg-success px-3 py-2 rounded-pill availability-badge">
             <span class="availability-dot"></span>
             {{ 'hero.availability' | translate }}
@@ -13,21 +13,38 @@
         </div>
 
         <h1 class="display-3 fw-bold mb-2">Alexandre Bessard</h1>
-        <p class="hero-subtitle fw-semibold mb-2">{{ 'hero.subtitle' | translate }}</p>
-        <p class="hero-tagline text-muted mb-4">{{ 'hero.tagline' | translate }}</p>
+        <p class="hero-subtitle fw-semibold mb-4">{{ 'hero.subtitle' | translate }}</p>
 
-        <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mb-5">
-          <span class="hero-meta-item">
-            <i class="bi bi-currency-euro"></i>
-            {{ 'hero.tjm' | translate }}
-          </span>
-          <span class="hero-meta-item">
-            <i class="bi bi-geo-alt"></i>
-            {{ 'hero.location' | translate }}
-          </span>
+        <div class="d-flex flex-wrap gap-2 mb-5 justify-content-center justify-content-lg-start">
+          <span class="hero-skill-pill"><i class="bi bi-robot"></i> {{ 'hero.skill.ai' | translate }}</span>
+          <span class="hero-skill-pill"><i class="bi bi-cloud"></i> {{ 'hero.skill.aws' | translate }}</span>
+          <span class="hero-skill-pill"><i class="bi bi-infinity"></i> {{ 'hero.skill.devops' | translate }}</span>
+          <span class="hero-skill-pill"><i class="bi bi-shield-lock"></i> {{ 'hero.skill.security' | translate }}</span>
         </div>
 
-        <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+        <div class="hero-pitch-block mb-5">
+          <p class="hero-pitch mb-2">{{ 'hero.pitch' | translate }}</p>
+          <p class="hero-pitch-cred mb-0"><i class="bi bi-shield-check"></i> {{ 'hero.pitch.cred' | translate }}</p>
+        </div>
+
+        <div class="hero-stats d-flex flex-wrap gap-4 mb-5 justify-content-center justify-content-lg-start">
+          <div class="hero-stat">
+            <span class="hero-stat-value">9</span>
+            <span class="hero-stat-label">{{ 'hero.stat.years' | translate }}</span>
+          </div>
+          <div class="hero-stat-sep"></div>
+          <div class="hero-stat">
+            <span class="hero-stat-value">5M+</span>
+            <span class="hero-stat-label">{{ 'hero.stat.users' | translate }}</span>
+          </div>
+          <div class="hero-stat-sep"></div>
+          <div class="hero-stat">
+            <span class="hero-stat-value">0</span>
+            <span class="hero-stat-label">{{ 'hero.stat.incidents' | translate }}</span>
+          </div>
+        </div>
+
+        <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mb-4">
           <a href="#contact" class="btn btn-primary btn-lg px-4">
             {{ 'hero.cta.primary' | translate }}
             <i class="bi bi-arrow-right ms-2"></i>
@@ -42,6 +59,13 @@
           </a>
         </div>
 
+        <div class="d-flex justify-content-center justify-content-lg-start">
+          <span class="hero-meta-item">
+            <i class="bi bi-geo-alt"></i>
+            {{ 'hero.location' | translate }}
+          </span>
+        </div>
+
       </div>
 
       <!-- Right: Photo -->
@@ -50,7 +74,7 @@
           ngSrc="assets/img/team/alexandre-bessard.png"
           width="1024"
           height="1536"
-          alt="Alexandre Bessard – Senior Cloud Architect"
+          alt="Alexandre Bessard – Expert IA & Architecte Cloud Senior"
           class="hero-photo img-fluid rounded-4 shadow-lg"
           priority
         />
